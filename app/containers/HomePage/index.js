@@ -10,14 +10,37 @@
  */
 
 import React from 'react';
+import { connect } from 'react-redux';
 import Nav from 'components/common/Nav';
+import { push } from 'react-router-redux';
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+
+export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.handleNav = this.handleNav.bind(this);
+  }
+
+  handleNav(e, url) {
+    this.props.moveLocation(url);
+  }
+
   render() {
     return (
       <div>
-        <Nav />
+        <Nav
+          onClick={this.handleNav}
+        />
       </div>
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return {
+    moveLocation: (url) => dispatch(push(url)),
+  }
+};
+
+export default connect(null, mapDispatchToProps)(HomePage);
+
