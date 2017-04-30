@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-   font-family: 'Josefin Sans';
-   text-transform: uppercase;
-   letter-spacing: 3px;
+   font-family: 'Lobster';
    font-size: 22px;
    font-weight: bold;
    display: block;

@@ -20,7 +20,7 @@ function Hero() {
         <h3 style={{ marginTop: '-2%', fontSize: '24px', fontFamily: 'Josefin Sans', textAlign: 'center', color: '#FAFAFA', textTransform: 'uppercase', letterSpacing: '3px' }}>Lessons starting at $85</h3>
         <Button className="btn btn-default">Get Out There</Button>
       </div>
-      <video style={{ backgroundColor: 'black', zIndex: '1', height: '80%', width: '100%', float: 'left', top: '0', padding: 'none' }} loop autoPlay>
+      <video style={{ backgroundColor: 'black', zIndex: '1', height: '30%', width: '100%', float: 'left', top: '0', padding: 'none' }} loop autoPlay>
         <source src={Surf} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
