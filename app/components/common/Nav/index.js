@@ -15,13 +15,7 @@ import Tripadvisor from 'assets/icons/tripadvisor.png';
 import Thumbtack from 'assets/icons/thumbtack.png';
 import Facebook from 'assets/icons/facebook.png';
 import Instagram from 'assets/icons/instagram.png';
-
-
-// const muiTheme = getMuiTheme({
-//   appPalette: {
-//     primary1Color: 'grey900',
-//   }
-// });
+import { browserHistory } from 'react-router';
 
 const StyledAppBar = styled(AppBar)`
   width: 100%;
@@ -30,6 +24,13 @@ const StyledAppBar = styled(AppBar)`
   background: -webkit-linear-gradient(left, #2bf7d0 0%,#8ae5ab 95%);
   background: linear-gradient(to right, #2bf7d0 0%,#8ae5ab 95%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bf7d0', endColorstr='#8ae5ab',GradientType=1 );
+`;
+
+const A = styled.a`
+  font-family: 'Lobster', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 `;
 
 const items = [
@@ -43,14 +44,17 @@ const items = [
     name: 'FAQ',
     url: '/faq',
   }, {
-    name: 'Gallery',
-    url: '/gallery',
+    name: 'Photography',
+    url: '/photography',
   }, {
     name: 'Press',
     url: '/press',
   }, {
     name: 'Retreats',
     url: '/retreats',
+  }, {
+    name: 'Camping',
+    url: '/camping',
   }, {
     name: 'Contact',
     url: '/contact',
@@ -68,20 +72,17 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   }
 
   handleToggle() {
-    this.setState({open: !this.state.open})
+    this.setState({ open: !this.state.open });
   }
 
-  handleClose(url, e) {
-    console.log(url, this.props.onClick)
-    this.setState({open: false});
-    this.props.onClick(url);
+  handleClose(url) {
+    this.setState({ open: false });
+    browserHistory.push(url);
   }
 
   render() {
-    let display = 'none';
-    (this.state.showMenu) ? display = 'block' : display = 'none';
     const icons = (
-      <div style={{ display: 'inline-flex', marginLeft: '-40%', width: '90%' }}>
+      <div style={{ display: 'inline-flex', marginLeft: '-35%', width: '90%' }}>
         <img src={Yelp} alt="yelp icon" />
         <img src={Tripadvisor} alt="tripadvisor icon" style={{ paddingLeft: '15%' }} />
         <img src={Thumbtack} alt="thumbtack icon" style={{ paddingLeft: '15%' }} />
@@ -89,10 +90,10 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
         <img src={Instagram} alt="instagram icon" style={{ paddingLeft: '15%' }} />
       </div>
       );
-    const brand = <a href="/" style={{ textTransform: 'uppercase', fontSize: '16px', color: 'black', textDecoration: 'none' }}>Aloha Brothers Surf Lessons</a>;
+    const brand = <A href="/">Aloha Brothers Surf Lessons</A>;
     return (
       <div>
-        <div style={{ position: 'fixed', width: '100%', zIndex: '10' }}>
+        <div style={{ position: 'fixed', width: '100%', zIndex: '100', top: '0' }}>
           <StyledAppBar
             title={brand}
             titleStyle={{ textDecoration: 'none' }}
