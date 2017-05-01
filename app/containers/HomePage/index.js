@@ -13,6 +13,7 @@ import React from 'react';
 import Nav from 'components/common/Nav';
 import Hero from 'components/landing/Hero';
 import Intro from 'components/landing/Intro';
+import Meet from 'components/landing/Meet';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -21,6 +22,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <Nav />
         <Hero />
         <Intro />
+        <Meet />
       </div>
     );
   }

@@ -26,10 +26,18 @@ const StyledAppBar = styled(AppBar)`
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bf7d0', endColorstr='#8ae5ab',GradientType=1 );
 `;
 
+const StyledDrawer = styled(Drawer)`
+  background: #2bf7d0;
+  background: -moz-linear-gradient(left, #2bf7d0 0%, #8ae5ab 95%);
+  background: -webkit-linear-gradient(left, #2bf7d0 0%,#8ae5ab 95%);
+  background: linear-gradient(to right, #2bf7d0 0%,#8ae5ab 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bf7d0', endColorstr='#8ae5ab',GradientType=1 );
+`;
+
 const A = styled.a`
   font-family: 'Lobster', sans-serif;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 28px;
   color: black;
 `;
 
@@ -103,7 +111,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
             iconElementRight={icons}
             iconStyleRight={{ marginTop: '2%', marginRight: '1.5%' }}
           />
-          <Drawer
+          <StyledDrawer
             docked={false}
             width={200}
             open={this.state.open}
@@ -114,7 +122,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
                 <MenuItem key={idx} onTouchTap={this.handleClose.bind(null, item.url)}>{item.name}</MenuItem>
               );
             })}
-          </Drawer>
+          </StyledDrawer>
         </div>
       </div>
     );
