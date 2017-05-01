@@ -13,7 +13,8 @@ import HuffPo from 'assets/logos/Huffington-Post-Logo.png';
 import LAMag from 'assets/logos/lamag.png';
 import LAT from 'assets/logos/latimes-logo.png';
 import Tele from 'assets/logos/telemundo.png';
-import Stars from 'assets/icons/stars_yellow.png'
+import Stars from 'assets/icons/stars_yellow.png';
+import { Link } from 'react-router';
 
 function Intro() {
   return (
@@ -34,6 +35,7 @@ function Intro() {
           <img src={HuffPo} style={{ padding: '3%' }} alt="huffington post" />
           <img src={Tele} style={{ padding: '3%' }} alt="telemundo" />
         </div>
+        <Link to="/press" style={{ textDecoration: 'none' }} ><p style={{ textAlign: 'center', color: '#7C4DFF', cursor: 'pointer', marginTop: '-2%' }}>See press</p></Link>
       </div>
     </div>
   );

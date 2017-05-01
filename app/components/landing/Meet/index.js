@@ -12,7 +12,6 @@ function Meet() {
   return (
     <div>
       <div style={{ height: '300px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-      <p style={{ textAlign: 'center', marginBottom: '10%' }}>Test</p>
     </div>
   );
 }

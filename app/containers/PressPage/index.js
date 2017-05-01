@@ -1,32 +1,29 @@
 /*
  *
- * Faqpage
+ * PressPage
  *
  */
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import Nav from 'components/common/Nav';
 
-
-export class Faqpage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class PressPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
         <Helmet
-          title="Faqpage"
+          title="PressPage"
           meta={[
-            { name: 'description', content: 'Description of Faqpage' },
+            { name: 'description', content: 'Description of PressPage' },
           ]}
         />
-        <Nav />
       </div>
     );
   }
 }
 
-Faqpage.propTypes = {
+PressPage.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
@@ -37,4 +34,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(null, mapDispatchToProps)(Faqpage);
+export default connect(null, mapDispatchToProps)(PressPage);
