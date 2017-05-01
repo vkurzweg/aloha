@@ -55,6 +55,9 @@ const items = [
     name: 'Photography',
     url: '/photography',
   }, {
+    name: 'Ding Repair',
+    url: '/dingrepair',
+  }, {
     name: 'Press',
     url: '/press',
   }, {

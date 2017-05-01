@@ -10,13 +10,14 @@ const Button = styled.button`
    margin: 0 auto;
    width: 30%;
    padding: 1.5%;
-   color: #FFC233;
-   border: 3px solid #FFC233;
+   color: #FF80AB;
+   border-radius: 5px;
+   border: 3px solid #4BF1C3;
 
 
   &:hover, &:active, &:focus {
     background-color: #FF80AB;
-    color: #686E8E;
+    color: #212121;
     border: none
     outline: 0;
  }

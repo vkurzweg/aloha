@@ -98,6 +98,22 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/dingrepair',
+      name: 'dingrepair',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/DingRepairPage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([component]) => {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
       path: '/retreats',
       name: 'retreats',
       getComponent(nextState, cb) {
