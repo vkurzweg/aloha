@@ -9,6 +9,8 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 // import { createStructuredSelector } from 'reselect';
 // import makeSelectGalleryPage from './selectors';
+import Nav from 'components/common/Nav';
+
 
 export class PhotographyPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -20,12 +22,13 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
             { name: 'description', content: 'Description of GalleryPage' },
           ]}
         />
+        <Nav />
       </div>
     );
   }
 }
 
-GalleryPage.propTypes = {
+PhotographyPage.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 

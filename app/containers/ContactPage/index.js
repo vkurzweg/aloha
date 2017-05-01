@@ -7,8 +7,10 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import { createStructuredSelector } from 'reselect';
-import makeSelectContactPage from './selectors';
+// import { createStructuredSelector } from 'reselect';
+// import makeSelectContactPage from './selectors';
+import Nav from 'components/common/Nav';
+
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -20,6 +22,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
             { name: 'description', content: 'Description of ContactPage' },
           ]}
         />
+        <Nav />
       </div>
     );
   }
@@ -29,9 +32,9 @@ ContactPage.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = createStructuredSelector({
-  ContactPage: makeSelectContactPage(),
-});
+// const mapStateToProps = createStructuredSelector({
+//   ContactPage: makeSelectContactPage(),
+// });
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -39,4 +42,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);
+export default connect(null, mapDispatchToProps)(ContactPage);

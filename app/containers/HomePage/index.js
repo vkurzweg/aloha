@@ -10,6 +10,7 @@
  */
 
 import React from 'react';
+import Helmet from 'react-helmet';
 import Nav from 'components/common/Nav';
 import Hero from 'components/landing/Hero';
 import Intro from 'components/landing/Intro';
@@ -19,6 +20,12 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <div style={{ top: '0' }}>
+        <Helmet
+          title="Aloha Brothers Surf Lessons - Venice Beach, CA"
+          meta={[
+            { name: 'description', content: '' },
+          ]}
+        />
         <Nav />
         <Hero />
         <Intro />
