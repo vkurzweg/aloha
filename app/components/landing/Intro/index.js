@@ -15,6 +15,7 @@ import LAT from 'assets/logos/latimes-logo.png';
 import Tele from 'assets/logos/telemundo.png';
 import Stars from 'assets/icons/stars_yellow.png';
 import { Link } from 'react-router';
+import Chevron from 'assets/icons/chevron.png';
 
 function Intro() {
   return (
@@ -35,7 +36,7 @@ function Intro() {
           <img src={HuffPo} style={{ padding: '3%' }} alt="huffington post" />
           <img src={Tele} style={{ padding: '3%' }} alt="telemundo" />
         </div>
-        <Link to="/press" style={{ textDecoration: 'none' }} ><p style={{ textAlign: 'center', color: '#7C4DFF', cursor: 'pointer', marginTop: '-2%' }}>See press</p></Link>
+        <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2%' }}>All press<img src={Chevron} role="presentation" /></h4></Link>
       </div>
     </div>
   );

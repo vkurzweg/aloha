@@ -12,6 +12,7 @@ import Lesson from 'assets/images/thumb_new-student.png';
 import FlatButton from 'material-ui/FlatButton';
 import Surf from 'assets/icons/surfboards_purple.png';
 import Chevron from 'assets/icons/chevron.png';
+import Camera from 'assets/icons/camera.png';
 import { Link } from 'react-router';
 
 function Rates() {
@@ -24,10 +25,10 @@ function Rates() {
         <div style={{ padding: '5%', width: '40%', marginLeft: '10%' }}>
           <Card style={{ height: '450px' }}>
             <CardMedia>
-              <img src={LessonKid} style={{ height: '190px'}} />
+              <img src={LessonKid} style={{ height: '190px' }} />
             </CardMedia>
             <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
-            <CardText style={{ textAlign: 'center', height: '100px' }}>
+            <CardText style={{ textAlign: 'center' }}>
               1 instructor for up to 4 people
               <hr />
               We create the group if you don't have at least 3 people
@@ -35,8 +36,8 @@ function Rates() {
               Most popular option!
             </CardText>
             <CardActions>
-              <FlatButton label="More" />
-              <FlatButton label="Book" />
+              <FlatButton style={{ color: '#FF80AB' }} label="FAQ" />
+              <FlatButton style={{ color: '#FF80AB' }} label="Book" />
             </CardActions>
           </Card>
         </div>
@@ -46,20 +47,24 @@ function Rates() {
               <img src={Lesson} style={{ height: '190px' }} />
             </CardMedia>
             <CardTitle title="Private Lesson (2 people)" subtitle="$255" />
-            <CardText style={{ textAlign: 'center', height: '100px'}}>
+            <CardText style={{ textAlign: 'center' }}>
               1 instructor for 2 people
               <hr />
               Perfect for couples or children and their parents!
             </CardText>
-            <CardActions>
-              <FlatButton label="More" />
-              <FlatButton label="Book" />
+            <CardActions style={{ marginTop: '10%' }}>
+              <FlatButton style={{ color: '#FF80AB' }} label="FAQ" />
+              <FlatButton style={{ color: '#FF80AB' }} label="Book" />
             </CardActions>
           </Card>
         </div>
       </div>
       <div >
-        <Link style={{ textDecoration: 'none' }} to="/booking" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '-3%' }}>See all rates & packages<img src={Chevron} role="presentation" /></h4></Link>
+        <div style={{ border: '2px solid #FF80AB', width: '30%', margin: '0 auto'}}>
+          <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
+          <p style={{ color: '#FF80AB', textAlign: 'center' }}>Add photography to your lesson for $75</p>
+        </div>
+        <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/booking" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '3%' }}>All rates & packages<img src={Chevron} role="presentation" /></h4></Link>
       </div>
     </div>
   );

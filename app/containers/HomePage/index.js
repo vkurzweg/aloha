@@ -16,6 +16,8 @@ import Hero from 'components/landing/Hero';
 import Intro from 'components/landing/Intro';
 import Meet from 'components/landing/Meet';
 import Rates from 'components/landing/Rates';
+import Barrell from 'assets/images/slideshow_barrell2.jpg';
+// import Office from 'assets/images/office.png';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -30,10 +32,15 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <Nav />
         <Hero />
         <Intro />
-        <Meet />
+        <div style={{ height: '300px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <Rates />
+        <Meet />
+
       </div>
     );
   }
 }
+
+
+// <div style={{ height: '300px', backgroundImage: `url(${Office})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
 
