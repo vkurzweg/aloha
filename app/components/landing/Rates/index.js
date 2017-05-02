@@ -41,9 +41,9 @@ function Rates() {
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center' }}>
                 1 instructor for up to 4 people
-                <hr />
+                <hr style={{ marginTop: '2%', marginBottom: '2%' }} />
                 We create the group if you don't have at least 3 people
-                <hr />
+                <hr style={{ marginTop: '2%', marginBottom: '2%' }} />
                 Most popular option!
               </CardText>
               <CardActions>
@@ -60,7 +60,7 @@ function Rates() {
             <CardTitle title="Private Lesson (2 ppl)" subtitle="$255"/>
             <CardText style={{ textAlign: 'center' }}>
               1 instructor for 2 people
-              <hr />
+              <hr style={{ marginTop: '2%', marginBottom: '2%' }} />
               Perfect for couples or children and their parents!
             </CardText>
             <CardActions style={{ marginTop: '11%' }}>
