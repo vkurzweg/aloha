@@ -93,7 +93,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 
   render() {
     const icons = (
-      <div style={{ display: 'inline-flex', marginLeft: '-35%', width: '90%' }}>
+      <div style={{ display: 'inline-flex', marginLeft: '-35%', width: '50%' }}>
         <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><img src={Yelp} alt="yelp icon" /></a>
         <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><img src={Tripadvisor} alt="tripadvisor icon" style={{ paddingLeft: '15%' }} /></a>
         <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><img src={Thumbtack} alt="thumbtack icon" style={{ paddingLeft: '15%' }} /></a>

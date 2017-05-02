@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
    font-family: 'Josefin Sans';
-   font-size: 22px;
+   font-size: 26px;
    font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;
@@ -10,9 +10,10 @@ const Button = styled.button`
    margin: 0 auto;
    width: 30%;
    padding: 1.5%;
-   color: #FF80AB;
+   color: #4BF1C3;
    border-radius: 5px;
-   border: 3px solid #4BF1C3;
+   border: 5px solid #4BF1C3;
+   margin-top: 3%;
 
 
   &:hover, &:active, &:focus {

@@ -54,7 +54,8 @@ export class PressPage extends React.PureComponent { // eslint-disable-line reac
               </div>
               <div className="col-sm-6" style={{ marginTop: '10%' }}>
                   <img style={{ display: 'block', margin: '0 auto', width: '30px' }} src={Camera} />
-                  <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Aloha Brothers Press</h3>
+                  <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
+                  <p style={{ textAlign: 'center', marginTop: '5%' }}>For media inquiries, please contact Nick Fowler at nickfowler9@gmail.com or 323-316-8108. </p>
               </div>
             </div>
           </div>

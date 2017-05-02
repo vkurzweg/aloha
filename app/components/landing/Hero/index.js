@@ -16,9 +16,9 @@ function Hero() {
   return (
     <div style={{ width: '100%', backgroundColor: 'black', top: '0' }}>
       <div style={{ zIndex: '10', dispay: 'block', margin: '0 auto', width: '100%', position: 'absolute', marginTop: '12%' }}>
-        <h1 style={{ fontSize: '40px', fontFamily: 'Lobster', textAlign: 'center', color: '#FF80AB', letterSpacing: '5px' }}><img src={Palm1} role="presentation" /> Surf in Venice Beach <img src={Palm2} role="presentation" /></h1>
-        <h3 style={{ marginTop: '-2%', fontSize: '24px', fontFamily: 'Josefin Sans', textAlign: 'center', color: '#FF80AB', textTransform: 'uppercase', letterSpacing: '3px' }}>Lessons starting at $85</h3>
-        <Button className="btn btn-default">Get Out There</Button>
+        <h1 style={{ fontSize: '48px', fontFamily: 'Lobster', textAlign: 'center', color: '#FF80AB', letterSpacing: '5px' }}><img src={Palm1} role="presentation" /> Surf in Venice Beach <img src={Palm2} role="presentation" /></h1>
+        <h3 style={{ fontSize: '28px', fontFamily: 'Josefin Sans', textAlign: 'center', color: '#FF80AB', textTransform: 'uppercase', letterSpacing: '3px' }}>Lessons starting at $85</h3>
+        <Button>Get Out There</Button>
       </div>
       <video style={{ backgroundColor: 'black', zIndex: '1', height: '30%', width: '100%', float: 'left', top: '0', padding: 'none' }} loop autoPlay>
         <source src={Surf} type="video/mp4" />
