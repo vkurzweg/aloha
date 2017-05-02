@@ -70,7 +70,7 @@ export default function createRoutes(store) {
       name: 'faq',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
-          import('containers/FAQPage'),
+          import('containers/Faqpage'),
         ]);
 
         const renderRoute = loadModule(cb);

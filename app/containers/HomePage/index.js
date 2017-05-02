@@ -18,6 +18,7 @@ import Meet from 'components/landing/Meet';
 import Rates from 'components/landing/Rates';
 import Barrell from 'assets/images/slideshow_barrell2.jpg';
 // import Office from 'assets/images/office.png';
+import Footer from 'components/common/Footer';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -35,7 +36,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <div style={{ height: '300px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <Rates />
         <Meet />
-
+        <Footer />
       </div>
     );
   }
