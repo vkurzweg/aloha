@@ -10,6 +10,7 @@ import Helmet from 'react-helmet';
 // import { createStructuredSelector } from 'reselect';
 // import makeSelectGalleryPage from './selectors';
 import Nav from 'components/common/Nav';
+import LightboxContainer from 'components/photography/LightboxContainer';
 
 
 export class PhotographyPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -23,6 +24,9 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
           ]}
         />
         <Nav />
+        <div style={{ marginTop: '15%' }}>
+          <LightboxContainer />
+        </div>
       </div>
     );
   }

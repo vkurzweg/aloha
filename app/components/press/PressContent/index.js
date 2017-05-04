@@ -33,10 +33,10 @@ function PressContent() {
         <div className="col-sm-6" style={{ marginTop: '3%' }}>
           <Slider {...settings}>
             <div style={{ width: '50%' }}>
-              <img src={Dutch} alt="Aloha Brothers on Dutch television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '5%',  paddingBottom: '1%' }} />
+              <img src={FrenchCan} alt="Aloha Brothers on Canadian television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
             <div style={{ width: '50%' }}>
-              <img src={FrenchCan} alt="Aloha Brothers on Canadian television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%' }} />
+              <img src={Dutch} alt="Aloha Brothers on Dutch television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '5%',  paddingBottom: '1%' }} />
             </div>
             <div style={{ width: '50%' }}>
               <img src={Voyage} alt="Profile of owner Nick in Voyage LA" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%' }} />
@@ -46,10 +46,10 @@ function PressContent() {
             </div>
           </Slider>
         </div>
-        <div className="col-sm-6" style={{ marginTop: '15%' }}>
-          <img style={{ display: 'block', margin: '0 auto', width: '30px' }} src={Camera} />
+        <div className="col-sm-6" style={{ marginTop: '15%', width: '45%' }}>
+          <img style={{ display: 'block', margin: '0 auto', width: '40px', marginTop: '5%' }} src={Camera} />
           <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
-          <p style={{ textAlign: 'center', marginTop: '5%', fontSize: '16px' }}>Media inquiries: Nick Fowler at nickfowler9@gmail.com or 323-316-8108</p>
+          <p style={{ padding: '2%', textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at <br />nickfowler9@gmail.com or 323-316-8108</p>
         </div>
       </div>
       <div className="row">
