@@ -7,7 +7,6 @@
 import React from 'react';
 // import styled from 'styled-components';
 import Lightbox from 'react-images';
-import Masonry from 'react-masonry-component';
 import BackPop from 'assets/images/lightbox/backside_pop.jpg';
 import Cleanup from 'assets/images/lightbox/beach_cleanup.jpg';
 import Crosswalk from 'assets/images/lightbox/crosswalk.jpg';
@@ -31,6 +30,13 @@ import Sami from 'assets/images/lightbox/sami_ghoche.jpg';
 import Skate from 'assets/images/lightbox/skateboard.png';
 import Snow from 'assets/images/lightbox/snowboarding.jpg';
 import Walking from 'assets/images/lightbox/walking.png';
+import Alaska from 'assets/images/lightbox/alaska.jpg';
+import Fall from 'assets/images/lightbox/fall.jpg';
+import Popup from 'assets/images/lightbox/popup.jpg';
+import GroupPose from 'assets/images/lightbox/group_pose.jpg';
+import Gopro from 'assets/images/lightbox/gopro.png';
+import Fam from 'assets/images/lightbox/fam.jpg';
+import Smiles from 'assets/images/lightbox/smiles.jpg';
 
 const LIGHTBOX_IMAGE_SET = [
   {
@@ -125,11 +131,35 @@ const LIGHTBOX_IMAGE_SET = [
     src: Walking,
     caption: 'Caption',
   },
+  {
+    src: Alaska,
+    caption: 'Caption',
+  },
+  {
+    src: Fall,
+    caption: 'Caption',
+  },
+  {
+    src: Popup,
+    caption: 'Caption',
+  },
+  {
+    src: GroupPose,
+    caption: 'Caption',
+  },
+  {
+    src: Gopro,
+    caption: 'Caption',
+  },
+  {
+    src: Fam,
+    caption: 'Caption',
+  },
+  {
+    src: Smiles,
+    caption: 'Caption',
+  },
 ];
-
-const masonryOptions = {
-  transitionDuration: 0,
-};
 
 class LightboxContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor() {
@@ -183,8 +213,8 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
   render() {
     const childElements = LIGHTBOX_IMAGE_SET.map((element, idx) => {
       return (
-        <div className="item-container" onClick={this.openLightbox} >
-          <img className="item" key={idx} src={element.src} />
+        <div key={idx} className="item-container" >
+          <img onClick={this.openLightbox} className="item" src={element.src} />
         </div>
       );
     });
