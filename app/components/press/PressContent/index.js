@@ -29,7 +29,7 @@ function PressContent() {
   };
   return (
     <div className="container">
-      <div className="row">
+      <div className="row" style={{ width: '100%' }}>
         <div className="col-sm-6" style={{ marginTop: '3%' }}>
           <Slider {...settings}>
             <div style={{ width: '50%' }}>
@@ -46,8 +46,8 @@ function PressContent() {
             </div>
           </Slider>
         </div>
-        <div className="col-sm-6" style={{ marginTop: '15%', width: '45%' }}>
-          <img style={{ display: 'block', margin: '0 auto', width: '40px', marginTop: '5%' }} src={Camera} />
+        <div className="col-sm-6" style={{ marginTop: '15%', width: '40%', border: '2px solid #FF80AB', padding: '1%', marginLeft: '2%' }}>
+          <img style={{ display: 'block', margin: '0 auto', width: '40px', marginTop: '2%' }} src={Camera} />
           <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
           <p style={{ padding: '2%', textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at <br />nickfowler9@gmail.com or 323-316-8108</p>
         </div>

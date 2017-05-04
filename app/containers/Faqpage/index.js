@@ -25,7 +25,7 @@ export class Faqpage extends React.PureComponent { // eslint-disable-line react/
           ]}
         />
         <Nav />
-        <div style={{ height: '300px', backgroundImage: `url(${Office})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div style={{ height: '450px', backgroundImage: `url(${Office})`, backgroundAttachment: 'fixed', backgroundSize: 'cover' }}></div>
         <div style={{ marginLeft: '5%', marginRight: '5%', marginTop: '3%' }}>
           <Q>Is there somewhere to change, and can I shower after the lesson?</Q>
           <A>Please show up wearing your swimsuits. If you would like to rinse off, please bring a large plastic container with your own water due to drought restrictions. Note that the city is turning off public showers at state beaches starting July 15, 2015.</A>

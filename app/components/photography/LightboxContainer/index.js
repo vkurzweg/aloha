@@ -62,11 +62,11 @@ const LIGHTBOX_IMAGE_SET = [
     caption: 'Caption',
   },
   {
-    src: Girls,
-    caption: 'Caption',
+    src: GroupTalk,
+    caption: 'Test2',
   },
   {
-    src: Guys,
+    src: Girls,
     caption: 'Caption',
   },
   {
@@ -74,11 +74,11 @@ const LIGHTBOX_IMAGE_SET = [
     caption: 'Test',
   },
   {
-    src: GroupTalk,
-    caption: 'Test2',
+    src: Happy,
+    caption: 'Caption',
   },
   {
-    src: Happy,
+    src: Guys,
     caption: 'Caption',
   },
   {
@@ -181,31 +181,27 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
   }
 
   render() {
-    const childElements = LIGHTBOX_IMAGE_SET.map((element) => {
+    const childElements = LIGHTBOX_IMAGE_SET.map((element, idx) => {
       return (
-        <div>
-          <img src={element.src} style={{ height: '150px', padding: '1%' }} />
+        <div className="item-container" onClick={this.openLightbox} >
+          <img className="item" key={idx} src={element.src} />
         </div>
       );
     });
     return (
-      <div style={{ width: '80%', margin: '0 auto' }}>
-        <Masonry
-          className='my-gallery-class'
-          options={masonryOptions} // default {}
-          onClick={this.openLightbox}
-      >
-          {childElements}
-        </Masonry>
-        <Lightbox
-          isOpen={this.state.lightboxIsOpen}
-          images={LIGHTBOX_IMAGE_SET}
-          onClickImage={this.handleClickImage}
-          onClickNext={this.gotoNext}
-          onClickPrev={this.gotoPrevious}
-          onClose={this.closeLightbox}
-          backdropClosesModal
-        />
+      <div className="wrapper">
+        <div className="masonry" style={{ width: '80%', margin: '0 auto' }}>
+            {childElements}
+          <Lightbox
+            isOpen={this.state.lightboxIsOpen}
+            images={LIGHTBOX_IMAGE_SET}
+            onClickImage={this.handleClickImage}
+            onClickNext={this.gotoNext}
+            onClickPrev={this.gotoPrevious}
+            onClose={this.closeLightbox}
+            backdropClosesModal
+          />
+        </div>
       </div>
     );
   }

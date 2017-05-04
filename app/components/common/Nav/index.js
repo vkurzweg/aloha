@@ -16,6 +16,7 @@ import Thumbtack from 'assets/icons/thumbtack.png';
 import Facebook from 'assets/icons/facebook.png';
 import Instagram from 'assets/icons/instagram.png';
 import { browserHistory } from 'react-router';
+import Logo from 'assets/logos/logo_50.png';
 
 const StyledAppBar = styled(AppBar)`
   width: 100%;
@@ -39,6 +40,10 @@ const A = styled.a`
   text-decoration: none;
   font-size: 28px;
   color: black;
+
+  &:hover {
+    color: #FF80AB;
+  }
 `;
 
 const items = [
@@ -101,7 +106,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
         <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><img src={Instagram} alt="instagram icon" style={{ paddingLeft: '15%' }} /></a>
       </div>
       );
-    const brand = <A href="/">Aloha Brothers Surf Lessons</A>;
+    const brand = <A href="/"><img src={Logo} alt="aloha brothers" />Aloha Brothers Surf Lessons</A>;
     return (
       <div>
         <div style={{ position: 'fixed', width: '100%', zIndex: '100', top: '0' }}>
