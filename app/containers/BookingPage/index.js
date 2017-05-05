@@ -91,7 +91,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               </div>
 
               <h4 style={{ textAlign: 'center', backgroundColor: '#7C4DFF', color: '#FFC233', padding: '1%', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '5%', fontWeight: 'bold' }}>Packages</h4>
-              <h5 style={{ fontSize: '16px', color: '#7C4DFF', textAlign: 'center', letterSpacing: '5px', textTransform: 'uppercase', fontStyle: 'bold', marginTop: '5%' }}>5-Lesson Package* <span style={{ borderRadius: '3px', backgroundColor: '#8AE5AB', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px' }}><img src={Palmtree} alt="palmtree" style={{ height: '25px'}} />Best Value!</span></h5>
+              <h5 style={{ fontSize: '16px', color: '#7C4DFF', textAlign: 'center', letterSpacing: '5px', textTransform: 'uppercase', fontStyle: 'bold', marginTop: '5%' }}>5-Lesson Package* <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px' }}><img src={Palmtree} alt="palmtree" style={{ height: '25px'}} />Best Value!</span></h5>
               <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
                 <table className="table" style={{ width: '100%', textAlign: 'center' }}>
                   <tbody>
@@ -104,8 +104,8 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               </div>
               <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '7%', marginTop: '2%', width: '80%'}}>
                 <li>* <b>9 - 10:30</b> Earliest session M-F</li>
-                <li><b>Spring/Summer (March - Sept)</b> Lessons in this package only available Monday - Friday</li>
-                <li>We try our best to work with your schedule. If we can't add another person to make your lesson into a group lesson within 24 hours, we will notify you that we need to reschedule.</li>
+                <li style={{ marginTop: '3%' }}><b>Spring/Summer (March - Sept)</b> Lessons in this package only available Monday - Friday</li>
+                <li style={{ marginTop: '3%' }}>We try our best to work with your schedule. If we can't add another person to make your lesson into a group lesson within 24 hours, we will notify you that we need to reschedule.</li>
               </ul>
               <h5 style={{ fontSize: '16px', color: '#7C4DFF', textAlign: 'center', letterSpacing: '5px', textTransform: 'uppercase', fontStyle: 'bold', marginTop: '5%' }}>4-Lesson Package*</h5>
               <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>

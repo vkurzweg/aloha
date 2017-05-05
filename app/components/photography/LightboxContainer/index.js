@@ -178,8 +178,7 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
     this.openLightbox = this.openLightbox.bind(this);
   }
 
-  openLightbox(event, index) {
-    event.preventDefault();
+  openLightbox(index) {
     console.log(index)
     this.setState({
       currentImage: index,
@@ -214,7 +213,7 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
   render() {
     const childElements = LIGHTBOX_IMAGE_SET.map((element, idx) => {
       return (
-        <div key={idx} onClick={this.openLightbox} className="item-container" >
+        <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
           <img className="item" src={element.src} />
         </div>
       );
@@ -224,6 +223,7 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
         <div className="masonry" style={{ width: '80%', margin: '0 auto' }}>
             {childElements}
           <Lightbox
+            currentImage={this.state.currentImage}
             isOpen={this.state.lightboxIsOpen}
             images={LIGHTBOX_IMAGE_SET}
             onClickImage={this.handleClickImage}
@@ -242,6 +242,3 @@ LightboxContainer.propTypes = {
 
 };
 export default LightboxContainer;
-
-// images={[{ src: BackPop }, { src: Cleanup }, { src: Crosswalk }, { src: Buddies }, { src: Snap }, { src: Girl }, { src: GoT }, { src: Girls }, { src: Guys }, { src: Lesson }, { src: GroupTalk }, { src: Happy }, { src: High5 }, { src: Hustlers }, { src: Julie }, { src: Kid }, { src: Kid2 }, { src: Paddle }, { src: Red }, { src: Sami }, { src: Skate }, { src: Snow }, { src: Walking }]}
-
