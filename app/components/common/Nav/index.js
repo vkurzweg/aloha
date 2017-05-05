@@ -106,7 +106,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
         <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><img src={Instagram} alt="instagram icon" style={{ paddingLeft: '15%' }} /></a>
       </div>
       );
-    const brand = <A href="/"><img src={Logo} alt="aloha brothers" />Aloha Brothers Surf Lessons</A>;
+    const brand = <A href="/">Aloha Brothers Surf Lessons</A>;
     return (
       <div>
         <div style={{ position: 'fixed', width: '100%', zIndex: '100', top: '0' }}>

@@ -24,7 +24,7 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
           ]}
         />
         <Nav />
-        <div style={{ marginTop: '15%' }}>
+        <div style={{ marginTop: '15%', backgroundColor: '#FFFFFF' }}>
           <LightboxContainer />
         </div>
       </div>

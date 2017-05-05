@@ -178,8 +178,9 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
     this.openLightbox = this.openLightbox.bind(this);
   }
 
-  openLightbox(index, event) {
+  openLightbox(event, index) {
     event.preventDefault();
+    console.log(index)
     this.setState({
       currentImage: index,
       lightboxIsOpen: true,
@@ -213,8 +214,8 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
   render() {
     const childElements = LIGHTBOX_IMAGE_SET.map((element, idx) => {
       return (
-        <div key={idx} className="item-container" >
-          <img onClick={this.openLightbox} className="item" src={element.src} />
+        <div key={idx} onClick={this.openLightbox} className="item-container" >
+          <img className="item" src={element.src} />
         </div>
       );
     });
