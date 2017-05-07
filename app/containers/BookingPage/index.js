@@ -11,7 +11,8 @@ import Nav from 'components/common/Nav';
 import Venice from 'assets/images/venice_background.jpg';
 import Palmtree from 'assets/icons/palmtree1.png';
 import Footer from 'components/common/Footer';
-
+import Camera from 'assets/icons/camera.png';
+import { Link } from 'react-router';
 
 export class BookingPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -29,6 +30,12 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
 
             <div className="col-sm-3" style={{ marginTop: '6%' }}>
               <img src={Venice} alt="walking with surfboards in Venice" style={{ padding: '2%', height: '500px' }} />
+              <div style={{ display: 'block', margin: '0 auto', width: '100%', padding: '5%', marginTop: '10%', marginLeft: '15%' }}>
+                <Link to="/photography"><div style={{ border: '2px solid #FF80AB', width: '100%', margin: '0 auto', padding: '10%'}}>
+                  <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
+                  <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
+                </div></Link>
+              </div>
             </div>
 
             <div className="col-sm-8" style={{ float: 'right' }}>
