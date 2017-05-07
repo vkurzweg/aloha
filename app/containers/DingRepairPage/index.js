@@ -29,7 +29,7 @@ export class DingRepairPage extends React.PureComponent { // eslint-disable-line
           </div>
           <div>
             <img src={Surf} role="presentation" style={{ display: 'block', margin: '0 auto' }} />
-            <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase' }}>Aloha Brothers Ding Repair</h3>
+            <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase' }}>Ding Repair</h3>
           </div>
         </div>
       </div>

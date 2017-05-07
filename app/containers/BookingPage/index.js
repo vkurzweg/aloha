@@ -121,6 +121,24 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '7%', marginTop: '2%', width: '80%', marginBottom: '5%'}}>
                 <li>* <b>Availablity</b> Same as 5-lesson package</li>
               </ul>
+
+              <h4 style={{ textAlign: 'center', backgroundColor: '#7C4DFF', color: '#FFC233', padding: '1%', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%', fontWeight: 'bold' }}>Gift Certificates</h4>
+              <div style={{ marginLeft: '5%', padding: '2%' }}>
+                <p style={{ fontFamily: 'Josefin Sans', fontSize: '16px' }}>You send the payment for number of lessons and we send you the printable file.</p>
+                <p style={{ fontFamily: 'Josefin Sans', fontSize: '16px' }}>All gift certificates are non-transferable, non-refundable, and expire in a year.</p>
+                <p style={{ fontFamily: 'Josefin Sans', fontSize: '16px' }}>Follow the instructions below, which are catered to the desktop version of PayPal.</p>
+              </div>
+              <ol style={{ padding: '2%', marginLeft: '10%', listStyleType: 'decimal', fontSize: '16px' }}>
+                <li>Go to paypal.com</li>
+                <li>Click Send</li>
+                <li>Enter nickfowler9@gmail.com with the amount (see rates above)</li>
+                <li>Click Continue</li>
+                <li>Select Friends or Family --- SUPER IMPORTANT!!!! </li>
+                <li>You will be asked to provide 3% of the total if processed incorrectly.</li>
+                <li>Sign in to PayPal or create an account</li>
+                <li>Email us and tell us that you purchased a gift certificate, the amount, and for whom NickFowler9@gmail.com</li>
+                <li>We email you the gift certificate!</li>
+              </ol>
             </div>
 
           </div>
