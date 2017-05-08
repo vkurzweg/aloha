@@ -18,5 +18,18 @@
     <!-- The app hooks into this div -->
     <div id="app"></div>
     <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDE-PEBoope_8b-0qRtqvv5DlwQa-9QLpQ",
+        authDomain: "aloha-e38ea.firebaseapp.com",
+        databaseURL: "https://aloha-e38ea.firebaseio.com",
+        projectId: "aloha-e38ea",
+        storageBucket: "aloha-e38ea.appspot.com",
+        messagingSenderId: "839998583595"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>

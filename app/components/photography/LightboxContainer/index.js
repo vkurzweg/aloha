@@ -37,6 +37,7 @@ import GroupPose from 'assets/images/lightbox/group_pose.jpg';
 import Gopro from 'assets/images/lightbox/gopro.png';
 import Fam from 'assets/images/lightbox/fam.jpg';
 import Smiles from 'assets/images/lightbox/smiles.jpg';
+import Peace from 'assets/images/lightbox/peace.jpg';
 
 const LIGHTBOX_IMAGE_SET = [
   {
@@ -157,6 +158,10 @@ const LIGHTBOX_IMAGE_SET = [
   },
   {
     src: Smiles,
+    caption: 'Caption',
+  },
+  {
+    src: Peace,
     caption: 'Caption',
   },
 ];
