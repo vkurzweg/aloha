@@ -150,12 +150,15 @@ export default function createRoutes(store) {
       name: 'contact',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
+          import('containers/ContactPage/sagas'),
           import('containers/ContactPage'),
+
         ]);
 
         const renderRoute = loadModule(cb);
 
-        importModules.then(([component]) => {
+        importModules.then(([sagas, component]) => {
+          injectSagas(sagas.default);
           renderRoute(component);
         });
 

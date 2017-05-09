@@ -6,6 +6,15 @@
 import { combineReducers } from 'redux-immutable';
 import { fromJS } from 'immutable';
 import { LOCATION_CHANGE } from 'react-router-redux';
+import {
+  CREATE_MESSAGE,
+  CREATE_MESSAGE_SUCCESS,
+  CREATE_MESSAGE_FAILURE,
+  SET_NAME,
+  SET_EMAIL,
+  SET_NUMBER,
+  SET_BODY,
+} from './constants';
 
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
 
@@ -37,6 +46,37 @@ function routeReducer(state = routeInitialState, action) {
   }
 }
 
+const contactInitialState = fromJS({
+  name: '',
+  email: '',
+  number: '',
+  body: '',
+  isCreatingMessage: false,
+  isCreateFailed: false,
+});
+
+function contactReducer(state = contactInitialState, action) {
+  switch (action.type) {
+    case CREATE_MESSAGE:
+      return state.set('isCreatingMessage', fromJS(action.payload));
+    case CREATE_MESSAGE_SUCCESS:
+      return state.set('isCreatingMessage', fromJS(action.payload));
+    case CREATE_MESSAGE_FAILURE:
+      return state.set('isCreatingMessage', fromJS(action.payload))
+                  .set('isCreateFailed', fromJS(action.isCreateFailed));
+    case SET_NAME:
+      return state.set('name', action.event);
+    case SET_EMAIL:
+      return state.set('email', action.email);
+    case SET_NUMBER:
+      return state.set('number', action.number);
+    case SET_BODY:
+      return state.set('body', action.body);
+    default:
+      return state;
+  }
+}
+
 /**
  * Creates the main reducer with the asynchronously loaded ones
  */
@@ -44,6 +84,7 @@ export default function createReducer(asyncReducers) {
   return combineReducers({
     route: routeReducer,
     language: languageProviderReducer,
+    contact: contactReducer,
     ...asyncReducers,
   });
 }
