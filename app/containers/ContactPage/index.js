@@ -10,6 +10,7 @@ import Helmet from 'react-helmet';
 // import { createStructuredSelector } from 'reselect';
 // import makeSelectContactPage from './selectors';
 import Nav from 'components/common/Nav';
+import ContactFormContainer from './ContactFormContainer';
 
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -23,6 +24,13 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
           ]}
         />
         <Nav />
+        <div className="container">
+          <div className="row">
+
+            <ContactFormContainer />
+
+          </div>
+        </div>
       </div>
     );
   }
