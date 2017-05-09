@@ -14,7 +14,9 @@ import {
   SET_EMAIL,
   SET_NUMBER,
   SET_BODY,
+  CLEAR_MESSAGE,
 } from './constants';
+import { reducer as reduxFormReducer } from 'redux-form/immutable'
 
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
 
@@ -85,6 +87,7 @@ export default function createReducer(asyncReducers) {
     route: routeReducer,
     language: languageProviderReducer,
     contact: contactReducer,
+    form: reduxFormReducer,
     ...asyncReducers,
   });
 }

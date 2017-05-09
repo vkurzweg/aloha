@@ -7,9 +7,9 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-// import { createStructuredSelector } from 'reselect';
-// import makeSelectContactPage from './selectors';
 import Nav from 'components/common/Nav';
+import { selectContact } from './selectors';
+import { createMessage, setName, setEmail, setNumber, setBody } from './actions';
 import ContactFormContainer from './ContactFormContainer';
 
 
@@ -27,7 +27,15 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
         <div className="container">
           <div className="row">
 
-            <ContactFormContainer />
+            <ContactFormContainer
+              setName={this.props.setName}
+              setEmail={this.props.setEmail}
+              setNumber={this.props.setNumber}
+              setBody={this.props.setBody}
+              createMessage={this.props.createMessage}
+              isCreateFailed={this.props.isCreateFailed}
+              userName={this.props.userName}
+            />
 
           </div>
         </div>
@@ -37,17 +45,26 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
 }
 
 ContactPage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
 };
 
-// const mapStateToProps = createStructuredSelector({
-//   ContactPage: makeSelectContactPage(),
-// });
-
-function mapDispatchToProps(dispatch) {
+function mapStateToProps(state) {
+  const contactState = selectContact(state);
+  const isCreateFailed = contactState.get('isCreateFailed');
+  const userName = contactState.get('name');
   return {
-    dispatch,
+    isCreateFailed,
+    userName,
   };
 }
 
-export default connect(null, mapDispatchToProps)(ContactPage);
+function mapDispatchToProps(dispatch) {
+  return {
+    setName: (name) => dispatch(setName(name)),
+    setEmail: (email) => dispatch(setEmail(email)),
+    setNumber: (number) => dispatch(setNumber(number)),
+    setBody: (body) => dispatch(setBody(body)),
+    createMessage: () => dispatch(createMessage()),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);
