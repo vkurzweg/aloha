@@ -6,6 +6,7 @@ import firebase from 'firebase';
 import { db } from 'utils/firebase-config';
 import { createMessage, createMessageSuccess, createMessageFailure } from './actions';
 import { selectContact, selectForm } from './selectors';
+import axios from 'axios'
 
 
 export function* createMessageAsync() {
@@ -14,7 +15,17 @@ export function* createMessageAsync() {
     const formState = yield select(selectForm);
     const contact = formState.get('contact').toJS();
     const message = contact.values;
+    const data = {
+      name: message.name,
+      email: message.email,
+      number: message.cellNumber,
+      body: message.message,
+    }
     console.log('message', message);
+    const api = axios.create({
+      baseURL: 'http://localhost:3000'
+    })
+    const mail = yield call(api, '/contactus', {method: 'post', data})
     const date = moment().format('MM-DD-YYYY');
     const newMessage = yield new Promise((resolve, reject) => {
       db.ref(`messages/${date}`).push(message, (err) => {
@@ -24,6 +35,7 @@ export function* createMessageAsync() {
       })
     });
     yield put(createMessageSuccess());
+    console.log('message sent!')
   } catch (e) {
     console.log('Create message request failed', e);
     yield put(createMessageFailure());

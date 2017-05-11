@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+
 // TODO: hide variables
 const config = {
   apiKey: process.env.FIREBASE_API_KEY || "AIzaSyDE-PEBoope_8b-0qRtqvv5DlwQa-9QLpQ",

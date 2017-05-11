@@ -13,15 +13,10 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleNameChange = this.handleNameChange.bind(this);
   }
 
   handleSubmit() {
     this.props.createMessage();
-  }
-
-  handleNameChange(name) {
-    this.props.setName(name);
   }
 
   render() {
@@ -37,7 +32,6 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
                   component="input"
                   type="text"
                   className="form-control"
-                  onChange={this.handleNameChange}
                   required data-validation-required-message="Please enter your name."
                 />
                 <p className="help-block"></p>
