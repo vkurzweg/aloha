@@ -15,25 +15,13 @@ export function* createMessageAsync() {
     const formState = yield select(selectForm);
     const contact = formState.get('contact').toJS();
     const message = contact.values;
-    const data = {
-      name: message.name,
-      email: message.email,
-      number: message.cellNumber,
-      body: message.message,
-    }
     console.log('message', message);
     const api = axios.create({
-      baseURL: 'http://localhost:3000'
-    })
-    const mail = yield call(api, '/contactus', {method: 'post', data})
-    const date = moment().format('MM-DD-YYYY');
-    const newMessage = yield new Promise((resolve, reject) => {
-      db.ref(`messages/${date}`).push(message, (err) => {
-        db.ref(`messages/${date}`).set(message, (err) => {
-          resolve(message);
-        })
-      })
+      baseURL: 'http://localhost:3000',
+      headers: {'Access-Control-Allow-Origin': '*'},
+      timeout: 3000,
     });
+    const response = yield call(api, '/contactus', {method: 'post', data: message})
     yield put(createMessageSuccess());
     console.log('message sent!')
   } catch (e) {
@@ -53,3 +41,12 @@ export function* watchCreateMessage() {
 export default [
   watchCreateMessage,
 ];
+
+// const date = moment().format('MM-DD-YYYY');
+// const newMessage = yield new Promise((resolve, reject) => {
+//   const messageRef = db.ref(`messages/${date}`).push(message, (err) => {
+//     db.ref(`messages/${date}/${messageRef.key}`).set(message, (err) => {
+//       resolve(message)
+//     })
+//   })
+// });

@@ -10,48 +10,62 @@ const ngrok = (isDev && process.env.ENABLE_TUNNEL) || argv.tunnel ? require('ngr
 const resolve = require('path').resolve;
 const app = express();
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
-// const firebase = require('../../utils/firebase-config');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
+// const firebase = require('firebase');
+
+// const config = {
+//   apiKey: process.env.FIREBASE_API_KEY || "AIzaSyDE-PEBoope_8b-0qRtqvv5DlwQa-9QLpQ",
+//   authDomain: process.env.FIREBASE_AUTH_DOMAIN || "aloha-e38ea.firebaseapp.com",
+//   databaseURL: process.env.FIREBASE_DATABASE_URL || "https://aloha-e38ea.firebaseio.com",
+//   projectId: "aloha-e38ea",
+//   storageBucket: process.env.FIREBASE_STORAGE_BUCKET ||  "aloha-e38ea.appspot.com",
+//   messagingSenderId: process.env.FIREBASE_MESSAGING_ID || "839998583595"
+// };
+// const fb = firebase.initializeApp(config);
+
+// const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         user: 'victoriakdunham@gmail.com',
+//         pass: 'pr3ttychakra'
+//     }
+// });
+
+// const messages = fb.database().ref('messages');
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
-// const router = express.Router();
-// router.post('/contactus', function(req, res){
-//   console.log('route hit', req.body)
-// });
 
 function handleSendMail(req, res){
-  console.log(req.query);
-  // const transporter = nodemailer.createTransport({
-  //       service: 'Gmail',
-  //       auth: {
-  //           user: 'victoriakdunham@gmail.com', // Your email id
-  //           pass: 'pr3ttychakra', // Your password
-  //       }
-  //   });
+  const transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'victoriakdunham@gmail.com', // Your email id
+            pass: 'pr3ttychakra', // Your password
+        }
+    });
 
-  // const mail = {
-  //   from: req.body.email,
-  //   to: 'victoriakdunham@gmail.com',
-  //   subject: 'New Website Message',
-  //   html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
-  // }
+  const mail = {
+    from: req.body.email,
+    to: 'victoriakdunham@gmail.com',
+    subject: 'New Website Message',
+    html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
+  }
 
-  // // var messagesRef = firebase.database.ref('/messages');
-
-
-  // transporter.sendMail(mail, function(error, response){
-  //   if(error){
-  //       console.log(error);
-  //   }else{
-  //       console.log("Message sent: " + response.accepted, response.rejected, response.messageId);
-  //   }
-  //  transporter.close();
-  // });
+  transporter.sendMail(mail, function(error, response){
+    if(error){
+        console.log(error);
+    }else{
+        console.log("Message sent: " + response.accepted, response.rejected, response.messageId);
+    }
+   transporter.close();
+  });
 }
 
-const routes = require('./routes');
 app.use('/contactus', handleSendMail);
 
 
