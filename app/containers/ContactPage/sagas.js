@@ -1,12 +1,13 @@
-import { take, call, put, select } from 'redux-saga/effects';
+import { take, call, put, select, cancel, fork } from 'redux-saga/effects';
 import moment from 'moment';
 import { toJS } from 'immutable';
 import { takeEvery } from 'redux-saga';
+import { LOCATION_CHANGE } from 'react-router-redux';
 import firebase from 'firebase';
 import { db } from 'utils/firebase-config';
 import { createMessage, createMessageSuccess, createMessageFailure } from './actions';
 import { selectContact, selectForm } from './selectors';
-import axios from 'axios'
+import axios from 'axios';
 
 
 export function* createMessageAsync() {
@@ -18,10 +19,10 @@ export function* createMessageAsync() {
     console.log('message', message);
     const api = axios.create({
       baseURL: 'http://localhost:3000',
-      headers: {'Access-Control-Allow-Origin': '*'},
+      headers: { 'Access-Control-Allow-Origin': '*' },
       timeout: 3000,
     });
-    const response = yield call(api, '/contactus', {method: 'post', data: message})
+    const response = yield call(api, '/contactus', { method: 'post', data: message })
     yield put(createMessageSuccess());
     console.log('message sent!')
   } catch (e) {
@@ -37,9 +38,16 @@ export function* watchCreateMessage() {
   yield takeEvery('app/contact/CREATE_MESSAGE', createMessageAsync)
 }
 
+export function* rootSaga() {
+  const createMessagesWatcher = yield fork(watchCreateMessage);
+  yield take(LOCATION_CHANGE);
+  yield cancel(createMessagesWatcher);
+  console.log('canceled Messages page watchers')
+}
+
 // All sagas to be loaded
 export default [
-  watchCreateMessage,
+  rootSaga,
 ];
 
 // const date = moment().format('MM-DD-YYYY');

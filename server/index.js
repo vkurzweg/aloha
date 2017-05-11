@@ -24,14 +24,14 @@ function handleSendMail(req, res){
   const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.AUTH_USER, // Your email id
-            pass: process.env.AUTH_PASS, // Your password
+            user: process.env.AUTH_USER,
+            pass: process.env.AUTH_PASS,
         }
     });
 
   const mail = {
     from: req.body.email,
-    to: 'victoriakdunham@gmail.com',
+    to: process.env.AUTH_USER,
     subject: 'New Website Message',
     html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
   }
