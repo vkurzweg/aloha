@@ -21,7 +21,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
 
   render() {
     return (
-      <div className="col-sm-6" style={{ marginTop: '15%' }}>
+      <div className="col-sm-6" style={{ marginTop: '9%' }}>
         <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', marginBottom: '2%', fontWeight: 'bold' }}>Send us a message</h4>
           <form onSubmit={this.handleSubmit} >
             <div className="control-group form-group">
@@ -82,6 +82,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
 
 ContactFormContainer.propTypes = {
   dispatch: PropTypes.func.isRequired,
+  createMessage: PropTypes.func,
 };
 
 
@@ -93,6 +94,6 @@ function mapDispatchToProps(dispatch) {
 
 ContactFormContainer = reduxForm({
   form: 'contact',
-})(ContactFormContainer)
+})(ContactFormContainer);
 
 export default connect(null, mapDispatchToProps)(ContactFormContainer);

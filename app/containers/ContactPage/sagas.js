@@ -16,7 +16,6 @@ export function* createMessageAsync() {
     const formState = yield select(selectForm);
     const contact = formState.get('contact').toJS();
     const message = contact.values;
-    console.log('message', message);
     const api = axios.create({
       baseURL: 'http://localhost:3000',
       headers: { 'Access-Control-Allow-Origin': '*' },
@@ -50,6 +49,7 @@ export default [
   rootSaga,
 ];
 
+// SAVE TO FIREBASE
 // const date = moment().format('MM-DD-YYYY');
 // const newMessage = yield new Promise((resolve, reject) => {
 //   const messageRef = db.ref(`messages/${date}`).push(message, (err) => {

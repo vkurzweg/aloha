@@ -22,17 +22,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 function handleSendMail(req, res){
   const transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: process.env.AUTH_USER,
-            pass: process.env.AUTH_PASS,
-        }
+      service: 'Gmail',
+      auth: {
+          user: process.env.AUTH_USER,
+          pass: process.env.AUTH_PASS,
+      }
     });
 
   const mail = {
     from: req.body.email,
     to: process.env.AUTH_USER,
-    subject: 'New Website Message',
+    subject: 'New Website Message - Aloha Brothers',
     html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
   }
 

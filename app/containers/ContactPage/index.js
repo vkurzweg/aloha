@@ -11,6 +11,7 @@ import Nav from 'components/common/Nav';
 import { selectContact, selectForm } from './selectors';
 import { createMessage, setName, setEmail, setNumber, setBody } from './actions';
 import ContactFormContainer from './ContactFormContainer';
+import ContactInfo from 'components/contact/ContactInfo';
 
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -26,7 +27,6 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
         <Nav />
         <div className="container">
           <div className="row">
-
             <ContactFormContainer
               setName={this.props.setName}
               setEmail={this.props.setEmail}
@@ -35,7 +35,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
               createMessage={this.props.createMessage}
               isCreateFailed={this.props.isCreateFailed}
             />
-
+            <ContactInfo />
           </div>
         </div>
       </div>
