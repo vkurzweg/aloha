@@ -14,14 +14,14 @@ function ContactInfo() {
     <div className="col-sm-6" style={{ marginTop: '7%' }}>
       <img src={Gopro} alt="Gopro view of inside a wave" style={{ display: 'block', margin: '0 auto', width: '80%' }} />
       <div>
-        <div style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF' }}>
-          <h3>Aloha Brothers Surf Lessons</h3>
-          <h4>Venice, CA</h4>
+        <div style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '1px' }}>
+          <h4>Aloha Brothers Surf Lessons</h4>
+          <h5 style={{ marginTop: '2%' }}>Venice, CA</h5>
         </div>
         <div style={{ fontSize: '16px', marginLeft: '10%'}}>
-          <p><span className="glyphicon glyphicon-phone" style={{ fontSize: '18px', padding: '1%' }}></span>(323) 316-8108</p>
-          <p><span className="glyphicon glyphicon-envelope" style={{ fontSize: '18px', padding: '1%' }}></span>nickfowler9@gmail.com</p>
-          <p><span className="glyphicon glyphicon-time" style={{ fontSize: '18px', padding: '1%' }}></span>Monday - Friday: 7:00 AM to 5:00 PM</p>
+          <p><span className="glyphicon glyphicon-phone" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>(323) 316-8108</p>
+          <p><span className="glyphicon glyphicon-envelope" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>nickfowler9@gmail.com</p>
+          <p><span className="glyphicon glyphicon-time" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>Monday - Friday: 7:00 AM to 5:00 PM</p>
         </div>
         <h3 style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF' }} >Surf Gear & Rentals</h3>
         <div style={{ fontSize: '16px', marginLeft: '10%'}}>

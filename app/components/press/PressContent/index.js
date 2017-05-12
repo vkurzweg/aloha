@@ -30,7 +30,13 @@ function PressContent() {
   return (
     <div className="container">
       <div className="row" style={{ width: '100%' }}>
-        <div className="col-sm-6" style={{ marginTop: '3%' }}>
+        <div style={{ marginTop: '7%' }}>
+          <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
+          <p style={{ textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at nickfowler9@gmail.com or 323-316-8108</p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-sm-6">
           <Slider {...settings}>
             <div style={{ width: '50%' }}>
               <img src={FrenchCan} alt="Aloha Brothers on Canadian television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%' }} />
@@ -45,14 +51,23 @@ function PressContent() {
               <img src={Group} alt="Filming a surf lesson in Venice, CA" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
           </Slider>
+          <a href="https://stokeshare.com/blog/surf-school-la-8-righteous-surf-lessons-in-los-angeles/#facebook" target="blank">
+            <div style={{ display: 'inline-flex', marginTop: '4%' }}>
+              <div style={{ marginLeft: '2%' }}>
+                <h4 style={{ color: '#7C4DFF', fontSize: '18px', fontWeight: 'bold', marginBottom: '1%' }}>'Surf School LA: 8 Righteous Surf Lessons in Los Angeles'</h4>
+                <p style={{ color: 'black' }}>The Aloha Bros offer beginner surf lessons, where you’ll learn how to pop up correctly, understand positioning in the lineup, basic ocean safety, proper paddling, and how to ride the waves for starters...</p>
+              </div>
+            </div>
+          </a>
+          <a href="http://vacationidea.com/california/best-romantic-things-to-do-in-los-angeles.html#slide21" target="blank">
+            <div style={{ display: 'inline-flex', marginTop: '4%' }}>
+              <div style={{ marginLeft: '2%' }}>
+                <h4 style={{ color: '#7C4DFF', fontSize: '18px', fontWeight: 'bold', marginBottom: '1%' }}>'Best Romantic Things to Do in Los Angeles'</h4>
+                <p style={{ color: 'black' }}>Learn how to surf LA-style with Aloha Brothers. Run by Nick Fowler and his team of surfing gurus...</p>
+              </div>
+            </div>
+          </a>
         </div>
-        <div className="col-sm-6" style={{ marginTop: '15%', width: '40%', border: '2px solid #FF80AB', padding: '1%', marginLeft: '2%' }}>
-          <img style={{ display: 'block', margin: '0 auto', width: '40px', marginTop: '2%' }} src={Camera} />
-          <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
-          <p style={{ padding: '2%', textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at <br />nickfowler9@gmail.com or 323-316-8108</p>
-        </div>
-      </div>
-      <div className="row">
         <div className="col-sm-6">
           <a href="http://www.latimes.com/health/la-he-getting-out-surfing-20150919-story.html" target="blank">
             <div style={{ display: 'inline-flex', marginTop: '4%' }}>
@@ -72,29 +87,11 @@ function PressContent() {
               </div>
             </div>
           </a>
-          <a href="https://stokeshare.com/blog/surf-school-la-8-righteous-surf-lessons-in-los-angeles/#facebook" target="blank">
-            <div style={{ display: 'inline-flex', marginTop: '4%' }}>
-              <div style={{ marginLeft: '2%' }}>
-                <h4 style={{ color: '#7C4DFF', fontSize: '18px', fontWeight: 'bold', marginBottom: '1%' }}>'Surf School LA: 8 Righteous Surf Lessons in Los Angeles'</h4>
-                <p style={{ color: 'black' }}>The Aloha Bros offer beginner surf lessons, where you’ll learn how to pop up correctly, understand positioning in the lineup, basic ocean safety, proper paddling, and how to ride the waves for starters...</p>
-              </div>
-            </div>
-          </a>
-          <a href="http://vacationidea.com/california/best-romantic-things-to-do-in-los-angeles.html#slide21" target="blank">
-            <div style={{ display: 'inline-flex', marginTop: '4%' }}>
-              <div style={{ marginLeft: '2%' }}>
-                <h4 style={{ color: '#7C4DFF', fontSize: '18px', fontWeight: 'bold', marginBottom: '1%' }}>'Best Romantic Things to Do in Los Angeles'</h4>
-                <p style={{ color: 'black' }}>Learn how to surf LA-style with Aloha Brothers. Run by Nick Fowler and his team of surfing gurus...</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div className="col-sm-6">
           <a href="http://www.lamag.com/lasocialspecialadvertising/los-angeles-magazines-readers-choice-travel-awards/" target="blank">
             <div style={{ display: 'inline-flex', marginTop: '4%' }}>
-              <img src={LAM} role="presentation" style={{ height: '40px'}} />
+              <img src={LAM} role="presentation" style={{ height: '35px'}} />
               <div style={{ marginLeft: '2%' }}>
-                <h4 style={{ color: '#7C4DFF', fontSize: '18px', fontWeight: 'bold', marginBottom: '1%' }}>'Reader's Choice Travel Awards'</h4>
+                <h4 style={{ color: '#7C4DFF', fontSize: '18px', fontWeight: 'bold', marginBottom: '1%', width: '100%' }}>'Reader's Choice Travel Awards'</h4>
                 <p style={{ color: 'black' }}>Nominated for Best Outdoor Activity</p>
               </div>
             </div>

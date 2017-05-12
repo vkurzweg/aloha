@@ -8,39 +8,11 @@ import {
   CREATE_MESSAGE,
   CREATE_MESSAGE_SUCCESS,
   CREATE_MESSAGE_FAILURE,
-  SET_NAME,
-  SET_EMAIL,
-  SET_NUMBER,
-  SET_BODY,
+  OPEN_MODAL,
+  CLOSE_MODAL,
 } from './constants';
 
-export function setName(name) {
-  return {
-    type: SET_NAME,
-    name,
-  };
-}
 
-export function setEmail(email) {
-  return {
-    type: SET_EMAIL,
-    email,
-  };
-}
-
-export function setNumber(number) {
-  return {
-    type: SET_NUMBER,
-    number,
-  };
-}
-
-export function setBody(body) {
-  return {
-    type: SET_BODY,
-    body,
-  };
-}
 
 export function createMessage() {
   return {
@@ -61,5 +33,19 @@ export function createMessageFailure() {
     type: CREATE_MESSAGE_FAILURE,
     payload: false,
     isCreateFailed: true,
+  };
+}
+
+export function openModal() {
+  return {
+    type: OPEN_MODAL,
+    payload: true,
+  };
+}
+
+export function closeModal() {
+  return {
+    type: CLOSE_MODAL,
+    payload: true,
   };
 }
