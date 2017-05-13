@@ -10,20 +10,11 @@ import { Field, reduxForm } from 'redux-form/immutable';
 import { toJS } from 'immutable';
 
 export class ContactFormContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  constructor(props) {
-    super(props);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit() {
-    this.props.createMessage();
-  }
-
   render() {
     return (
       <div className="col-sm-6" style={{ marginTop: '9%' }}>
         <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', marginBottom: '2%', fontWeight: 'bold' }}>Send us a message</h4>
-          <form onSubmit={this.handleSubmit} >
+          <form onSubmit={this.props.handleSubmit} >
             <div className="control-group form-group">
               <div className="controls">
                 <label htmlFor="name" >Full Name</label>

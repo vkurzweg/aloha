@@ -5,7 +5,7 @@ import { takeEvery } from 'redux-saga';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import firebase from 'firebase';
 import { db } from 'utils/firebase-config';
-import { createMessage, createMessageSuccess, createMessageFailure } from './actions';
+import { createMessageSuccess, createMessageFailure, openModal } from './actions';
 import { selectContact, selectForm } from './selectors';
 import axios from 'axios';
 
@@ -22,6 +22,7 @@ export function* createMessageAsync() {
       timeout: 3000,
     });
     const response = yield call(api, '/contactus', { method: 'post', data: message })
+    yield put(openModal());
     yield put(createMessageSuccess());
     console.log('message sent!')
   } catch (e) {

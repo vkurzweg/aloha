@@ -38,130 +38,131 @@ import Gopro from 'assets/images/lightbox/gopro.png';
 import Fam from 'assets/images/lightbox/fam.jpg';
 import Smiles from 'assets/images/lightbox/smiles.jpg';
 import Peace from 'assets/images/lightbox/peace.jpg';
+import { Image } from 'cloudinary-react';
 
 const LIGHTBOX_IMAGE_SET = [
   {
-    src: BackPop,
+    src: 'backside_pop_fokxfe',
     caption: 'Test',
   },
   {
-    src: Cleanup,
+    src: 'beach_cleanup_eewmrr',
     caption: 'Test2',
   },
   {
-    src: Crosswalk,
+    src: 'crosswalk_z8cqec',
     caption: 'Caption',
   },
   {
-    src: Buddies,
+    src: 'crowdrise_buddies_nw6mov',
     caption: 'Caption',
   },
   {
-    src: Snap,
+    src: 'frontside_snap_rnx9jp',
     caption: 'Test',
   },
   {
-    src: Girl,
+    src: 'girl_board',
     caption: 'Test2',
   },
   {
-    src: GoT,
+    src: 'got_lannister_ybpjfv',
     caption: 'Caption',
   },
   {
-    src: GroupTalk,
+    src: 'group_talking_uxu5dt',
     caption: 'Test2',
   },
   {
-    src: Girls,
+    src: 'group_girls',
     caption: 'Caption',
   },
   {
-    src: Lesson,
+    src: 'group_lesson_ops4yu',
     caption: 'Test',
   },
   {
-    src: Happy,
+    src: 'happy_ixfi1d',
     caption: 'Caption',
   },
   {
-    src: Guys,
+    src: 'group_guys_h5cfwu',
     caption: 'Caption',
   },
   {
-    src: High5,
+    src: 'high_five_qvfi1e',
     caption: 'Caption',
   },
   {
-    src: Hustlers,
+    src: 'hustlers_qy2exp',
     caption: 'Caption',
   },
   {
-    src: Julie,
+    src: 'julie_lake_smm2gr',
     caption: 'Test',
   },
   {
-    src: Kid,
+    src: 'kid_surf_fyqkrh',
     caption: 'Test2',
   },
   {
-    src: Kid2,
+    src: 'kid_surf2_t3vyjt',
     caption: 'Caption',
   },
   {
-    src: Paddle,
+    src: 'paddle_jaxjb1',
     caption: 'Caption',
   },
   {
-    src: Red,
+    src: 'red_surf_wxwruc',
     caption: 'Test',
   },
   {
-    src: Sami,
+    src: 'sami_ghoche',
     caption: 'Test2',
   },
   {
-    src: Skate,
+    src: 'skateboard_hd4nhs',
     caption: 'Caption',
   },
   {
-    src: Snow,
+    src: 'snowboarding_qx7p7j',
     caption: 'Caption',
   },
   {
-    src: Walking,
+    src: 'walking_zrva6x',
     caption: 'Caption',
   },
   {
-    src: Alaska,
+    src: 'alaska_wnyn7w',
     caption: 'Caption',
   },
   {
-    src: Fall,
+    src: 'fall_ktlswp',
     caption: 'Caption',
   },
   {
-    src: Popup,
+    src: 'popup_p8pujm',
     caption: 'Caption',
   },
   {
-    src: GroupPose,
+    src: 'group_pose_fczeot',
     caption: 'Caption',
   },
   {
-    src: Gopro,
+    src: 'gopro_mwuhs1',
     caption: 'Caption',
   },
   {
-    src: Fam,
+    src: 'fam_f5m2h6',
     caption: 'Caption',
   },
   {
-    src: Smiles,
+    src: 'smiles',
     caption: 'Caption',
   },
   {
-    src: Peace,
+    src: 'peace_qctxei',
     caption: 'Caption',
   },
 ];
@@ -219,7 +220,7 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
     const childElements = LIGHTBOX_IMAGE_SET.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <img className="item" src={element.src} />
+          <Image className="item" cloudName="kurzweg" publicId={element.src} width="auto" responsive />
         </div>
       );
     });

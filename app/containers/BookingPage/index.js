@@ -12,7 +12,7 @@ import Palmtree from 'assets/icons/palmtree1.png';
 import Footer from 'components/common/Footer';
 import Camera from 'assets/icons/camera.png';
 import { Link } from 'react-router';
-import {Image} from 'cloudinary-react';
+import { Image } from 'cloudinary-react';
 
 export class BookingPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {

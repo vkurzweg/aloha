@@ -6,15 +6,22 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import { Modal } from 'antd';
+import { Modal, Button } from 'antd';
 
 function SuccessModal(props) {
   return (
     <div>
-      <Modal title="Message Sent!" visible={props.modalIsOpen}
-        onOk={props.closeModal} footer={null}
+      <Modal
+        title="Message Sent!"
+        visible={props.modalIsOpen}
+        onOk={props.closeModal}
+        footer={[
+            <Button key="submit" type="primary" size="large" onClick={props.closeModal}>
+              Dismiss
+            </Button>,
+          ]}
       >
-        <p>Aloha, thanks for contacting us. Someone will be in touch with you shortly.</p>
+        <p style={{ padding: '5%', fontSize: '16px' }}>Aloha, thanks for contacting us. <br /> Someone will respond to your inquiry within 24 hours.</p>
       </Modal>
     </div>
   );

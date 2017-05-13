@@ -37,6 +37,7 @@ export function createMessageFailure() {
 }
 
 export function openModal() {
+  console.log('action dispatched')
   return {
     type: OPEN_MODAL,
     payload: true,
@@ -46,6 +47,6 @@ export function openModal() {
 export function closeModal() {
   return {
     type: CLOSE_MODAL,
-    payload: true,
+    payload: false,
   };
 }

@@ -43,6 +43,7 @@ function handleSendMail(req, res){
         console.log("Message sent: " + response.accepted, response.rejected, response.messageId);
     }
    transporter.close();
+   res.json({msg: 'Message sent'})
   });
 }
 

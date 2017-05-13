@@ -16,6 +16,16 @@ import SuccessModal from 'components/contact/SuccessModal';
 
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault()
+    this.props.createMessage();
+  }
+
   render() {
     return (
       <div>
@@ -29,14 +39,17 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
         <div className="container">
           <div className="row">
             <ContactFormContainer
-              isModalOpen={this.props.isModalOpen}
+              handleSubmit={this.handleSubmit}
+              modalIsOpen={this.props.modalIsOpen}
               openModal={this.props.openModal}
               closeModal={this.props.closeModal}
-              createMessage={this.props.createMessage}
               isCreateFailed={this.props.isCreateFailed}
             />
             <ContactInfo />
-            <SuccessModal />
+            <SuccessModal
+              modalIsOpen={this.props.modalIsOpen}
+              closeModal={this.props.closeModal}
+            />
           </div>
         </div>
       </div>
