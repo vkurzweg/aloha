@@ -18,7 +18,7 @@ import { Link } from 'react-router';
 function Rates() {
   return (
     <div style={{ display: 'block', width: '100%', margin: '0 auto' }}>
-      <div className="container" style={{ height: '100px', backgroundColor: '#FF80AB', width: '100%' }}>
+      <div className="container" style={{ backgroundColor: '#FF80AB', width: '100%' }}>
         <div className="row">
           <div className="col-sm-5">
             <h4 style={{ marginTop: '5%', padding: '2%', textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px' }}>All lessons last 90 minutes (water time)</h4>
@@ -31,12 +31,13 @@ function Rates() {
           </div>
         </div>
       </div>
+
       <div className="container" style={{ backgroundColor: '#ECECEC', width: '100%' }}>
-        <div className="row">
-          <div className="col-sm-6" style={{ padding: '5%', width: '40%', marginLeft: '10%' }}>
-            <Card style={{ height: '490px', width: '80%' }}>
+        <div className="row" style={{ marginTop: '5%' }}>
+          <div className="col-sm-6" style={{ position: 'relative', height: '0', paddingBottom: '58%' }}>
+            <Card style={{ display: 'block', margin: '0 auto', position: 'absolute', top: '0', left: '0', height: '100%', width: '80%' }}>
               <CardMedia>
-                <img src={LessonKid} style={{ height: '210px', width: '100%' }} />
+                <img src={LessonKid} style={{ width: '100%' }} />
               </CardMedia>
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center' }}>
@@ -52,10 +53,10 @@ function Rates() {
               </CardActions>
             </Card>
           </div>
-        <div className="col-sm-6" style={{ padding: '5%', width: '40%' }}>
-          <Card style={{ height: '490px', width: '80%' }}>
+        <div className="col-sm-6" style={{ position: 'relative', height: '0', paddingBottom: '58%' }}>
+          <Card style={{ position: 'absolute', top: '0', left: '0', height: '100%', width: '80%' }}>
             <CardMedia>
-              <img src={Duo} style={{ height: '210px' }} />
+              <img src={Duo} style={{ width: '100%' }} />
             </CardMedia>
             <CardTitle title="Private Lesson (2 ppl)" subtitle="$255"/>
             <CardText style={{ textAlign: 'center' }}>
@@ -63,7 +64,7 @@ function Rates() {
               <hr style={{ marginTop: '2%', marginBottom: '2%' }} />
               Perfect for couples or children and their parents!
             </CardText>
-            <CardActions style={{ marginTop: '11%' }}>
+            <CardActions style={{ marginTop: '5%'}}>
               <FlatButton style={{ color: '#FF80AB' }} label="FAQ" />
               <FlatButton style={{ color: '#FF80AB' }} label="Book" />
             </CardActions>
@@ -71,7 +72,7 @@ function Rates() {
         </div>
         </div>
       </div>
-      <div style={{ backgroundColor: '#ECECEC' }}>
+      <div style={{ backgroundColor: '#ECECEC', paddingTop: '5%' }}>
         <Link to="/photography"><div style={{ border: '2px solid #FF80AB', width: '30%', margin: '0 auto', padding: '2%' }}>
           <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
           <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>

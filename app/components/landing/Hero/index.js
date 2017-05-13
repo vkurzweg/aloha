@@ -15,8 +15,8 @@ import Button from './Button';
 function Hero() {
   return (
     <div style={{ width: '100%', backgroundColor: 'black', top: '0' }}>
-      <div style={{ zIndex: '10', dispay: 'block', margin: '0 auto', width: '100%', position: 'absolute', marginTop: '12%' }}>
-        <h1 style={{ fontSize: '48px', fontFamily: 'Lobster', textAlign: 'center', color: '#FF80AB', letterSpacing: '5px' }}><img src={Palm1} role="presentation" /> Surf Venice Beach <img src={Palm2} role="presentation" /></h1>
+      <div style={{ zIndex: '10', dispay: 'block', margin: '0 auto', width: '100%', position: 'absolute', marginTop: '15%' }}>
+        <h1 style={{ fontSize: '48px', fontFamily: 'Lobster', textAlign: 'center', color: '#FF80AB', letterSpacing: '3px' }}><img src={Palm1} role="presentation" /> Surf Venice Beach <img src={Palm2} role="presentation" /></h1>
         <h3 style={{ fontSize: '28px', fontFamily: 'Josefin Sans', textAlign: 'center', color: '#FF80AB', textTransform: 'uppercase', letterSpacing: '3px' }}>Lessons starting at $85</h3>
         <Button>Get Out There</Button>
       </div>

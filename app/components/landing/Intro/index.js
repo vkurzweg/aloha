@@ -16,13 +16,20 @@ import Tele from 'assets/logos/telemundo.png';
 import Stars from 'assets/icons/stars_yellow.png';
 import { Link } from 'react-router';
 import Chevron from 'assets/icons/chevron.png';
+import MediaQuery from 'react-responsive';
+
 
 function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
-      <h2 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h2>
+      <MediaQuery minWidth={768}>
+        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h3>
+      </MediaQuery>
+      <MediaQuery maxWidth={767}>
+        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '1%', marginRight: '5%' }} />Est. 2011<img src={Waves} role="presentation" style={{ padding: '1%', marginLeft: '5%' }} /></h3>
+      </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
-        <p style={{ textAlign: 'center', width: '70%', display: 'block', margin: '0 auto', marginTop: '5%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking for an experienced instructor to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
+        <p style={{ textAlign: 'center', width: '80%', display: 'block', margin: '0 auto', marginTop: '5%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking for an experienced instructor to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
         <div style={{ width: '100%', margin: '0 auto' }}>
           <img src={Stars} alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>500+ 5-star reviews</p>
