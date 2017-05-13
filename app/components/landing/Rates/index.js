@@ -35,7 +35,7 @@ function Rates() {
       <div className="container" style={{ backgroundColor: '#ECECEC', width: '100%' }}>
         <div className="row" style={{ marginTop: '5%' }}>
           <div className="col-sm-6" style={{ position: 'relative', height: '0', paddingBottom: '58%' }}>
-            <Card style={{ display: 'block', margin: '0 auto', position: 'absolute', top: '0', left: '0', height: '100%', width: '80%' }}>
+            <Card style={{ display: 'block', margin: '0 auto', position: 'absolute', height: '100%', width: '80%' }}>
               <CardMedia>
                 <img src={LessonKid} style={{ width: '100%' }} />
               </CardMedia>
@@ -47,14 +47,10 @@ function Rates() {
                 <hr style={{ marginTop: '2%', marginBottom: '2%' }} />
                 Most popular option!
               </CardText>
-              <CardActions>
-                <FlatButton style={{ color: '#FF80AB' }} label="FAQ" />
-                <FlatButton style={{ color: '#FF80AB' }} label="Book" />
-              </CardActions>
             </Card>
           </div>
         <div className="col-sm-6" style={{ position: 'relative', height: '0', paddingBottom: '58%' }}>
-          <Card style={{ position: 'absolute', top: '0', left: '0', height: '100%', width: '80%' }}>
+          <Card style={{ position: 'absolute', display: 'block', margin: '0 auto', height: '100%', width: '80%' }}>
             <CardMedia>
               <img src={Duo} style={{ width: '100%' }} />
             </CardMedia>
@@ -64,10 +60,6 @@ function Rates() {
               <hr style={{ marginTop: '2%', marginBottom: '2%' }} />
               Perfect for couples or children and their parents!
             </CardText>
-            <CardActions style={{ marginTop: '5%'}}>
-              <FlatButton style={{ color: '#FF80AB' }} label="FAQ" />
-              <FlatButton style={{ color: '#FF80AB' }} label="Book" />
-            </CardActions>
           </Card>
         </div>
         </div>

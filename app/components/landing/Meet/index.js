@@ -11,12 +11,13 @@ import Waves2 from 'assets/icons/waves_pink2.png';
 import { Link } from 'react-router';
 import Chevron from 'assets/icons/chevron.png';
 import { Image } from 'cloudinary-react';
+import MediaQuery from 'react-responsive';
 
 
 function Meet() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
-      <h2 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Meet the Owner<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h2>
+      <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Meet Nick<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h3>
       <div className="container">
         <div className="row">
           <div className="col-sm-6">

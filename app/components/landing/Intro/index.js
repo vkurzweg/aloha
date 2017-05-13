@@ -22,10 +22,10 @@ import MediaQuery from 'react-responsive';
 function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
-      <MediaQuery minWidth={768}>
+      <MediaQuery minWidth={849}>
         <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h3>
       </MediaQuery>
-      <MediaQuery maxWidth={767}>
+      <MediaQuery maxWidth={848}>
         <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '1%', marginRight: '5%' }} />Est. 2011<img src={Waves} role="presentation" style={{ padding: '1%', marginLeft: '5%' }} /></h3>
       </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
