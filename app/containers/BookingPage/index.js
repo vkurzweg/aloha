@@ -8,11 +8,11 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import Nav from 'components/common/Nav';
-import Venice from 'assets/images/venice_background.jpg';
 import Palmtree from 'assets/icons/palmtree1.png';
 import Footer from 'components/common/Footer';
 import Camera from 'assets/icons/camera.png';
 import { Link } from 'react-router';
+import {Image} from 'cloudinary-react';
 
 export class BookingPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -26,20 +26,10 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
         />
         <Nav />
         <div className="container">
-          <div className="row" style={{ width: '100%' }}>
+          <div className="row" style={{ width: '100%', marginTop: '7%' }}>
 
-            <div className="col-sm-3" style={{ marginTop: '6%' }}>
-              <img src={Venice} alt="walking with surfboards in Venice" style={{ padding: '2%', height: '500px' }} />
-              <div style={{ display: 'block', margin: '0 auto', width: '100%', padding: '5%', marginTop: '10%', marginLeft: '15%' }}>
-                <Link to="/photography"><div style={{ border: '2px solid #FF80AB', width: '100%', margin: '0 auto', padding: '10%'}}>
-                  <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
-                  <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
-                </div></Link>
-              </div>
-            </div>
-
-            <div className="col-sm-8" style={{ float: 'right' }}>
-              <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '12%' }}>Rates & Packages</h3>
+            <div className="col-sm-8">
+              <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Rates & Packages</h3>
               <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '75%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
                 <p style={{ fontFamily: 'Josefin Sans' }}>All lessons last 90 minutes (water time)</p>
                 <hr style={{ width: '50%', display: 'block', margin: '0 auto', marginTop: '2%', marginBottom: '2%' }} />
@@ -49,7 +39,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               <div className="container" style={{ width: '100%', marginTop: '5%' }}>
                 <div className="row">
 
-                <div className="col-xs-6">
+                <div className="col-sm-6">
                   <h5 style={{ fontSize: '16px', color: '#7C4DFF', textAlign: 'center', letterSpacing: '5px', textTransform: 'uppercase', fontStyle: 'bold' }}>Group Lessons*</h5>
                   <table className="table" style={{ textAlign: 'center', marginTop: '5%', height: '100%' }}>
                     <tbody>
@@ -74,7 +64,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
                   </ul>
                 </div>
 
-                <div className="col-xs-6">
+                <div className="col-sm-6">
                   <h5 style={{ fontSize: '16px', color: '#7C4DFF', textAlign: 'center', letterSpacing: '5px', textTransform: 'uppercase', fontStyle: 'bold' }}>Private Lessons</h5>
                   <table className="table" style={{ width: '85%', textAlign: 'center', marginTop: '5%' }}>
                     <tbody>
@@ -147,7 +137,13 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
                 <li>We email you the gift certificate!</li>
               </ol>
             </div>
-
+          <div className="col-sm-3">
+            <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', height: '500px' }} />
+            <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
+              <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
+              <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
+            </div></Link>
+          </div>
           </div>
         </div>
         <Footer />
