@@ -29,7 +29,7 @@ function PressContent() {
   return (
     <div className="container">
       <div className="row" style={{ width: '100%' }}>
-        <div style={{ marginTop: '10%' }}>
+        <div style={{ marginTop: '20%' }}>
           <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
           <p style={{ textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at nickfowler9@gmail.com or 323-316-8108</p>
         </div>
@@ -37,35 +37,19 @@ function PressContent() {
       <div className="row">
         <div className="col-sm-6">
           <Slider {...settings}>
-            <div style={{ width: '50%' }}>
-              <img src={FrenchCan} alt="Aloha Brothers on Canadian television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
+            <div>
+              <img src={FrenchCan} alt="Aloha Brothers on Canadian television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
-            <div style={{ width: '50%' }}>
-              <img src={Dutch} alt="Aloha Brothers on Dutch television" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '5%',  paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
+            <div>
+              <img src={Dutch} alt="Aloha Brothers on Dutch television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '5%',  paddingBottom: '1%' }} />
             </div>
-            <div style={{ width: '50%' }}>
-              <img src={Voyage} alt="Profile of owner Nick in Voyage LA" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
+            <div>
+              <img src={Voyage} alt="Profile of owner Nick in Voyage LA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
-            <div style={{ width: '50%' }}>
-              <img src={Group} alt="Filming a surf lesson in Venice, CA" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
+            <div>
+              <img src={Group} alt="Filming a surf lesson in Venice, CA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
           </Slider>
-          <a href="https://stokeshare.com/blog/surf-school-la-8-righteous-surf-lessons-in-los-angeles/#facebook" target="blank">
-            <Article>
-              <div style={{ marginLeft: '2%' }}>
-                <Headline>'Surf School LA: 8 Righteous Surf Lessons in Los Angeles'</Headline>
-                <Body>The Aloha Bros offer beginner surf lessons, where you’ll learn how to pop up correctly, understand positioning in the lineup, basic ocean safety, proper paddling, and how to ride the waves for starters...</Body>
-              </div>
-            </Article>
-          </a>
-          <a href="http://vacationidea.com/california/best-romantic-things-to-do-in-los-angeles.html#slide21" target="blank">
-            <Article>
-              <div style={{ marginLeft: '2%' }}>
-                <Headline>'Best Romantic Things to Do in Los Angeles'</Headline>
-                <Body>Learn how to surf LA-style with Aloha Brothers. Run by Nick Fowler and his team of surfing gurus...</Body>
-              </div>
-            </Article>
-          </a>
         </div>
         <div className="col-sm-6" style={{ marginBottom: '5%' }}>
           <a href="http://www.latimes.com/health/la-he-getting-out-surfing-20150919-story.html" target="blank">
@@ -117,6 +101,22 @@ function PressContent() {
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'The Yogi's Guide to Los Angeles, California'</Headline>
                 <Body>Aloha Brothers Surf Lessons are some of the best on the Coast. The instructors have loads of experience helping surfers of various levels...</Body>
+              </div>
+            </Article>
+          </a>
+          <a href="https://stokeshare.com/blog/surf-school-la-8-righteous-surf-lessons-in-los-angeles/#facebook" target="blank">
+            <Article>
+              <div style={{ marginLeft: '2%' }}>
+                <Headline>'Surf School LA: 8 Righteous Surf Lessons in Los Angeles'</Headline>
+                <Body>The Aloha Bros offer beginner surf lessons, where you’ll learn how to pop up correctly, understand positioning in the lineup, basic ocean safety, proper paddling, and how to ride the waves for starters...</Body>
+              </div>
+            </Article>
+          </a>
+          <a href="http://vacationidea.com/california/best-romantic-things-to-do-in-los-angeles.html#slide21" target="blank">
+            <Article>
+              <div style={{ marginLeft: '2%' }}>
+                <Headline>'Best Romantic Things to Do in Los Angeles'</Headline>
+                <Body>Learn how to surf LA-style with Aloha Brothers. Run by Nick Fowler and his team of surfing gurus...</Body>
               </div>
             </Article>
           </a>

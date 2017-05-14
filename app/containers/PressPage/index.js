@@ -8,8 +8,11 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import Nav from 'components/common/Nav';
+import NavMobile from 'components/common/NavMobile';
 import MediaQuery from 'react-responsive';
 import PressContent from 'components/press/PressContent';
+import PressContentMobile from 'components/press/PressContentMobile';
+import Footer from 'components/common/Footer';
 
 export class PressPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -21,8 +24,15 @@ export class PressPage extends React.PureComponent { // eslint-disable-line reac
             { name: 'description', content: 'Description of PressPage' },
           ]}
         />
-        <Nav />
-        <PressContent />
+        <MediaQuery minWidth={768}>
+          <Nav />
+          <PressContent />
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+          <NavMobile />
+          <PressContentMobile />
+        </MediaQuery>
+        <Footer />
       </div>
     );
   }
