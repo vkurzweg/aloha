@@ -10,13 +10,7 @@ import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import Menu from 'assets/icons/menu.png';
-import Yelp from 'assets/icons/yelp.png';
-import Tripadvisor from 'assets/icons/tripadvisor.png';
-import Thumbtack from 'assets/icons/thumbtack.png';
-import Facebook from 'assets/icons/facebook.png';
-import Instagram from 'assets/icons/instagram.png';
 import { browserHistory } from 'react-router';
-import Logo from 'assets/logos/logo_50.png';
 
 const StyledAppBar = styled(AppBar)`
   width: 100%;
@@ -88,15 +82,6 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   }
 
   render() {
-    const icons = (
-      <div style={{ display: 'inline-flex', marginLeft: '-35%', width: '50%' }}>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><img src={Yelp} alt="yelp icon" /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><img src={Tripadvisor} alt="tripadvisor icon" style={{ paddingLeft: '15%' }} /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><img src={Thumbtack} alt="thumbtack icon" style={{ paddingLeft: '15%' }} /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><img src={Facebook} alt="facebook icon" style={{ paddingLeft: '15%' }} /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><img src={Instagram} alt="instagram icon" style={{ paddingLeft: '15%' }} /></a>
-      </div>
-      );
     const brand = <A href="/">Aloha Brothers Surf Lessons</A>;
     return (
       <div>

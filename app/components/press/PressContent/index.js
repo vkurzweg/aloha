@@ -12,13 +12,10 @@ import Dutch from 'assets/images/dutch_press.jpg';
 import FrenchCan from 'assets/images/frenchcan_press.jpg';
 import Voyage from 'assets/images/voyagela.png';
 import Group from 'assets/images/group_camera2.jpg';
-import Camera from 'assets/icons/camera.png';
 import LAT from 'assets/logos/latimes-logo.png';
 import LAM from 'assets/logos/lamag.png';
 import CBS from 'assets/logos/CBS-los-angeles-logo2.png';
 import Huffpo from 'assets/logos/Huffington-Post-Logo.png';
-import Telemundo from 'assets/logos/telemundo.png';
-import Stoke from 'assets/logos/stokeshare.png';
 
 
 function PressContent() {

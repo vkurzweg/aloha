@@ -17,7 +17,7 @@ import { Link } from 'react-router';
 
 function RatesTables() {
   return (
-    <div style={{ marginTop: '18%', width: '100%' }}>
+    <div style={{ paddingTop: '18%', width: '100%' }}>
 
      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Rates & Packages</h3>
      <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '85%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>

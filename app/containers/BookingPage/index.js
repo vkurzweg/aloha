@@ -31,7 +31,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
         <MediaQuery minWidth={768}>
           <Nav />
           <div className="container" style={{ width: '100%' }}>
-            <div className="row" style={{ width: '100%', marginTop: '12%' }}>
+            <div className="row" style={{ width: '100%', marginTop: '8%' }}>
               <RatesTables />
               <div className="col-sm-3">
                 <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', height: '500px' }} />
