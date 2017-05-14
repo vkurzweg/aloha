@@ -26,6 +26,8 @@ function RatesTables() {
        <p style={{ fontFamily: 'Josefin Sans' }}>Surfboard & wetsuit included at no extra charge</p>
      </div>
 
+     <Link to="/contact"><button className="btn btn-default" style={{ backgroundColor: '#FF80AB', color: 'white', width: '12em', display: 'block', margin: '0 auto', fontSize: '20px', border: 'none', marginTop: '5%', marginBottom: '7%'}}>Book a lesson or package</button></Link>
+
      <Header>Beginner & Intermediate</Header>
      <div className="container" style={{ width: '100%', marginTop: '5%' }}>
        <div className="row">
@@ -78,7 +80,7 @@ function RatesTables() {
        </div>
      </div>
 
-     <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', marginBottom: '3%'}}>
+     <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', marginBottom: '3%', marginTop: '-5%'}}>
        <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
        <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
      </div></Link>

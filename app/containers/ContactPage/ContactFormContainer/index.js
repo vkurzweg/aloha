@@ -12,7 +12,7 @@ import { toJS } from 'immutable';
 export class ContactFormContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div className="col-sm-6" style={{ marginTop: '9%' }}>
+      <div className="col-sm-6" style={{ marginTop: '12%' }}>
         <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', marginBottom: '2%', fontWeight: 'bold' }}>Send us a message</h4>
           <form onSubmit={this.props.handleSubmit} >
             <div className="control-group form-group">
@@ -63,7 +63,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
                   />
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary" style={{ width: '100%', backgroundColor: '#7C4DFF', color: '#FFC233', textTransform: 'uppercase', border: 'none', padding: '3%' }}>Send Message</button>
+              <button type="submit" className="btn btn-primary" style={{ width: '100%', backgroundColor: '#FF80AB', color: 'black', textTransform: 'uppercase', border: 'none', padding: '3%' }}>Send Message</button>
             </div>
           </form>
         </div>

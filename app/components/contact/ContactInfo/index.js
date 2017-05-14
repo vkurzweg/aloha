@@ -11,7 +11,7 @@ import Gopro from 'assets/images/gopro.jpg';
 
 function ContactInfo() {
   return (
-    <div className="col-sm-6" style={{ marginTop: '7%' }}>
+    <div className="col-sm-6" style={{ marginTop: '12%' }}>
       <img src={Gopro} alt="Gopro view of inside a wave" style={{ display: 'block', margin: '0 auto', width: '80%' }} />
       <div>
         <div style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '1px' }}>
@@ -23,7 +23,7 @@ function ContactInfo() {
           <p><span className="glyphicon glyphicon-envelope" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>nickfowler9@gmail.com</p>
           <p><span className="glyphicon glyphicon-time" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>Monday - Friday: 7:00 AM to 5:00 PM</p>
         </div>
-        <h3 style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF' }} >Surf Gear & Rentals</h3>
+        <h4 style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '1px' }} >Surf Gear & Rentals</h4>
         <div style={{ fontSize: '16px', marginLeft: '10%'}}>
           <p><b>Rider Shack</b></p>
           <p>13211 W Washington Blvd <br /> Los Angeles, CA 90066</p>

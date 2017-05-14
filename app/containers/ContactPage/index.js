@@ -7,12 +7,14 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
+import MediaQuery from 'react-responsive';
 import Nav from 'components/common/Nav';
+import NavMobile from 'components/common/NavMobile';
+import ContactInfo from 'components/contact/ContactInfo';
+import SuccessModal from 'components/contact/SuccessModal';
 import { selectContact, selectForm } from './selectors';
 import { createMessage, openModal, closeModal } from './actions';
 import ContactFormContainer from './ContactFormContainer';
-import ContactInfo from 'components/contact/ContactInfo';
-import SuccessModal from 'components/contact/SuccessModal';
 
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -35,7 +37,13 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
             { name: 'description', content: 'Description of ContactPage' },
           ]}
         />
-        <Nav />
+        <MediaQuery minWidth={768}>
+          <Nav />
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+          <NavMobile />
+          <div style={{ height: '3em' }}></div>
+        </MediaQuery>
         <div className="container">
           <div className="row">
             <ContactFormContainer

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.button`
    font-family: 'Josefin Sans';
-   font-size: 26px;
+   font-size: 22px;
    font-weight: bold;
    text-transform: uppercase;
    letter-spacing: 3px;

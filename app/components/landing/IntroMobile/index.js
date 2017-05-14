@@ -24,6 +24,7 @@ import Facebook from 'assets/icons/facebook.png';
 import Instagram from 'assets/icons/instagram.png';
 import Palm from 'assets/icons/palmtree_green1.png';
 import Palm2 from 'assets/icons/palmtree_green2.png';
+import Logo from 'assets/logos/aloha_logo.png';
 
 
 
@@ -31,17 +32,17 @@ function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
       <MediaQuery minWidth={849}>
-        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h3>
+        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Logo} role="presentation" style={{ padding: '2%', width: '40px' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Logo} role="presentation" style={{ padding: '2%', width: '40px' }} /></h3>
       </MediaQuery>
       <MediaQuery maxWidth={848}>
-        <h4 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '1%', marginRight: '5%' }} />Est. 2011<img src={Waves} role="presentation" style={{ padding: '1%', marginLeft: '5%' }} /></h4>
+        <h4 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Logo} role="presentation" style={{ padding: '1%', marginRight: '5%', width: '40px' }} />Est. 2011<img src={Logo} role="presentation" style={{ padding: '1%', marginLeft: '5%', width: '40px' }} /></h4>
       </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>
           <img src={Stars} alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>500+ 5-star reviews</p>
         </div>
-        <div style={{ display: 'block', width: '100%', margin: '0 auto' }}>
+        <div style={{ display: 'block', width: '80%', margin: '0 auto' }}>
           <div style={{ display: 'inline-flex', textAlign: 'center', width: '70%', marginTop: '5%', marginBottom: '2%' }}>
             <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><img src={Yelp} alt="yelp icon" /></a>
             <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><img src={Tripadvisor} alt="tripadvisor icon" style={{ paddingLeft: '15%' }} /></a>
@@ -52,14 +53,11 @@ function Intro() {
         </div>
         <div className="container">
           <div className="row" style={{ marginTop: '3%' }}>
-            <div className="col-xs-2">
-              <img src={Palm} role="presentation" style={{ marginTop: '80%', marginLeft: '-55%' }} />
+            <div className="col-xs-3">
+              <img src={Palm} role="presentation" style={{ marginTop: '60%' }} />
             </div>
             <div className="col-xs-8">
               <p style={{ marginTop: '5%', textAlign: 'justify', width: '100%', display: 'block', margin: '0 auto', marginBottom: '5%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
-            </div>
-            <div className="col-xs-2">
-              <img src={Palm2} role="presentation" style={{ marginTop: '80%', marginLeft: '-55%' }} />
             </div>
           </div>
         </div>

@@ -17,16 +17,17 @@ import Stars from 'assets/icons/stars_yellow.png';
 import { Link } from 'react-router';
 import Chevron from 'assets/icons/chevron.png';
 import MediaQuery from 'react-responsive';
+import Logo from 'assets/logos/aloha_logo.png';
 
 
 function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
       <MediaQuery minWidth={849}>
-        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '2%' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Waves} role="presentation" style={{ padding: '2%' }} /></h3>
+        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Logo} role="presentation" style={{ padding: '2%' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Logo} role="presentation" style={{ padding: '2%' }} /></h3>
       </MediaQuery>
       <MediaQuery maxWidth={848}>
-        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Waves2} role="presentation" style={{ padding: '1%', marginRight: '5%' }} />Est. 2011<img src={Waves} role="presentation" style={{ padding: '1%', marginLeft: '5%' }} /></h3>
+        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Logo} role="presentation" style={{ padding: '1%', marginRight: '5%' }} />Est. 2011<img src={Logo} role="presentation" style={{ padding: '1%', marginLeft: '5%' }} /></h3>
       </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <p style={{ textAlign: 'center', width: '80%', display: 'block', margin: '0 auto', marginTop: '5%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking for an experienced instructor to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>

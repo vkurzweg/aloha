@@ -10,6 +10,8 @@ import Palmtree from 'assets/icons/palmtree1.png';
 import Header from './Header';
 import Subhead from './Subhead';
 import TD from './TD';
+import { Link } from 'react-router';
+
 
 
 function RatesTables() {
@@ -21,6 +23,7 @@ function RatesTables() {
        <p style={{ fontFamily: 'Josefin Sans' }}>All lessons last 90 minutes (water time)</p>
        <hr style={{ width: '50%', display: 'block', margin: '0 auto', marginTop: '2%', marginBottom: '2%' }} />
        <p style={{ fontFamily: 'Josefin Sans' }}>Surfboard & wetsuit included at no extra charge</p>
+       <Link to="/contact"><button className="btn btn-default" style={{ backgroundColor: '#FF80AB', color: 'white', width: '12em', display: 'block', margin: '0 auto', fontSize: '20px', border: 'none', marginTop: '5%', marginBottom: '7%'}}>Book a lesson or package</button></Link>
      </div>
 
      <Header>Beginner & Intermediate</Header>
