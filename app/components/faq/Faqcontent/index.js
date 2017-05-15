@@ -12,6 +12,7 @@ import A from './A';
 import Office from 'assets/images/office.png';
 
 
+
 function Faqcontent() {
   return (
     <div>

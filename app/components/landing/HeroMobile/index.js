@@ -8,7 +8,6 @@ import React from 'react';
 // import styled from 'styled-components';
 import Palm1 from 'assets/icons/palmtree_green1.png';
 import Palm2 from 'assets/icons/palmtree_green2.png';
-import Surf from 'assets/surf_stock.mp4';
 import Button from './Button';
 
 
@@ -21,7 +20,7 @@ function Hero() {
         <Button>Book a lesson</Button>
       </div>
       <video style={{ backgroundColor: 'black', zIndex: '1', height: '100%', width: '100%', float: 'left', top: '0', padding: 'none' }} loop autoPlay>
-        <source src={Surf} type="video/mp4" />
+        <source src="http://res.cloudinary.com/kurzweg/video/upload/v1494632548/surf_stock.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
