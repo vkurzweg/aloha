@@ -25,7 +25,7 @@ import Instagram from 'assets/icons/instagram.png';
 import Palm from 'assets/icons/palmtree_green1.png';
 import Palm2 from 'assets/icons/palmtree_green2.png';
 import Logo from 'assets/logos/aloha_logo.png';
-
+import Btn from 'components/landing/Btn';
 
 
 function Intro() {
@@ -42,7 +42,7 @@ function Intro() {
           <img src={Stars} alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>500+ 5-star reviews</p>
         </div>
-        <div style={{ display: 'block', width: '80%', margin: '0 auto' }}>
+        <div style={{ display: 'block', margin: '0 auto' }}>
           <div style={{ display: 'inline-flex', textAlign: 'center', width: '70%', marginTop: '5%', marginBottom: '2%' }}>
             <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><img src={Yelp} alt="yelp icon" /></a>
             <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><img src={Tripadvisor} alt="tripadvisor icon" style={{ paddingLeft: '15%' }} /></a>
@@ -83,7 +83,7 @@ function Intro() {
           <img src={Tele} style={{ padding: '3%' }} alt="telemundo" />
         </div>
         <div style={{ marginTop: '3%', paddingBottom: '5%' }}>
-          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2%', border: '1px solid #7C4DFF', padding: '2%', width: '15em', display: 'block', margin: '0 auto', borderRadius: '2px' }}>All press</h4></Link>
+          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>All press</Btn></Link>
         </div>
       </div>
     </div>

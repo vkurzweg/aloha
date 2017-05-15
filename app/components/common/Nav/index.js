@@ -16,7 +16,6 @@ import Thumbtack from 'assets/icons/thumbtack.png';
 import Facebook from 'assets/icons/facebook.png';
 import Instagram from 'assets/icons/instagram.png';
 import { browserHistory } from 'react-router';
-import Logo from 'assets/logos/logo_50.png';
 
 const StyledAppBar = styled(AppBar)`
   width: 100%;
@@ -50,9 +49,6 @@ const items = [
   {
     name: 'Rates & Booking',
     url: '/booking',
-  }, {
-    name: 'Instructors',
-    url: '/instructors',
   }, {
     name: 'FAQ',
     url: '/faq',
@@ -133,6 +129,11 @@ Nav.propTypes = {
 };
 
 export default Nav;
+
+// {
+//     name: 'Instructors',
+//     url: '/instructors',
+//   },
 
 // {
 //     name: 'Ding Repair',

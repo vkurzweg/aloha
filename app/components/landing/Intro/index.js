@@ -13,9 +13,9 @@ import LAT from 'assets/logos/latimes-logo.png';
 import Tele from 'assets/logos/telemundo.png';
 import Stars from 'assets/icons/stars_yellow.png';
 import { Link } from 'react-router';
-import Chevron from 'assets/icons/chevron.png';
 import MediaQuery from 'react-responsive';
 import Logo from 'assets/logos/aloha_logo.png';
+import Btn from 'components/landing/Btn';
 
 
 function Intro() {
@@ -43,7 +43,7 @@ function Intro() {
           <img src={Tele} style={{ padding: '3%' }} alt="telemundo" />
         </div>
         <div style={{ marginTop: '3%', paddingBottom: '5%'}}>
-          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2%', border: '1px solid #7C4DFF', padding: '2%', width: '15em', display: 'block', margin: '0 auto', borderRadius: '2px' }}>All press</h4></Link>
+          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>All press</Btn></Link>
         </div>
       </div>
     </div>

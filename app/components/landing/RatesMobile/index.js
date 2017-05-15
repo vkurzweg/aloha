@@ -11,9 +11,9 @@ import LessonKid from 'assets/images/cuteness_overload.jpg';
 import Duo from 'assets/images/duo2.jpg';
 import FlatButton from 'material-ui/FlatButton';
 import Surf from 'assets/icons/surfboards_purple.png';
-import Chevron from 'assets/icons/chevron.png';
 import Camera from 'assets/icons/camera.png';
 import { Link } from 'react-router';
+import Btn from 'components/landing/Btn';
 
 function Rates() {
   return (
@@ -39,7 +39,7 @@ function Rates() {
           <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
         </div></Link>
         <div style={{ marginBottom: '5%', marginTop: '3%' }}>
-          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/booking" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '3%', border: '1px solid #7C4DFF', padding: '2%', width: '15em', display: 'block', margin: '0 auto', borderRadius: '2px' }}>All rates & packages</h4></Link>
+          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/booking" ><Btn>All rates & packages</Btn></Link>
         </div>
       </div>
       </div>
