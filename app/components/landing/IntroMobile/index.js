@@ -6,8 +6,6 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Waves from 'assets/icons/waves_yellow.png';
-import Waves2 from 'assets/icons/waves_yellow2.png';
 import CBS from 'assets/logos/CBS-los-angeles-logo2.png';
 import HuffPo from 'assets/logos/Huffington-Post-Logo.png';
 import LAMag from 'assets/logos/lamag.png';
@@ -15,7 +13,6 @@ import LAT from 'assets/logos/latimes-logo.png';
 import Tele from 'assets/logos/telemundo.png';
 import Stars from 'assets/icons/stars_yellow.png';
 import { Link } from 'react-router';
-import Chevron from 'assets/icons/chevron.png';
 import MediaQuery from 'react-responsive';
 import Yelp from 'assets/icons/yelp.png';
 import Tripadvisor from 'assets/icons/tripadvisor.png';
@@ -23,7 +20,6 @@ import Thumbtack from 'assets/icons/thumbtack.png';
 import Facebook from 'assets/icons/facebook.png';
 import Instagram from 'assets/icons/instagram.png';
 import Palm from 'assets/icons/palmtree_green1.png';
-import Palm2 from 'assets/icons/palmtree_green2.png';
 import Logo from 'assets/logos/aloha_logo.png';
 import Btn from 'components/landing/Btn';
 

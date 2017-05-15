@@ -7,7 +7,6 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { Link } from 'react-router';
-import Chevron from 'assets/icons/chevron.png';
 import { Image } from 'cloudinary-react';
 import Btn from 'components/landing/Btn';
 

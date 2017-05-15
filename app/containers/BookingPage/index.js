@@ -20,7 +20,7 @@ import MediaQuery from 'react-responsive';
 
 export class BookingPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
-    let spinner = 'https://www.ihs.com/images/ajax-loader.gif'
+    const spinner = 'https://www.ihs.com/images/ajax-loader.gif';
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
@@ -37,7 +37,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               <div className="col-sm-3">
                 <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', height: '500px', background: `#ECECEC url(${spinner}) center no-repeat` }} />
                 <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
-                  <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
+                  <img src={Camera} role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>
               </div>
