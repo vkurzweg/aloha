@@ -8,15 +8,35 @@
     <!-- Allow installing the app to the homescreen -->
     <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One|Josefin+Sans|Francois+One|Lobster|Quicksand" rel="stylesheet">
+    <style>
+      #loading {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('assets/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+      }
+    </style>
     <meta name="mobile-web-app-capable" content="yes">
-    <title>React.js Boilerplate</title>
+    <title>Aloha Brothers Surf Lessons - Venice, CA</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->
     <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
 
     <!-- The app hooks into this div -->
+    <div id="loading">
+      <img src="assets/loading.gif" />
+    </div>
     <div id="app"></div>
     <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
+    <script type="text/javascript">
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
+    </script>
   </body>
 </html>
