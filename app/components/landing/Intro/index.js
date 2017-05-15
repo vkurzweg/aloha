@@ -42,7 +42,9 @@ function Intro() {
           <img src={HuffPo} style={{ padding: '3%' }} alt="huffington post" />
           <img src={Tele} style={{ padding: '3%' }} alt="telemundo" />
         </div>
-        <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2%', paddingBottom: '2%' }}>All press<img src={Chevron} role="presentation" /></h4></Link>
+        <div style={{ marginTop: '3%', paddingBottom: '5%'}}>
+          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2%', border: '1px solid #7C4DFF', padding: '2%', width: '15em', display: 'block', margin: '0 auto', borderRadius: '2px' }}>All press</h4></Link>
+        </div>
       </div>
     </div>
   );

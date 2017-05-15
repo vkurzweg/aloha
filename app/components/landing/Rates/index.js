@@ -66,7 +66,9 @@ function Rates() {
           <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
           <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
         </div></Link>
-        <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/booking" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '3%', paddingBottom: '3%' }}>All rates & packages<img src={Chevron} role="presentation" /></h4></Link>
+        <div style={{ marginTop: '3%', marginBottom: '5%' }}>
+          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/booking" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '3%', border: '1px solid #7C4DFF', padding: '2%', width: '15em', display: 'block', margin: '0 auto', borderRadius: '2px' }}>All rates & packages</h4></Link>
+        </div>
       </div>
     </div>
   );

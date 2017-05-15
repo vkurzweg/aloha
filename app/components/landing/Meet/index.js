@@ -6,8 +6,6 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Waves from 'assets/icons/waves_pink.png';
-import Waves2 from 'assets/icons/waves_pink2.png';
 import { Link } from 'react-router';
 import Chevron from 'assets/icons/chevron.png';
 import { Image } from 'cloudinary-react';
@@ -28,7 +26,9 @@ function Meet() {
           </div>
         </div>
       </div>
-      <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/instructors" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '3%', paddingBottom: '3%' }}>All Surf Instructors<img src={Chevron} role="presentation" /></h4></Link>
+      <div style={{ paddingBottom: '5%', marginTop: '3%' }}>
+        <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/instructors" ><h4 style={{ textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '4%', border: '1px solid #7C4DFF', padding: '2%', width: '15em', display: 'block', margin: '0 auto', borderRadius: '2px' }}>All Surf Instructors</h4></Link>
+      </div>
     </div>
   );
 }
