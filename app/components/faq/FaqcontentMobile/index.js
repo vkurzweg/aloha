@@ -9,11 +9,11 @@ import React from 'react';
 import { Link } from 'react-router';
 import Q from './Q';
 import A from './A';
-import Office from 'assets/images/office.png';
 
 
 
 function Faqcontent() {
+  const office = 'http://res.cloudinary.com/kurzweg/image/upload/v1494631994/office_tuvew1.png';
   return (
     <div>
       <div style={{ marginLeft: '5%', marginRight: '5%', paddingTop: '20%', marginBottom: '3%' }}>
@@ -24,7 +24,7 @@ function Faqcontent() {
         <Q>What should I bring?</Q>
         <A>A swimsuit to wear under your wetsuit, a towel, and sunblock if you'd like.</A>
       </div>
-      <div style={{ height: '225px', backgroundImage: `url(${Office})`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+      <div style={{ height: '225px', backgroundImage: `url(${office})`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
         <Q style={{ color: '#6FEAB5', fontSize: '28px', fontWeight: 'bold', paddingTop: '15%'}}>Questions?</Q>
         <Link to="/contact"><button className="btn btn-default" style={{ color: '#6FEAB5', border: '5px solid #6FEAB5', fontSize: '20px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', margin: '0 auto', backgroundColor: 'transparent'}}>Contact Us</button></Link>
       </div>

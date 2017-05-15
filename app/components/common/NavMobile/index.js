@@ -45,9 +45,6 @@ const items = [
     name: 'Rates & Booking',
     url: '/booking',
   }, {
-    name: 'Instructors',
-    url: '/instructors',
-  }, {
     name: 'FAQ',
     url: '/faq',
   }, {
@@ -116,6 +113,11 @@ Nav.propTypes = {
 };
 
 export default Nav;
+
+// {
+//     name: 'Instructors',
+//     url: '/instructors',
+//   },
 
 // {
 //     name: 'Ding Repair',

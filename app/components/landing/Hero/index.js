@@ -6,8 +6,6 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Palm1 from 'assets/icons/palmtree_green1.png';
-import Palm2 from 'assets/icons/palmtree_green2.png';
 import Button from './Button';
 import { Link } from 'react-router';
 

@@ -8,10 +8,6 @@ import React from 'react';
 // import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel';
-import Dutch from 'assets/images/dutch_press.jpg';
-import FrenchCan from 'assets/images/frenchcan_press.jpg';
-import Voyage from 'assets/images/voyagela.png';
-import Group from 'assets/images/group_camera2.jpg';
 import LAT from 'assets/logos/latimes-logo.png';
 import LAM from 'assets/logos/lamag.png';
 import CBS from 'assets/logos/CBS-los-angeles-logo2.png';
@@ -19,6 +15,8 @@ import Huffpo from 'assets/logos/Huffington-Post-Logo.png';
 import Article from './Article';
 import Headline from './Headline';
 import Body from './Body';
+import { Image } from 'cloudinary-react';
+
 
 function PressContent() {
   const settings = {
@@ -38,16 +36,16 @@ function PressContent() {
         <div className="col-sm-6">
           <Slider {...settings}>
             <div>
-              <img src={FrenchCan} alt="Aloha Brothers on Canadian television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="frenchcan_press" width="auto" alt="Aloha Brothers on Canadian television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
             <div>
-              <img src={Dutch} alt="Aloha Brothers on Dutch television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '5%',  paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="dutch_press" width="auto" alt="Aloha Brothers on Dutch television" style={{ height: '250px', width: 'auto', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '5%', paddingBottom: '1%' }} />
             </div>
             <div>
-              <img src={Voyage} alt="Profile of owner Nick in Voyage LA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="voyagela" alt="Profile of owner Nick in Voyage LA" style={{ height: '250px', width: 'auto', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
             <div>
-              <img src={Group} alt="Filming a surf lesson in Venice, CA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="group_camera2" alt="Filming a surf lesson in Venice, CA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
           </Slider>
         </div>

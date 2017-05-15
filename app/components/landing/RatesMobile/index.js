@@ -7,13 +7,13 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { Card, CardActions, CardMedia, CardTitle, CardText } from 'material-ui/Card';
-import LessonKid from 'assets/images/cuteness_overload.jpg';
-import Duo from 'assets/images/duo2.jpg';
 import FlatButton from 'material-ui/FlatButton';
 import Surf from 'assets/icons/surfboards_purple.png';
 import Camera from 'assets/icons/camera.png';
 import { Link } from 'react-router';
 import Btn from 'components/landing/Btn';
+import { Image } from 'cloudinary-react';
+
 
 function Rates() {
   return (
@@ -22,7 +22,7 @@ function Rates() {
       <div className="container" style={{ backgroundColor: '#ECECEC', width: '100%', paddingTop: '5%' }}>
             <Card style={{ display: 'block', margin: '0 auto', height: '100%', width: '80%' }}>
               <CardMedia>
-                <img src={LessonKid} style={{ width: '100%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="auto" responsive />
               </CardMedia>
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center' }}>

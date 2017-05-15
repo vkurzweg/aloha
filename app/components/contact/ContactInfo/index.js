@@ -6,13 +6,14 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Gopro from 'assets/images/gopro.jpg';
+import { Image } from 'cloudinary-react';
+
 
 
 function ContactInfo() {
   return (
     <div className="col-sm-6" style={{ marginTop: '12%' }}>
-      <img src={Gopro} alt="Gopro view of inside a wave" style={{ display: 'block', margin: '0 auto', width: '80%' }} />
+      <Image className="item" cloudName="kurzweg" publicId="gopro_pgpjzj" width="auto" alt="Gopro view of inside a wave" style={{ display: 'block', margin: '0 auto', width: '80%' }} />
       <div>
         <div style={{ textAlign: 'center', marginTop: '5%', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '1px' }}>
           <h4>Aloha Brothers Surf Lessons</h4>

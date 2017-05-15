@@ -20,7 +20,6 @@ import IntroMobile from 'components/landing/IntroMobile';
 import Meet from 'components/landing/Meet';
 import Rates from 'components/landing/Rates';
 import RatesMobile from 'components/landing/RatesMobile';
-import Barrell from 'assets/images/slideshow_barrell2.jpg';
 // import Office from 'assets/images/office.png';
 import Footer from 'components/common/Footer';
 import MediaQuery from 'react-responsive';
@@ -28,6 +27,7 @@ import MediaQuery from 'react-responsive';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
+  const barrell = 'http://res.cloudinary.com/kurzweg/image/upload/v1494888277/slideshow_barrell2.jpg';
     return (
       <div style={{ top: '0' }}>
         <Helmet
@@ -40,7 +40,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <Nav />
           <Hero />
           <Intro />
-          <div style={{ height: '300px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div style={{ height: '300px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery minWidth={957}>
           <Rates />
@@ -49,7 +49,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <NavMobile />
           <HeroMobile />
           <IntroMobile />
-          <div style={{ height: '200px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div style={{ height: '200px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery maxWidth={956}>
           <RatesMobile />
