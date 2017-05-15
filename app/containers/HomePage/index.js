@@ -41,6 +41,8 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <Hero />
           <Intro />
           <div style={{ height: '300px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        </MediaQuery>
+        <MediaQuery minWidth={957}>
           <Rates />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
@@ -48,6 +50,8 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <HeroMobile />
           <IntroMobile />
           <div style={{ height: '200px', backgroundImage: `url(${Barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        </MediaQuery>
+        <MediaQuery maxWidth={956}>
           <RatesMobile />
         </MediaQuery>
         <Meet />

@@ -24,8 +24,8 @@ function Faqcontent() {
         <A>A swimsuit to wear under your wetsuit, a towel, and sunblock if you'd like.</A>
       </div>
       <div style={{ height: '225px', backgroundImage: `url(${Office})`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <Q style={{ color: '#6FEAB5', fontSize: '34px', fontWeight: 'bold', paddingTop: '5%'}}>Questions?</Q>
-        <Link to="/contact"><button className="btn btn-default" style={{ color: '#6FEAB5', border: '5px solid #6FEAB5', fontSize: '20px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', margin: '0 auto', backgroundColor: 'transparent'}}>Contact Us</button></Link>
+        <Q style={{ color: '#FF80AB', fontSize: '24px', fontWeight: 'bold', paddingTop: '5%'}}>Questions?</Q>
+        <Link to="/contact"><button className="btn btn-default" style={{ color: '#FF80AB', border: '5px solid #FF80AB', fontSize: '20px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', margin: '0 auto', backgroundColor: 'transparent'}}>Contact Us</button></Link>
       </div>
       <div style={{ marginLeft: '5%', marginRight: '5%', marginTop: '3%', marginBottom: '3%' }}>
 

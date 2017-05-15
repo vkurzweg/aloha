@@ -12,6 +12,8 @@
 .item-container {
   width: 100%;
   display: block;
+  background: url('http://hoott.com/images/ajax_loader.gif') 50% 50% no-repeat #ECECEC;
+
 }
 
 .item {
@@ -57,3 +59,6 @@
         width: 1260px;
     }
 }
+
+/*background: #ECECEC url(https://www.ihs.com/images/ajax-loader.gif) center no-repeat;
+*/
