@@ -5,7 +5,7 @@
 */
 
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel';
 import Dutch from 'assets/images/dutch_press.jpg';
@@ -20,6 +20,12 @@ import Article from './Article';
 import Headline from './Headline';
 import Body from './Body';
 
+const A = styled.a`
+ &:hover, &:active, &:focus {
+   color: #FF80AB;
+}
+`;
+
 function PressContent() {
   const settings = {
     autoplay: true,
@@ -30,8 +36,8 @@ function PressContent() {
     <div className="container">
       <div className="row" style={{ width: '100%' }}>
         <div style={{ marginTop: '10%' }}>
-          <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
-          <p style={{ textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at nickfowler9@gmail.com or 323-316-8108</p>
+          <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', padding: '1%' }}>Press</h3>
+          <p style={{ fontStyle: 'italic', textAlign: 'center', fontSize: '16px' }}>For media inquiries, contact Nick Fowler at nickfowler9@gmail.com or 323-316-8108</p>
         </div>
       </div>
       <div className="row">
@@ -50,27 +56,27 @@ function PressContent() {
               <img src={Group} alt="Filming a surf lesson in Venice, CA" style={{ height: '400px', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
             </div>
           </Slider>
-          <a href="https://stokeshare.com/blog/surf-school-la-8-righteous-surf-lessons-in-los-angeles/#facebook" target="blank">
+          <A href="https://stokeshare.com/blog/surf-school-la-8-righteous-surf-lessons-in-los-angeles/#facebook" target="blank">
             <Article>
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Surf School LA: 8 Righteous Surf Lessons in Los Angeles'</Headline>
                 <Body>The Aloha Bros offer beginner surf lessons, where you’ll learn how to pop up correctly, understand positioning in the lineup, basic ocean safety, proper paddling, and how to ride the waves for starters...</Body>
               </div>
             </Article>
-          </a>
-          <a href="http://vacationidea.com/california/best-romantic-things-to-do-in-los-angeles.html#slide21" target="blank">
+          </A>
+          <A href="http://vacationidea.com/california/best-romantic-things-to-do-in-los-angeles.html#slide21" target="blank">
             <Article>
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Best Romantic Things to Do in Los Angeles'</Headline>
                 <Body>Learn how to surf LA-style with Aloha Brothers. Run by Nick Fowler and his team of surfing gurus...</Body>
               </div>
             </Article>
-          </a>
+          </A>
         </div>
         <div className="col-sm-6" style={{ marginBottom: '5%' }}>
           <a href="http://www.latimes.com/health/la-he-getting-out-surfing-20150919-story.html" target="blank">
             <Article>
-              <img src={LAT} role="presentation" style={{ height: '50px'}} />
+              <img src={LAT} role="presentation" style={{ height: '50px', marginTop: '5%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Some surfing tips to help newbies hang ten'</Headline>
                 <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "It's aerobic, anaerobic, and then some..."</Body>
@@ -83,12 +89,12 @@ function PressContent() {
                 <Headline>'Best Surfing And Stand Up Paddleboard Classes In LA'</Headline>
                 <Body>Aspiring wave riders of all age and ability levels appreciate Aloha Brothers’ encouraging teaching style. Not only does Nick help you understand what you’re doing wrong, he is sure to let you know what you’re doing right...</Body>
               </div>
-              <img src={CBS} role="presentation" style={{ height: '50px'}} />
+              <img src={CBS} role="presentation" style={{ height: '50px', marginTop: '8%' }} />
             </Article>
           </a>
           <a href="http://www.lamag.com/lasocialspecialadvertising/los-angeles-magazines-readers-choice-travel-awards/" target="blank">
             <Article>
-              <img src={LAM} role="presentation" style={{ height: '35px'}} />
+              <img src={LAM} role="presentation" style={{ height: '35px', marginTop: '5%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Reader's Choice Travel Awards'</Headline>
                 <Body>Nominated for Best Outdoor Activity</Body>

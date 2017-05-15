@@ -17,7 +17,7 @@ import FaqcontentMobile from 'components/faq/FaqcontentMobile';
 export class Faqpage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
           title="Faqpage"
           meta={[

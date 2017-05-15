@@ -20,7 +20,7 @@ import Footer from 'components/common/Footer';
 export class PhotographyPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{ backgroundColor: '#FFFFFF' }}>
+      <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
           title="PhotographyPage"
           meta={[
@@ -34,7 +34,7 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
           <NavMobile />
           <div style={{ height: '50px' }}></div>
         </MediaQuery>
-        <h3 style={{ textAlign: 'center', color: '#6FEAB5', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '8%' }}>Photography</h3>
+        <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '8%' }}>Photography</h3>
         <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '75%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
           <p style={{ fontFamily: 'Josefin Sans' }}>Add professional photography to your lesson</p>
           <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>

@@ -15,6 +15,7 @@ import SuccessModal from 'components/contact/SuccessModal';
 import { selectContact, selectForm } from './selectors';
 import { createMessage, openModal, closeModal } from './actions';
 import ContactFormContainer from './ContactFormContainer';
+import Footer from 'components/common/Footer';
 
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -30,7 +31,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
 
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
           title="ContactPage"
           meta={[
@@ -60,6 +61,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
             />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

@@ -13,7 +13,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
   render() {
     return (
       <div className="col-sm-6" style={{ marginTop: '12%' }}>
-        <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', marginBottom: '2%', fontWeight: 'bold' }}>Send us a message</h4>
+        <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', marginBottom: '2%', fontWeight: 'bold' }}>Contact us</h4>
           <form onSubmit={this.props.handleSubmit} >
             <div className="control-group form-group">
               <div className="controls">

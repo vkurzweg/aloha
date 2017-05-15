@@ -28,7 +28,7 @@ function ContactInfo() {
           <p><b>Rider Shack</b></p>
           <p>13211 W Washington Blvd <br /> Los Angeles, CA 90066</p>
         </div>
-        <div style={{ fontSize: '16px', marginLeft: '10%', marginTop: '2%' }}>
+        <div style={{ fontSize: '16px', marginLeft: '10%', marginTop: '2%', marginBottom: '5%' }}>
           <p><b>Mollusk</b></p>
           <p>1600 Pacific Ave <br /> Venice, CA 90291</p>
         </div>
