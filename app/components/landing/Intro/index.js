@@ -6,8 +6,6 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Waves from 'assets/icons/waves_yellow.png';
-import Waves2 from 'assets/icons/waves_yellow2.png';
 import CBS from 'assets/logos/CBS-los-angeles-logo2.png';
 import HuffPo from 'assets/logos/Huffington-Post-Logo.png';
 import LAMag from 'assets/logos/lamag.png';

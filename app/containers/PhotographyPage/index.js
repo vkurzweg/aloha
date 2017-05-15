@@ -9,10 +9,12 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 // import { createStructuredSelector } from 'reselect';
 // import makeSelectGalleryPage from './selectors';
+import MediaQuery from 'react-responsive';
 import Nav from 'components/common/Nav';
+import NavMobile from 'components/common/NavMobile';
 import LightboxContainer from 'components/photography/LightboxContainer';
+import LightboxContainerMobile from 'components/photography/LightboxContainerMobile';
 import Footer from 'components/common/Footer';
-import Palm from 'assets/icons/palmtree_green1.png';
 
 
 export class PhotographyPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -25,7 +27,13 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
             { name: 'description', content: 'Description of GalleryPage' },
           ]}
         />
-        <Nav />
+        <MediaQuery minWidth={768}>
+          <Nav />
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+          <NavMobile />
+          <div style={{ height: '50px' }}></div>
+        </MediaQuery>
         <h3 style={{ textAlign: 'center', color: '#6FEAB5', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '8%' }}>Photography</h3>
         <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '75%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
           <p style={{ fontFamily: 'Josefin Sans' }}>Add professional photography to your lesson</p>
@@ -44,7 +52,12 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
             </table>
           </div>
         </div>
-        <LightboxContainer />
+        <MediaQuery minWidth={768}>
+          <LightboxContainer />
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+          <LightboxContainerMobile />
+        </MediaQuery>
         <Footer />
       </div>
     );
