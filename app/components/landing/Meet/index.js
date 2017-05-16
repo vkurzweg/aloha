@@ -13,7 +13,7 @@ import Btn from 'components/landing/Btn';
 function Meet() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
-      <h3 style={{ textAlign: 'center', color: '#FF80AB', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF', padding: '2%' }}>Meet the Owner</h3>
+      <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF', padding: '2%' }}>Meet the Owner</h3>
       <div className="container">
         <div className="row">
           <div className="col-sm-5">
