@@ -10,7 +10,7 @@ import Helmet from 'react-helmet';
 import Nav from 'components/common/Nav';
 import NavMobile from 'components/common/NavMobile';
 import Footer from 'components/common/Footer';
-import Camera from 'assets/icons/camera.png';
+import Camera from 'assets/icons/camera.jpg';
 import { Link } from 'react-router';
 import { Image } from 'cloudinary-react';
 import RatesTables from 'components/booking/RatesTables';

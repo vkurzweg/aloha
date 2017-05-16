@@ -223,6 +223,7 @@
     "firebase": "^3.9.0",
     "firebase-saga": "^1.1.2",
     "fontfaceobserver": "2.0.7",
+    "gifsicle": "^3.0.4",
     "immutable": "3.8.1",
     "intl": "1.2.5",
     "invariant": "2.2.2",

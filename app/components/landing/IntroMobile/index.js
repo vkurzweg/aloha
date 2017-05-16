@@ -19,7 +19,7 @@ import Tripadvisor from 'assets/icons/tripadvisor.jpg';
 import Thumbtack from 'assets/icons/thumbtack.jpg';
 import Facebook from 'assets/icons/facebook.jpg';
 import Instagram from 'assets/icons/instagram.jpg';
-import Palm from 'assets/icons/palmtree_green1.jpg;
+import Palm from 'assets/icons/palmtree_green1.jpg';
 import Logo from 'assets/logos/aloha_logo.jpg';
 import Btn from 'components/landing/Btn';
 

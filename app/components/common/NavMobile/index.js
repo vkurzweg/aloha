@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import Menu from 'assets/icons/menu.png';
+import Menu from 'assets/icons/menu.jpg';
 import { browserHistory } from 'react-router';
 
 const StyledAppBar = styled(AppBar)`
