@@ -6,7 +6,7 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Palmtree from 'assets/icons/palmtree1.png';
+import Palmtree from 'assets/icons/palmtree1.jpg';
 import Header from './Header';
 import Subhead from './Subhead';
 import TD from './TD';

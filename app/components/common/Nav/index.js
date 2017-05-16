@@ -9,12 +9,12 @@ import styled from 'styled-components';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import Menu from 'assets/icons/menu.png';
-import Yelp from 'assets/icons/yelp.png';
-import Tripadvisor from 'assets/icons/tripadvisor.png';
-import Thumbtack from 'assets/icons/thumbtack.png';
-import Facebook from 'assets/icons/facebook.png';
-import Instagram from 'assets/icons/instagram.png';
+import Menu from 'assets/icons/menu.jpg';
+import Yelp from 'assets/icons/yelp.jpg';
+import Tripadvisor from 'assets/icons/tripadvisor.jpg';
+import Thumbtack from 'assets/icons/thumbtack.jpg';
+import Facebook from 'assets/icons/facebook.jpg';
+import Instagram from 'assets/icons/instagram.jpg';
 import { browserHistory } from 'react-router';
 
 const StyledAppBar = styled(AppBar)`

@@ -6,15 +6,15 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import CBS from 'assets/logos/CBS-los-angeles-logo2.png';
-import HuffPo from 'assets/logos/Huffington-Post-Logo.png';
-import LAMag from 'assets/logos/lamag.png';
-import LAT from 'assets/logos/latimes-logo.png';
-import Tele from 'assets/logos/telemundo.png';
-import Stars from 'assets/icons/stars_yellow.png';
+import CBS from 'assets/logos/CBS-los-angeles-logo2.jpg';
+import HuffPo from 'assets/logos/Huffington-Post-Logo.jpg';
+import LAMag from 'assets/logos/lamag.jpg';
+import LAT from 'assets/logos/latimes-logo.jpg';
+import Tele from 'assets/logos/telemundo.jpg';
+import Stars from 'assets/icons/stars_yellow.jpg';
 import { Link } from 'react-router';
 import MediaQuery from 'react-responsive';
-import Logo from 'assets/logos/aloha_logo.png';
+import Logo from 'assets/logos/aloha_logo.jpg';
 import Btn from 'components/landing/Btn';
 
 
