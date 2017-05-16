@@ -87,7 +87,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           <StyledAppBar
             title={brand}
             titleStyle={{ textDecoration: 'none', marginTop: '-3%' }}
-            iconElementLeft={<Image cloudName="kurzweg" publicId="menu" responsive alt="menu icon" />}
+            iconElementLeft={<Image cloudName="kurzweg" publicId="menu" responsive alt="menu icon" style={{ padding: '1%' }} />}
             iconStyleLeft={{ padding: '1.3%' }}
             onLeftIconButtonTouchTap={this.handleToggle}
           />
