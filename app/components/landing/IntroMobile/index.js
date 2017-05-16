@@ -22,17 +22,18 @@ import Instagram from 'assets/icons/instagram.jpg';
 import Palm from 'assets/icons/palmtree_green1.jpg';
 import Logo from 'assets/logos/aloha_logo.jpg';
 import Btn from 'components/landing/Btn';
+import { Image } from 'cloudinary-react';
 
 
 function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
-      <MediaQuery minWidth={849}>
-        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Logo} role="presentation" style={{ padding: '2%', width: '40px' }} />Aloha Brothers Surf Lessons, est. 2011<img src={Logo} role="presentation" style={{ padding: '2%', width: '40px' }} /></h3>
-      </MediaQuery>
-      <MediaQuery maxWidth={848}>
-        <h4 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><img src={Logo} role="presentation" style={{ padding: '1%', marginRight: '5%', width: '40px' }} />Est. 2011<img src={Logo} role="presentation" style={{ padding: '1%', marginLeft: '5%', width: '40px' }} /></h4>
-      </MediaQuery>
+    <MediaQuery minWidth={849}>
+      <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><Image className="item" cloudName="kurzweg" publicId="aloha_logo" responsive style={{ padding: '2%', width: '100px' }} />Aloha Brothers Surf Lessons, est. 2011<Image className="item" cloudName="kurzweg" publicId="aloha_logo" responsive style={{ padding: '2%', width: '100px' }} /></h3>
+    </MediaQuery>
+    <MediaQuery maxWidth={848}>
+      <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><Image className="item" cloudName="kurzweg" publicId="aloha_logo" responsive style={{ padding: '1%', marginRight: '5%', width: '50px' }} />Est. 2011<Image className="item" cloudName="kurzweg" publicId="aloha_logo" responsive role="presentation" style={{ padding: '1%', marginLeft: '5%', width: '50px' }} /></h3>
+    </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>
           <img src={Stars} alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
