@@ -16,8 +16,12 @@ export function* createMessageAsync() {
     const formState = yield select(selectForm);
     const contact = formState.get('contact').toJS();
     const message = contact.values;
+    console.log('message', message)
+    let base = location.protocol + '//' + location.hostname;
+    if (base === 'http://localhost') base = 'http://localhost:3000';
+    console.log('base', base);
     const api = axios.create({
-      baseURL: 'http://localhost:3000',
+      baseURL: base,
       headers: { 'Access-Control-Allow-Origin': '*' },
       timeout: 3000,
     });

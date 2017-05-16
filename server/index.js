@@ -11,12 +11,18 @@ const ngrok = (isDev && process.env.ENABLE_TUNNEL) || argv.tunnel ? require('ngr
 const resolve = require('path').resolve;
 const app = express();
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
 
 function handleSendMail(req, res){
+  console.log('req.body', req.body)
   const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
