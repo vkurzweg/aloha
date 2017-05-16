@@ -10,7 +10,6 @@ import Helmet from 'react-helmet';
 import Nav from 'components/common/Nav';
 import NavMobile from 'components/common/NavMobile';
 import Footer from 'components/common/Footer';
-import Camera from 'assets/icons/camera.jpg';
 import { Link } from 'react-router';
 import { Image } from 'cloudinary-react';
 import RatesTables from 'components/booking/RatesTables';
@@ -37,7 +36,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               <div className="col-sm-3">
                 <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', height: '500px', background: `#ECECEC url(${spinner}) center no-repeat` }} />
                 <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
-                  <img src={Camera} role="presentation" style={{ display: 'block', margin: '0 auto' }} />
+                  <Image cloudName="kurzweg" publicId="camera" role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>
               </div>

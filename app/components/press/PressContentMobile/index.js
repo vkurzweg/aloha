@@ -8,10 +8,6 @@ import React from 'react';
 // import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel';
-import LAT from 'assets/logos/latimes-logo.jpg';
-import LAM from 'assets/logos/lamag.jpg';
-import CBS from 'assets/logos/CBS-los-angeles-logo2.jpg';
-import Huffpo from 'assets/logos/Huffington-Post-Logo.jpg';
 import Article from './Article';
 import Headline from './Headline';
 import Body from './Body';
@@ -52,7 +48,7 @@ function PressContent() {
         <div className="col-sm-6" style={{ marginBottom: '5%' }}>
           <a href="http://www.latimes.com/health/la-he-getting-out-surfing-20150919-story.html" target="blank">
             <Article>
-              <img src={LAT} role="presentation" style={{ height: '50px', marginTop: '5%'}} />
+              <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ height: '50px', marginTop: '5%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Some surfing tips to help newbies hang ten'</Headline>
                 <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "It's aerobic, anaerobic, and then some..."</Body>
@@ -65,12 +61,12 @@ function PressContent() {
                 <Headline>'Best Surfing And Stand Up Paddleboard Classes In LA'</Headline>
                 <Body>Aspiring wave riders of all age and ability levels appreciate Aloha Brothers’ encouraging teaching style. Not only does Nick help you understand what you’re doing wrong, he is sure to let you know what you’re doing right...</Body>
               </div>
-              <img src={CBS} role="presentation" style={{ height: '50px', marginTop: '8%' }} />
+              <Image cloudName="kurzweg" publicId="CBS-los-angeles-logo2" responsive role="presentation" style={{ height: '50px', marginTop: '8%' }} />
             </Article>
           </a>
           <a href="http://www.lamag.com/lasocialspecialadvertising/los-angeles-magazines-readers-choice-travel-awards/" target="blank">
             <Article>
-              <img src={LAM} role="presentation" style={{ height: '35px', marginTop: '5%' }} />
+            <Image cloudName="kurzweg" publicId="lamag" role="presentation" style={{ height: '35px', marginTop: '5%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Reader's Choice Travel Awards'</Headline>
                 <Body>Nominated for Best Outdoor Activity</Body>
@@ -83,7 +79,7 @@ function PressContent() {
                 <Headline>'Skip the Stuff. Give Fun Instead!'</Headline>
                 <Body>Buy you and your sweetie a couple of surfing lessons with companies like Venice’s Aloha Brothers Surf Lessons...</Body>
               </div>
-              <img src={Huffpo} role="presentation" style={{ height: '40px', marginTop: '5%' }} />
+              <Image cloudName="kurzweg" publicId="Huffington-Post-Logo" role="presentation" style={{ height: '40px'}} />
             </Article>
           </a>
           <a href="https://thepointsguy.com/2014/10/destination-venice-beach-ca-surf-shop-dine-in-style/" target="blank">

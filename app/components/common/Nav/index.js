@@ -9,13 +9,9 @@ import styled from 'styled-components';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import Menu from 'assets/icons/menu.jpg';
-import Yelp from 'assets/icons/yelp.jpg';
-import Tripadvisor from 'assets/icons/tripadvisor.jpg';
-import Thumbtack from 'assets/icons/thumbtack.jpg';
-import Facebook from 'assets/icons/facebook.jpg';
-import Instagram from 'assets/icons/instagram.jpg';
 import { browserHistory } from 'react-router';
+import { Image } from 'cloudinary-react';
+
 
 const StyledAppBar = styled(AppBar)`
   width: 100%;
@@ -85,12 +81,12 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
 
   render() {
     const icons = (
-      <div style={{ display: 'inline-flex', marginLeft: '-35%', width: '50%' }}>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><img src={Yelp} alt="yelp icon" /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><img src={Tripadvisor} alt="tripadvisor icon" style={{ paddingLeft: '15%' }} /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><img src={Thumbtack} alt="thumbtack icon" style={{ paddingLeft: '15%' }} /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><img src={Facebook} alt="facebook icon" style={{ paddingLeft: '15%' }} /></a>
-        <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><img src={Instagram} alt="instagram icon" style={{ paddingLeft: '15%' }} /></a>
+      <div style={{ display: 'inline-flex', marginLeft: '-5%', width: '50%' }}>
+        <a style={{ paddingLeft: '10%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><Image cloudName="kurzweg" publicId="yelp" responsive alt="yelp icon" /></a>
+        <a style={{ paddingLeft: '10%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><Image cloudName="kurzweg" publicId="tripadvisor" responsive alt="tripadvisor icon" style={{ paddingLeft: '10%' }} /></a>
+        <a style={{ paddingLeft: '10%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><Image cloudName="kurzweg" publicId="thumbtack" responsive alt="thumbtack icon" style={{ paddingLeft: '10%' }} /></a>
+        <a style={{ paddingLeft: '10%', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><Image cloudName="kurzweg" publicId="facebook" responsive alt="facebook icon" style={{ paddingLeft: '10%' }} /></a>
+        <a style={{ paddingLeft: '10%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><Image cloudName="kurzweg" publicId="instagram" responsive alt="instagram icon" style={{ paddingLeft: '10%' }} /></a>
       </div>
       );
     const brand = <A href="/">Aloha Brothers Surf Lessons</A>;
@@ -100,7 +96,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           <StyledAppBar
             title={brand}
             titleStyle={{ textDecoration: 'none' }}
-            iconElementLeft={<img src={Menu} alt="menu icon" />}
+            iconElementLeft={<Image cloudName="kurzweg" publicId="menu" responsive alt="menu icon" />}
             iconStyleLeft={{ padding: '1.3%' }}
             onLeftIconButtonTouchTap={this.handleToggle}
             iconElementRight={icons}

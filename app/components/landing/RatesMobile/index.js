@@ -20,7 +20,7 @@ function Rates() {
       <div className="container" style={{ backgroundColor: '#ECECEC', width: '100%', paddingTop: '5%' }}>
             <Card style={{ display: 'block', margin: '0 auto', height: '100%', width: '80%' }}>
               <CardMedia>
-              <Image className="item" cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="auto" responsive />
+              <Image cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="auto" responsive />
               </CardMedia>
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center' }}>
@@ -33,7 +33,7 @@ function Rates() {
             </Card>
       <div style={{ backgroundColor: '#ECECEC', paddingTop: '5%' }}>
         <Link to="/photography"><div style={{ margin: '0 auto', padding: '2%' }}>
-          <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
+          <Image cloudName="kurzweg" publicId="camera" width="auto" responsive style={{ display: 'block', margin: '0 auto' }} />
           <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
         </div></Link>
         <div style={{ marginBottom: '5%', marginTop: '3%' }}>

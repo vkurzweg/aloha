@@ -9,8 +9,9 @@ import styled from 'styled-components';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import Menu from 'assets/icons/menu.jpg';
 import { browserHistory } from 'react-router';
+import { Image } from 'cloudinary-react';
+
 
 const StyledAppBar = styled(AppBar)`
   width: 100%;
@@ -86,7 +87,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
           <StyledAppBar
             title={brand}
             titleStyle={{ textDecoration: 'none', marginTop: '-3%' }}
-            iconElementLeft={<img src={Menu} alt="menu icon" />}
+            iconElementLeft={<Image cloudName="kurzweg" publicId="menu" responsive alt="menu icon" />}
             iconStyleLeft={{ padding: '1.3%' }}
             onLeftIconButtonTouchTap={this.handleToggle}
           />
