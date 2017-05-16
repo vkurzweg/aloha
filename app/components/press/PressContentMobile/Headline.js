@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Headline = styled.h4`
-  color: #000000;
+  color: #7C4DFF;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 16px;

@@ -26,24 +26,25 @@ module.exports = (options) => ({
       test: /\.css$/,
       include: /node_modules/,
       loaders: ['style-loader', 'css-loader'],
-    },
-      {
-        test: /\.scss$/,
-        loader: 'style!css!sass?outputStyle=expanded&' + 'includePaths[]=' +
-                  (path.resolve(__dirname, './node_modules'))
-      }, {
+    }, {
       test: /\.(eot|svg|ttf|woff|woff2)$/,
       loader: 'file-loader',
     }, {
       test: /\.(jpg|png|gif)$/,
       loaders: [
-        'file-loader',
+       'file-loader',
         {
           loader: 'image-webpack-loader',
           query: {
-            progressive: true,
-            optimizationLevel: 7,
-            interlaced: false,
+            mozjpeg: {
+              progressive: true,
+            },
+            gifsicle: {
+              interlaced: false,
+            },
+            optipng: {
+              optimizationLevel: 7,
+            },
             pngquant: {
               quality: '65-90',
               speed: 4,
