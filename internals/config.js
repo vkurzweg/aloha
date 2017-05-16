@@ -6,6 +6,10 @@ const ReactBoilerplate = {
   // This refers to the react-boilerplate version this project is based on.
   version: '3.4.0',
 
+  node: {
+    fs: 'empty',
+  },
+
   /**
    * The DLL Plugin provides a dramatic speed increase to webpack build and hot module reloading
    * by caching the module metadata for all of our npm dependencies. We enable it by default
