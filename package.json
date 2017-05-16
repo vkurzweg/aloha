@@ -168,7 +168,11 @@
       "express",
       "ip",
       "minimist",
-      "sanitize.css"
+      "sanitize.css",
+      "nodemailer",
+      "dotenv",
+      "body-parser",
+      "request",
     ],
     "include": [
       "core-js",
@@ -228,8 +232,6 @@
     "minimist": "1.2.0",
     "moment": "^2.18.1",
     "nodemailer": "^4.0.1",
-    "nodemailer-direct-transport": "^3.3.2",
-    "nodemailer-mandrill-transport": "^1.2.0",
     "react": "15.4.1",
     "react-dom": "15.4.1",
     "react-helmet": "3.2.2",

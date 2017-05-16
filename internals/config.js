@@ -30,6 +30,8 @@ const ReactBoilerplate = {
         'sanitize.css',
         'nodemailer',
         'dotenv',
+        'body-parser',
+        'request',
       ],
 
       /**
