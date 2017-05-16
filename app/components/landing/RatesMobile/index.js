@@ -7,7 +7,6 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { Card, CardActions, CardMedia, CardTitle, CardText } from 'material-ui/Card';
-import Camera from 'assets/icons/camera.jpg';
 import { Link } from 'react-router';
 import Btn from 'components/landing/Btn';
 import { Image } from 'cloudinary-react';

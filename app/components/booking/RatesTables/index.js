@@ -6,11 +6,11 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Palmtree from 'assets/icons/palmtree1.jpg';
 import Header from './Header';
 import Subhead from './Subhead';
 import TD from './TD';
 import { Link } from 'react-router';
+import { Image } from 'cloudinary-react';
 
 
 
@@ -79,7 +79,7 @@ function RatesTables() {
      </div>
 
      <Header>Packages</Header>
-     <Subhead>5-Lesson Package* <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px' }}><img src={Palmtree} alt="palmtree" style={{ height: '25px'}} />Best Value!</span></Subhead>
+     <Subhead>5-Lesson Package* <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px' }}><Image cloudName="kurzweg" publicId="palmtree1" alt="palmtree" style={{ height: '25px'}} />Best Value!</span></Subhead>
      <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
        <table className="table" style={{ width: '100%', textAlign: 'center' }}>
          <tbody>

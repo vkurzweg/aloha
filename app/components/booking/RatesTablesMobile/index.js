@@ -6,12 +6,10 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Palmtree from 'assets/icons/palmtree1.jpg';
 import Header from './Header';
 import Subhead from './Subhead';
 import TD from './TD';
 import { Image } from 'cloudinary-react';
-import Camera from 'assets/icons/camera.jpg';
 import { Link } from 'react-router';
 
 
@@ -81,14 +79,14 @@ function RatesTables() {
      </div>
 
      <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', marginBottom: '3%', marginTop: '-5%'}}>
-       <img src={Camera} alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
+       <Image cloudName="kurzweg" publicId="camera" alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
        <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
      </div></Link>
 
      <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ display: 'block', margin: '0 auto', height: '300px', marginBottom: '4%' }} />
 
      <Header>Packages</Header>
-     <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px', display: 'block', margin: '0 auto', width: '30%', marginTop: '2%' }}><img src={Palmtree} alt="palmtree" style={{ height: '25px'}} />Best Value!</span>
+     <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px', display: 'block', margin: '0 auto', width: '30%', marginTop: '2%' }}><Image cloudName="kurzweg" publicId="palmtree1" alt="palmtree" style={{ height: '25px'}} />Best Value!</span>
      <Subhead>5-Lesson Package*</Subhead>
      <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
        <table className="table" style={{ width: '100%', textAlign: 'center' }}>
