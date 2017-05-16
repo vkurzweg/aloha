@@ -172,7 +172,7 @@
       "nodemailer",
       "dotenv",
       "body-parser",
-      "request",
+      "request"
     ],
     "include": [
       "core-js",
