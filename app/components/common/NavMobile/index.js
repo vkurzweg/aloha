@@ -52,6 +52,9 @@ const items = [
     name: 'Photography',
     url: '/photography',
   }, {
+    name: 'Instructors',
+    url: '/instructors',
+  }, {
     name: 'Press',
     url: '/press',
   }, {
@@ -115,10 +118,6 @@ Nav.propTypes = {
 
 export default Nav;
 
-// {
-//     name: 'Instructors',
-//     url: '/instructors',
-//   },
 
 // {
 //     name: 'Ding Repair',
