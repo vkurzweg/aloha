@@ -9,6 +9,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Q from './Q';
 import A from './A';
+import { Image } from 'cloudinary-react';
 
 
 
@@ -24,11 +25,14 @@ function Faqcontent() {
         <Q>What should I bring?</Q>
         <A>A swimsuit to wear under your wetsuit, a towel, and sunblock if you'd like.</A>
       </div>
-      <div style={{ height: '225px', backgroundImage: `url(${office})`, backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <Q style={{ color: '#6FEAB5', fontSize: '28px', fontWeight: 'bold', paddingTop: '15%'}}>Questions?</Q>
-        <Link to="/contact"><button className="btn btn-default" style={{ color: '#6FEAB5', border: '5px solid #6FEAB5', fontSize: '20px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', margin: '0 auto', backgroundColor: 'transparent'}}>Contact Us</button></Link>
+      <div>
+        <Image cloudName="kurzweg" publicId="office_tuvew1" style={{ position: 'absolute', height: '175px', width: '100%' }} />
+        <div style={{ display: 'block', width: '100%', margin: '0 auto', position: 'absolute', zIndex: '100' }}>
+          <Q style={{ color: '#6FEAB5', fontSize: '28px', fontWeight: 'bold', paddingTop: '10%'}}>Questions?</Q>
+          <Link to="/contact"><button className="btn btn-default" style={{ color: '#6FEAB5', border: '5px solid #6FEAB5', fontSize: '20px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '3px', display: 'block', margin: '0 auto', backgroundColor: 'transparent'}}>Contact Us</button></Link>
+        </div>
       </div>
-      <div style={{ marginLeft: '5%', marginRight: '5%', marginTop: '4%', marginBottom: '3%' }}>
+      <div style={{ marginLeft: '5%', marginRight: '5%', marginTop: '15%', marginBottom: '3%' }}>
 
         <Q>Does my child need a life vest?</Q>
         <A>No need to bring a life vest. We take good care of all our clients. If you Instagram, check out our hashtag, #alohabrothersurflessons, or our Facebook. You will see some pictures of our youngest students, who are 3 and 4 years old.</A>
