@@ -9,9 +9,9 @@ const Button = styled.button`
    margin: 0 auto;
    width: 50%;
    padding: 1.5%;
-   color: #4BF1C3;
+   color: #FF80AB;
    border-radius: 5px;
-   border: 3px solid #4BF1C3;
+   border: 3px solid #FF80AB;
    margin-top: 3%;
 
 
