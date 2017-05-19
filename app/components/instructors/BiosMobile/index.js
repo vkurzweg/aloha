@@ -13,10 +13,10 @@ import Header from './Header';
 
 function Bios() {
   return (
-    <div className="container" style={{ paddingTop: '7%' }}>
+    <div className="container" style={{ paddingTop: '15%' }}>
       <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Surf Instructors</h3>
       <Header>Nick</Header>
-      <div className="row" style={{ marginLeft: '10%' }}>
+      <div className="row">
         <div className="col-sm-5">
           <Image cloudName="kurzweg" publicId="nick_watershot" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
@@ -27,7 +27,7 @@ function Bios() {
         </div>
       </div>
       <Header>Matt</Header>
-      <div className="row" style={{ marginLeft: '10%' }}>
+      <div className="row">
         <div className="col-sm-5">
           <Image cloudName="kurzweg" publicId="matt" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
@@ -36,7 +36,7 @@ function Bios() {
         </div>
       </div>
       <Header>Taylor</Header>
-      <div className="row" style={{ marginLeft: '10%' }}>
+      <div className="row">
         <div className="col-sm-5">
           <Image cloudName="kurzweg" publicId="taylor_crop" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
@@ -45,7 +45,7 @@ function Bios() {
         </div>
       </div>
       <Header>David</Header>
-      <div className="row" style={{ marginLeft: '10%' }}>
+      <div className="row">
         <div className="col-sm-5">
           <Image cloudName="kurzweg" publicId="david" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
@@ -54,7 +54,7 @@ function Bios() {
         </div>
       </div>
       <Header>Dustin</Header>
-      <div className="row" style={{ marginLeft: '10%', marginBottom: '5%' }}>
+      <div className="row" style={{ marginBottom: '5%' }}>
         <div className="col-sm-5">
           <Image cloudName="kurzweg" publicId="dustin" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>

@@ -12,6 +12,7 @@ import Nav from 'components/common/Nav';
 import NavMobile from 'components/common/NavMobile';
 import Footer from 'components/common/Footer';
 import Bios from 'components/instructors/Bios';
+import BiosMobile from 'components/instructors/BiosMobile';
 
 
 export class InstructorsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -31,6 +32,8 @@ export class InstructorsPage extends React.PureComponent { // eslint-disable-lin
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
+          <BiosMobile />
+          <Footer />
         </MediaQuery>
       </div>
     );
