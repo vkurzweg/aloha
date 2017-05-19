@@ -17,7 +17,7 @@ import Bios from 'components/instructors/Bios';
 export class InstructorsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
           title="InstructorsPage"
           meta={[
@@ -27,6 +27,7 @@ export class InstructorsPage extends React.PureComponent { // eslint-disable-lin
         <MediaQuery minWidth={768}>
           <Nav />
           <Bios />
+          <Footer />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
