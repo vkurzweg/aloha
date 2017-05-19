@@ -23,6 +23,7 @@ import RatesMobile from 'components/landing/RatesMobile';
 // import Office from 'assets/images/office.png';
 import Footer from 'components/common/Footer';
 import MediaQuery from 'react-responsive';
+import { Image } from 'cloudinary-react';
 
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -49,7 +50,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <NavMobile />
           <HeroMobile />
           <IntroMobile />
-          <div style={{ height: '200px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <Image cloudName="kurzweg" publicId="slideshow_barrell2" style={{ height: '200px', width: '100%' }} />
         </MediaQuery>
         <MediaQuery maxWidth={956}>
           <RatesMobile />
