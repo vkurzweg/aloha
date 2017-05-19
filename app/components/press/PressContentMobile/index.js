@@ -51,7 +51,7 @@ function PressContent() {
               <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ height: '50px', marginTop: '5%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Some surfing tips to help newbies hang ten'</Headline>
-                <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "It's aerobic, anaerobic, and then some..."</Body>
+                <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "If you surf two to three times a week, you can pretty much eat like a pregnant elephant with triplets and you'll never gain weight."</Body>
               </div>
             </Article>
           </a>

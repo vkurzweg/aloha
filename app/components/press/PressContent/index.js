@@ -70,10 +70,10 @@ function PressContent() {
         <div className="col-sm-6" style={{ marginBottom: '5%' }}>
           <a href="http://www.latimes.com/health/la-he-getting-out-surfing-20150919-story.html" target="blank">
             <Article>
-              <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ height: '50px', marginTop: '5%' }} />
+              <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ height: '50px', marginTop: '12%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Some surfing tips to help newbies hang ten'</Headline>
-                <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "It's aerobic, anaerobic, and then some..."</Body>
+                <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "If you surf two to three times a week, you can pretty much eat like a pregnant elephant with triplets and you'll never gain weight."</Body>
               </div>
             </Article>
           </a>

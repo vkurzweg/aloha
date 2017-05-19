@@ -22,7 +22,7 @@ function Bios() {
         </div>
         <div className="col-sm-7">
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '3%', margin: '0 auto' }}>Born and raised in Hawaii, Nick was pushed into his first wave by former world surfing champion Fred Hemmings when he was around 5 or 6, and has been in love with the ocean ever since.  Nick studied at UC Santa Cruz because of the school's proximity to quality surf. Nick also studied linguistics in Chile because the country is known for its long, empty waves.</p>
-          <p style={{ fontSize: '16px', paddingTop: '2%', margin: '0 auto', width: '80%' }}>Nick took a year off and lived in Tahiti in order to improve his French, and surf powerful Polynesian barrels. He <a href="http://westlalanguagetutor.com/" target="blank">teaches and translates languages</a> because he can't bear to miss good waves working a 9-5 job. Fluent in <span style={{ color: '#7C4DFF' }}>Spanish</span>, <span style={{ color: '#FF80AB' }}>French</span> and <span style={{ color: '#108EE9' }}>Portuguese</span>, and conversational in <span style={{ color: '#FF9800' }}>Indonesian</span>, Nick frequently gives surf lessons in these languages.</p>
+          <p style={{ fontSize: '16px', paddingTop: '2%', margin: '0 auto', width: '80%' }}>Nick took a year off and lived in Tahiti in order to improve his French, and surf powerful Polynesian barrels. He <a href="http://westlalanguagetutor.com/" target="blank">also teaches languages</a> because he can't bear to miss good waves working a 9-5 job. Fluent in <span style={{ color: '#7C4DFF' }}>Spanish</span>, <span style={{ color: '#FF80AB' }}>French</span> and <span style={{ color: '#108EE9' }}>Portuguese</span>, and conversational in <span style={{ color: '#FF9800' }}>Indonesian</span>, Nick frequently gives surf lessons in these languages.</p>
           <p style={{ fontSize: '16px', paddingTop: '2%', margin: '0 auto', width: '80%' }}>Nick surfs daily and has taught countless friends and friends of friends and their friends too over the years. He almost always manages to get them up and riding the very first time they go out.</p>
         </div>
       </div>
@@ -41,7 +41,7 @@ function Bios() {
           <Image cloudName="kurzweg" publicId="taylor_crop" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
         <div className="col-sm-7">
-          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>Taylor grew up surfing in North Carolina and Hawaii. One day when he was 11 years, in the sweltering summer heat on a NC coast, he took out his Dads old 1970's Natural Progression surfboard to see if he could catch any waves -- the rest is history. He loves to see people's reactions and joy as they ride their first waves, experiencing the unique -- and unmatched adrenaline of the sport.</p>
+          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>Taylor grew up surfing in North Carolina and Hawaii. One day when he was 11 years, in the sweltering summer heat on a NC coast, he took out his Dads old 1970's Natural Progression surfboard to see if he could catch any waves -- the rest is history. He loves to see people's reactions and joy as they ride their first waves, experiencing the unique - and unmatched - adrenaline of the sport.</p>
         </div>
       </div>
       <Header>David</Header>
