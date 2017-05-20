@@ -29,7 +29,7 @@ function Bios() {
           <Image cloudName="kurzweg" publicId="kawai" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
         <div className="col-sm-7">
-          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}></p>
+          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>Hailing from Hawaiian surf royalty (Kawai's uncles are the legendary Michael and Derek Ho, and his cousins are Mason and Coco), Kawai moved from his native Kauai to O'ahu when he was a teen and quickly became a standout fixture at Pipeline, the most famous wave on earth. Comfortable in all sizes of surf, Kawai loves helping total beginners to advanced surfers improve.</p>
         </div>
       </div>
     </div>
