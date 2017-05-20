@@ -21,7 +21,7 @@ function SuccessModal(props) {
             </Button>,
           ]}
       >
-        <p style={{ padding: '5%', fontSize: '16px' }}>Aloha, thanks for contacting us. <br /> Someone will respond to your inquiry within 24 hours.</p>
+        <p style={{ padding: '5%', fontSize: '16px' }}>Thanks for contacting us. <br /> We'll respond to your inquiry within 24 hours.</p>
       </Modal>
     </div>
   );

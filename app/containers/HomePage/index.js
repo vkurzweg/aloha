@@ -37,6 +37,9 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
             { name: 'description', content: '' },
           ]}
         />
+        <MediaQuery minWidth={1824}>
+        </MediaQuery>
+
         <MediaQuery minWidth={768}>
           <Nav />
           <Hero />

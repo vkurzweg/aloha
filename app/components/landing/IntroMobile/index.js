@@ -67,7 +67,7 @@ function Intro() {
           <Image cloudName="kurzweg" publicId="Telemundo" style={{ padding: '3%' }} alt="telemundo" />
         </div>
         <div style={{ marginTop: '3%', paddingBottom: '5%' }}>
-          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>All press</Btn></Link>
+          <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>More press</Btn></Link>
         </div>
       </div>
     </div>

@@ -13,7 +13,6 @@ import {
 } from './constants';
 
 
-
 export function createMessage() {
   return {
     type: CREATE_MESSAGE,

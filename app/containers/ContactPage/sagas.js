@@ -8,6 +8,7 @@ import { db } from 'utils/firebase-config';
 import { createMessageSuccess, createMessageFailure, openModal } from './actions';
 import { selectContact, selectForm } from './selectors';
 import axios from 'axios';
+import { push } from 'react-router-redux';
 
 
 export function* createMessageAsync() {
@@ -28,7 +29,7 @@ export function* createMessageAsync() {
     const response = yield call(api, '/contactus', { method: 'post', data: message })
     yield put(openModal());
     yield put(createMessageSuccess());
-    console.log('message sent!')
+    console.log('message sent!');
   } catch (e) {
     console.log('Create message request failed', e);
     yield put(createMessageFailure());

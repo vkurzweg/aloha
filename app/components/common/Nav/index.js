@@ -52,8 +52,11 @@ const items = [
     name: 'Photography',
     url: '/photography',
   }, {
-    name: 'Instructors',
+    name: 'Instructors - California',
     url: '/instructors',
+  }, {
+    name: 'Instructors - Hawaii',
+    url: '/instructors-hawaii',
   }, {
     name: 'Press',
     url: '/press',

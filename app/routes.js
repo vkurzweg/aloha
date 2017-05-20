@@ -66,6 +66,22 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/instructors-hawaii',
+      name: 'instructorsHawaii',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/InstructorsHawaiiPage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([component]) => {
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
       path: '/faq',
       name: 'faq',
       getComponent(nextState, cb) {

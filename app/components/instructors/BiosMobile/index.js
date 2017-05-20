@@ -14,7 +14,7 @@ import Header from './Header';
 function Bios() {
   return (
     <div className="container" style={{ paddingTop: '15%' }}>
-      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Surf Instructors</h3>
+      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Surf Instructors - Venice</h3>
       <Header>Nick</Header>
       <div className="row">
         <div className="col-sm-5">
