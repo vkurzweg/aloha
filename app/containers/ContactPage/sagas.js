@@ -3,8 +3,6 @@ import moment from 'moment';
 import { toJS } from 'immutable';
 import { takeEvery } from 'redux-saga';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import firebase from 'firebase';
-import { db } from 'utils/firebase-config';
 import { createMessageSuccess, createMessageFailure, openModal } from './actions';
 import { selectContact, selectForm } from './selectors';
 import axios from 'axios';
@@ -54,13 +52,3 @@ export function* rootSaga() {
 export default [
   rootSaga,
 ];
-
-// SAVE TO FIREBASE
-// const date = moment().format('MM-DD-YYYY');
-// const newMessage = yield new Promise((resolve, reject) => {
-//   const messageRef = db.ref(`messages/${date}`).push(message, (err) => {
-//     db.ref(`messages/${date}/${messageRef.key}`).set(message, (err) => {
-//       resolve(message)
-//     })
-//   })
-// });
