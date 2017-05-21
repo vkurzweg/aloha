@@ -25,7 +25,9 @@ function RatesTables() {
        <p style={{ fontFamily: 'Josefin Sans' }}>Surfboard & wetsuit included at no extra charge</p>
      </div>
 
-     <Link to="/contact"><button className="btn btn-default" style={{ backgroundColor: '#FF80AB', color: 'white', width: '12em', display: 'block', margin: '0 auto', fontSize: '20px', border: 'none', marginTop: '5%', marginBottom: '7%'}}>Book a lesson or package</button></Link>
+     <Link to="/contact"><button className="btn btn-default" style={{ backgroundColor: '#FF80AB', color: 'white', width: '12em', display: 'block', margin: '0 auto', fontSize: '20px', border: 'none', marginTop: '5%', marginBottom: '3%'}}>Book a lesson or package</button></Link>
+
+     <Image cloudName="kurzweg" publicId="backside_pop_crop" width="300" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
 
      <Header>Beginner & Intermediate</Header>
      <div className="container" style={{ width: '100%', marginTop: '5%' }}>
@@ -119,7 +121,7 @@ function RatesTables() {
        <li>* <b>Availablity</b> Same as 5-lesson package</li>
      </ul>
 
-     <Image cloudName="kurzweg" publicId="backside_pop_crop" width="300" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+     <Image cloudName="kurzweg" publicId="bali" width="300" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
 
      <Header>Gift Certificates</Header>
      <div style={{ marginLeft: '5%', padding: '2%' }}>
