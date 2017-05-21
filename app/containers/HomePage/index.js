@@ -29,6 +29,7 @@ import { Image } from 'cloudinary-react';
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
   const barrell = 'http://res.cloudinary.com/kurzweg/image/upload/v1494888277/slideshow_barrell2.jpg';
+  const crosswalk = 'http://res.cloudinary.com/kurzweg/image/upload/v1494631504/crosswalk_z8cqec.jpg';
     return (
       <div style={{ top: '0' }}>
         <Helmet
@@ -48,6 +49,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         </MediaQuery>
         <MediaQuery minWidth={957}>
           <Rates />
+          <div style={{ height: '300px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
@@ -57,6 +59,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         </MediaQuery>
         <MediaQuery maxWidth={956}>
           <RatesMobile />
+          <Image cloudName="kurzweg" publicId="crosswalk_z8cqec" style={{ height: '200px', width: '100%' }} />
         </MediaQuery>
         <Meet />
         <Footer />

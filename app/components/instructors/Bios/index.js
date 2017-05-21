@@ -28,7 +28,7 @@ function Bios() {
       <Header>Matt</Header>
       <div className="row" style={{ marginLeft: '10%' }}>
         <div className="col-sm-5">
-          <Image cloudName="kurzweg" publicId="matt" responsive style={{ width: '100%', marginTop: '5%' }} />
+          <Image cloudName="kurzweg" publicId="matt" width="400" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
         <div className="col-sm-7">
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>A Southern California native with over 25 years of ocean experience, Matt has the skills to take beginners to the next level. Matt's background includes completion of the Junior Lifeguards training program, CPR certification, and a degree in Environmental Studies from the University of California, Santa Cruz. Therefore, his approach to surf instruction is based not only on proper technique but also with a strong emphasis on safety and ocean awareness. Matt's experience and passion for surfing make him the perfect candidate for clients of all ages and sizes!</p>

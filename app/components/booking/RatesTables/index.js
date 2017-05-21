@@ -16,7 +16,7 @@ import { Image } from 'cloudinary-react';
 
 function RatesTables() {
   return (
-    <div className="col-sm-8">
+    <div className="col-sm-6">
 
      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Rates & Packages</h3>
      <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '75%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
