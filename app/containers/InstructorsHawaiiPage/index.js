@@ -20,9 +20,9 @@ export class InstructorsHawaiiPage extends React.Component { // eslint-disable-l
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="InstructorsHawaiiPage"
+          title="Aloha Brothers Surf Instructors - O'ahu, HI"
           meta={[
-            { name: 'description', content: 'Description of InstructorsHawaiiPage' },
+            { name: 'description', content: "Now offering surf lessons in Hawaii! Our friendly instructors have the experience and ability to get you up and riding." },
           ]}
         />
         <MediaQuery minWidth={768}>

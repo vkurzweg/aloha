@@ -23,9 +23,9 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="BookingPage"
+          title="Aloha Brothers Surf Lessons - Rates & Packages"
           meta={[
-            { name: 'description', content: 'Description of BookingPage' },
+            { name: "description", content: "Book a group lesson for $85 per person, board and wetsuit included. Aloha Brothers also offers private surf lessons in Los Angeles/Venice and O'ahu." },
           ]}
         />
         <MediaQuery minWidth={768}>

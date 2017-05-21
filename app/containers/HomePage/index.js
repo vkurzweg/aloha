@@ -34,7 +34,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         <Helmet
           title="Aloha Brothers Surf Lessons - Venice Beach, CA"
           meta={[
-            { name: 'description', content: '' },
+            { name: "description", content: "Aloha Brothers Surf Lessons, #1 Surf School in Southern CA!" },
           ]}
         />
         <MediaQuery minWidth={1824}>

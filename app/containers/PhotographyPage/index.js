@@ -22,9 +22,9 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="PhotographyPage"
+          title="Aloha Brothers Surf Lessons - Photography"
           meta={[
-            { name: 'description', content: 'Description of GalleryPage' },
+            { name: 'description', content: 'Add professional photography to your surf lesson or package! Click to check out our gallery.' },
           ]}
         />
         <MediaQuery minWidth={768}>

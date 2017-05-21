@@ -19,9 +19,9 @@ export class Faqpage extends React.PureComponent { // eslint-disable-line react/
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="Faqpage"
+          title="Aloha Brothers Surf Lessons - FAQs"
           meta={[
-            { name: 'description', content: 'Description of Faqpage' },
+            { name: "description", content: "One of the top-rated surf schools in Southern California, located in Venice Beach. Find out what to expect at your first surf lesson from Aloha Brothers." },
           ]}
         />
         <MediaQuery minWidth={768}>

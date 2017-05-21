@@ -33,9 +33,9 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="ContactPage"
+          title="Aloha Brothers Surf Lessons - Venice & O'ahu - Contact Us"
           meta={[
-            { name: 'description', content: 'Description of ContactPage' },
+            { name: "description", content: "All levels, ages, and sizes welcome! Fill out our contact form or send us an email to book a surf lesson in Southern California or O'ahu, Hawaii." },
           ]}
         />
         <MediaQuery minWidth={768}>

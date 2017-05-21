@@ -19,9 +19,9 @@ export class PressPage extends React.PureComponent { // eslint-disable-line reac
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="PressPage"
+          title="Aloha Brothers Surf Lessons - Press"
           meta={[
-            { name: 'description', content: 'Description of PressPage' },
+            { name: 'description', content: 'Located in Venice, CA, Aloha Brothers has been featured in the Los Angeles Times, Huffington Post, and international media outlets.' },
           ]}
         />
         <MediaQuery minWidth={768}>

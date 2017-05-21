@@ -62,6 +62,7 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
   }
 
   render() {
+    const sprite = 'http://res.cloudinary.com/kurzweg/image/sprite/gallery.png';
     const childElements = GALLERY_IMAGE_SET.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
