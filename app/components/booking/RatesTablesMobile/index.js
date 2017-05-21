@@ -14,6 +14,7 @@ import { Link } from 'react-router';
 
 
 function RatesTables() {
+  const spinner = 'https://www.ihs.com/images/ajax-loader.gif';
   return (
     <div style={{ paddingTop: '18%', width: '100%' }}>
 
@@ -83,7 +84,7 @@ function RatesTables() {
        <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
      </div></Link>
 
-     <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ display: 'block', margin: '0 auto', height: '300px', marginBottom: '4%' }} />
+     <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="300" responsive alt="walking with surfboards in Venice" style={{ display: 'block', margin: '0 auto', marginBottom: '4%' }} />
 
      <Header>Packages</Header>
      <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px', display: 'block', margin: '0 auto', width: '30%', marginTop: '2%' }}><Image cloudName="kurzweg" publicId="palmtree1" alt="palmtree" style={{ height: '25px'}} />Best Value!</span>
@@ -118,6 +119,8 @@ function RatesTables() {
        <li>* <b>Availablity</b> Same as 5-lesson package</li>
      </ul>
 
+     <Image cloudName="kurzweg" publicId="backside_pop_crop" width="300" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+
      <Header>Gift Certificates</Header>
      <div style={{ marginLeft: '5%', padding: '2%' }}>
        <p style={{ fontFamily: 'Josefin Sans', fontSize: '16px' }}>You send the payment for number of lessons and we send you the printable file.</p>
@@ -135,6 +138,8 @@ function RatesTables() {
        <li>Email us and tell us that you purchased a gift certificate, the amount, and for whom NickFowler9@gmail.com</li>
        <li>We email you the gift certificate!</li>
      </ol>
+
+     <Image cloudName="kurzweg" publicId="shoulder_shimmy" width="300" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
    </div>
   );
 }
