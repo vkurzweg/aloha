@@ -1,7 +1,7 @@
 .wrapper {
     width: 85%;
     margin: 3em auto;
-    background: url('http://hoott.com/images/ajax_loader.gif') 50% 50% no-repeat #ECECEC;
+    background-color: #ECECEC;
 }
 
 .masonry {
@@ -12,6 +12,7 @@
 .item-container {
   width: 100%;
   display: block;
+  background: url('http://hoott.com/images/ajax_loader.gif') 50% 50% no-repeat #ECECEC;
 }
 
 .item {
