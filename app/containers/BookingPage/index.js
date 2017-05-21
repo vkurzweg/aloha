@@ -40,13 +40,13 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               </div>
               <RatesTables />
               <div className="col-sm-3">
-                <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="400" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
                 <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
                   <Image cloudName="kurzweg" publicId="camera" role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>
-                <Image cloudName="kurzweg" publicId="crosstraining" width="auto" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="boards" width="auto" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="crosstraining" width="400" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="boards" width="400" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
               </div>
             </div>
           </div>
