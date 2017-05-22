@@ -20,7 +20,7 @@ function Faqcontent() {
       <div style={{ marginLeft: '5%', marginRight: '5%', paddingTop: '20%', marginBottom: '3%' }}>
         <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginBottom: '3%' }}>FAQ</h3>
         <Q>Is there somewhere to change, and can I shower after the lesson?</Q>
-        <A>Please show up wearing your swimsuits. If you would like to rinse off, please bring a large plastic container with your own water due to drought restrictions. Note that the city is turning off public showers at state beaches starting July 15, 2015.</A>
+        <A>Please show up wearing your swimsuits. There are public showers where we can rinse off after the lesson.</A>
 
         <Q>What should I bring?</Q>
         <A>A swimsuit to wear under your wetsuit, a towel, and sunblock if you'd like.</A>
