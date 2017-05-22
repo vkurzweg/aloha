@@ -62,18 +62,17 @@ class LightboxContainer extends React.Component { // eslint-disable-line react/p
   }
 
   render() {
-    const sprite = 'http://res.cloudinary.com/kurzweg/image/sprite/gallery.png';
     const childElements = GALLERY_IMAGE_SET.map((element, idx) => {
       return (
         <div key={idx} onClick={() => this.openLightbox(idx)} className="item-container" >
-          <Image className="item" cloudName="kurzweg" publicId={element.src} width="300" quality="auto" crop="scale" responsive />
+          <Image className="item" cloudName="kurzweg" publicId={element.src} alt={element.alt} width="300" quality="auto" crop="scale" responsive />
         </div>
       );
     });
     return (
       <div className="wrapper">
         <div className="masonry" style={{ width: '80%', margin: '0 auto' }}>
-            {childElements}
+          {childElements}
           <Lightbox
             currentImage={this.state.currentImage}
             isOpen={this.state.lightboxIsOpen}

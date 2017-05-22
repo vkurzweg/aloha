@@ -92,6 +92,18 @@ const LIGHTBOX_IMAGE_SET = [
   {
     src: 'http://res.cloudinary.com/kurzweg/image/upload/v1494631799/peace_qctxei.jpg',
   },
+  {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1495493813/mini_barrell.jpg',
+  },
+  {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1495493813/backside_click.jpg',
+  },
+  {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1495493812/tail_waft.jpg',
+  },
+  {
+    src: 'http://res.cloudinary.com/kurzweg/image/upload/v1495493814/oxnard.png',
+  },
 ];
 
 export default LIGHTBOX_IMAGE_SET;
