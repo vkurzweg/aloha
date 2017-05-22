@@ -12,13 +12,17 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Nav from 'components/common/Nav';
+import NavXL from 'components/common/NavXL';
 import NavMobile from 'components/common/NavMobile';
 import Hero from 'components/landing/Hero';
+import HeroXL from 'components/landing/HeroXL';
 import HeroMobile from 'components/landing/HeroMobile';
 import Intro from 'components/landing/Intro';
+import IntroXL from 'components/landing/IntroXL';
 import IntroMobile from 'components/landing/IntroMobile';
 import Meet from 'components/landing/Meet';
 import Rates from 'components/landing/Rates';
+import RatesXL from 'components/landing/RatesXL';
 import RatesMobile from 'components/landing/RatesMobile';
 // import Office from 'assets/images/office.png';
 import Footer from 'components/common/Footer';
@@ -39,15 +43,21 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           ]}
         />
         <MediaQuery minWidth={1824}>
+          <NavXL />
+          <HeroXL />
+          <IntroXL />
+          <div style={{ height: '425px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <RatesXL />
+          <div style={{ height: '425px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
 
-        <MediaQuery minWidth={768}>
+        <MediaQuery minWidth={768} maxWidth={1823}>
           <Nav />
           <Hero />
           <Intro />
           <div style={{ height: '300px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
-        <MediaQuery minWidth={957}>
+        <MediaQuery minWidth={957} maxWidth={1823}>
           <Rates />
           <div style={{ height: '300px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
