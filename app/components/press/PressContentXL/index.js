@@ -38,11 +38,12 @@ function PressContent() {
         <div className="col-sm-3">
           <Image className="item" cloudName="kurzweg" publicId="frenchcan_press" width="400" alt="Aloha Brothers on Canadian television" style={{ width: '100%', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
           <Image className="item" cloudName="kurzweg" publicId="dutch_press" width="400" alt="Aloha Brothers on Dutch television" style={{ width: '100%', paddingTop: '6%', marginLeft: '5%', marginTop: '5%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
+          <Image className="item" cloudName="kurzweg" publicId="group_talking_uxu5dt" width="400" alt="Aloha Brothers on Dutch television" style={{ width: '100%', paddingTop: '6%', marginLeft: '5%', marginTop: '5%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
         </div>
         <div className="col-sm-6">
           <a href="http://www.latimes.com/health/la-he-getting-out-surfing-20150919-story.html" target="blank">
             <Article>
-              <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ height: '50px', marginTop: '12%' }} />
+              <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ height: '50px', marginTop: '4%' }} />
               <div style={{ marginLeft: '2%' }}>
                 <Headline>'Some surfing tips to help newbies hang ten'</Headline>
                 <Body>"It requires a ton of cardio," said Nick Fowler, of Venice-based Aloha Brothers Surf Lessons. "If you surf two to three times a week, you can pretty much eat like a pregnant elephant with triplets and you'll never gain weight."</Body>
@@ -112,6 +113,7 @@ function PressContent() {
         <div className="col-sm-3">
           <Image className="item" cloudName="kurzweg" publicId="voyagela" width="400" alt="Profile of owner Nick in Voyage LA" style={{ width: '100%', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
           <Image className="item" cloudName="kurzweg" publicId="group_camera2" width="400" alt="Filming a surf lesson in Venice, CA" style={{ width: '100%', paddingTop: '6%', marginLeft: '5%', marginTop: '2%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
+          <Image className="item" cloudName="kurzweg" publicId="kid_surf_fyqkrh" width="400" alt="Aloha Brothers on Dutch television" style={{ width: '100%', paddingTop: '6%', marginLeft: '5%', marginTop: '5%', paddingBottom: '1%', display: 'block', margin: '0 auto' }} />
         </div>
       </div>
     </div>
