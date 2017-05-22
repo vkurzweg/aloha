@@ -32,7 +32,7 @@ function Rates() {
           <div className="col-sm-6" style={{ display: 'block', margin: '0 auto', position: 'relative', height: '0', paddingBottom: '40%' }}>
             <Card style={{ display: 'block', margin: '0 auto', position: 'absolute', width: '60%', marginLeft: '25%' }}>
               <CardMedia>
-                <Image className="item" cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="auto" responsive />
+                <Image className="item" cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="400" quality="auto" responsive />
               </CardMedia>
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center', fontSize: '20px', }}>
@@ -47,7 +47,7 @@ function Rates() {
         <div className="col-sm-6" style={{ display: 'block', margin: '0 auto', position: 'relative', height: '0', paddingBottom: '40%' }}>
           <Card style={{ position: 'absolute', display: 'block', margin: '0 auto', width: '60%' }}>
             <CardMedia>
-              <Image className="item" cloudName="kurzweg" publicId="duo2_hlvkfo" width="auto" responsive />
+              <Image className="item" cloudName="kurzweg" publicId="duo2_hlvkfo" width="400" quality="auto" responsive />
             </CardMedia>
             <CardTitle title="Private Lesson (2 ppl)" subtitle="$255"/>
             <CardText style={{ textAlign: 'center', fontSize: '20px', marginBottom: '4%' }}>

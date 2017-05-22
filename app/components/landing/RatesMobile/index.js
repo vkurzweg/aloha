@@ -19,7 +19,7 @@ function Rates() {
       <div className="container" style={{ backgroundColor: '#ECECEC', width: '100%', paddingTop: '5%' }}>
             <Card style={{ display: 'block', margin: '0 auto', height: '100%', width: '80%' }}>
               <CardMedia>
-              <Image cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="auto" responsive />
+              <Image cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="250" quality="auto" responsive />
               </CardMedia>
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center' }}>
