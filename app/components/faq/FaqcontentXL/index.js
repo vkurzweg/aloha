@@ -11,7 +11,6 @@ import Q from './Q';
 import A from './A';
 
 
-
 function Faqcontent() {
   const office = 'http://res.cloudinary.com/kurzweg/image/upload/v1494631994/office_tuvew1.png';
   return (
