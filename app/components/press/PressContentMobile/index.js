@@ -32,16 +32,16 @@ function PressContent() {
         <div className="col-sm-6">
           <Slider {...settings}>
             <div>
-              <Image className="item" cloudName="kurzweg" publicId="frenchcan_press" width="auto" alt="Aloha Brothers on Canadian television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="frenchcan_press" width="200" quality="auto" alt="Aloha Brothers on Canadian television" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
             <div>
-              <Image className="item" cloudName="kurzweg" publicId="dutch_press" width="auto" alt="Aloha Brothers on Dutch television" style={{ height: '250px', width: 'auto', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '5%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="dutch_press" width="200" quality="auto" alt="Aloha Brothers on Dutch television" style={{ height: '250px', width: 'auto', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '5%', paddingBottom: '1%' }} />
             </div>
             <div>
-              <Image className="item" cloudName="kurzweg" publicId="voyagela" alt="Profile of owner Nick in Voyage LA" style={{ height: '250px', width: 'auto', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="voyagela" width="200" quality="auto" alt="Profile of owner Nick in Voyage LA" style={{ height: '250px', width: 'auto', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
             <div>
-              <Image className="item" cloudName="kurzweg" publicId="group_camera2" alt="Filming a surf lesson in Venice, CA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
+              <Image className="item" cloudName="kurzweg" publicId="group_camera2" width="200" quality="auto" alt="Filming a surf lesson in Venice, CA" style={{ height: '250px', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '2%', paddingBottom: '1%' }} />
             </div>
           </Slider>
         </div>

@@ -35,20 +35,20 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
           <div className="container" style={{ width: '100%' }}>
             <div className="row" style={{ width: '100%', marginTop: '8%' }}>
               <div className="col-sm-3">
-                <Image cloudName="kurzweg" publicId="backside_pop_crop" width="400" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="shoulder_shimmy" width="400" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="sami_ghoche" width="400" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="bali" width="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="backside_pop_crop" width="400" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="shoulder_shimmy" width="400" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="sami_ghoche" width="400" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="bali" width="400" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
               </div>
               <RatesTablesXL />
               <div className="col-sm-3">
-                <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="400" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="400" quality="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
                 <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
                   <Image cloudName="kurzweg" publicId="camera" role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '20px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>
-                <Image cloudName="kurzweg" publicId="crosstraining" width="400" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="boards" width="400" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="crosstraining" width="400" quality="auto" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="boards" width="400" quality="auto" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
               </div>
             </div>
           </div>
@@ -59,20 +59,20 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
           <div className="container" style={{ width: '100%' }}>
             <div className="row" style={{ width: '100%', marginTop: '8%' }}>
               <div className="col-sm-3">
-                <Image cloudName="kurzweg" publicId="backside_pop_crop" width="400" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="shoulder_shimmy" width="400" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="sami_ghoche" width="400" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="bali" width="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="backside_pop_crop" width="300" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="shoulder_shimmy" width="300" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="sami_ghoche" width="300" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="bali" width="300" quality="auto" responsive style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
               </div>
               <RatesTables />
               <div className="col-sm-3">
-                <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="400" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="300" quality="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
                 <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
                   <Image cloudName="kurzweg" publicId="camera" role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>
-                <Image cloudName="kurzweg" publicId="crosstraining" width="400" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Image cloudName="kurzweg" publicId="boards" width="400" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="crosstraining" width="300" quality="auto" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
+                <Image cloudName="kurzweg" publicId="boards" width="300" quality="auto" responsive alt="skateboarding in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
               </div>
             </div>
           </div>

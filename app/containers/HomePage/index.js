@@ -46,30 +46,34 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <NavXL />
           <HeroXL />
           <IntroXL />
-          <div style={{ height: '425px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-          <RatesXL />
           <div style={{ height: '425px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <RatesXL />
+          <div style={{ height: '425px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
 
         <MediaQuery minWidth={768} maxWidth={1823}>
           <Nav />
           <Hero />
           <Intro />
-          <div style={{ height: '300px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div style={{ height: '300px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery minWidth={957} maxWidth={1823}>
           <Rates />
-          <div style={{ height: '300px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div style={{ height: '300px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <NavMobile />
           <HeroMobile />
           <IntroMobile />
-          <Image cloudName="kurzweg" publicId="slideshow_barrell2" style={{ height: '200px', width: '100%' }} />
+          <Image cloudName="kurzweg" publicId="crosswalk_z8cqec" style={{ height: '225px', width: '100%' }} />
         </MediaQuery>
-        <MediaQuery maxWidth={956}>
+        <MediaQuery minWidth={768} maxWidth={956}>
           <RatesMobile />
-          <Image cloudName="kurzweg" publicId="crosswalk_z8cqec" style={{ height: '200px', width: '100%' }} />
+          <div style={{ height: '300px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+          <RatesMobile />
+          <Image cloudName="kurzweg" publicId="slideshow_barrell2" style={{ height: '200px', width: '100%' }} />
         </MediaQuery>
         <Meet />
         <Footer />
