@@ -65,7 +65,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <NavMobile />
           <HeroMobile />
           <IntroMobile />
-          <Image cloudName="kurzweg" publicId="crosswalk_z8cqec" style={{ height: '225px', width: '100%' }} />
+          <Image cloudName="kurzweg" publicId="crosswalk_z8cqec" alt="walking to a surf lesson in Venice, CA" style={{ height: '225px', width: '100%' }} />
         </MediaQuery>
         <MediaQuery minWidth={768} maxWidth={956}>
           <RatesMobile />
@@ -73,7 +73,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
         </MediaQuery>
         <MediaQuery maxWidth={767}>
           <RatesMobile />
-          <Image cloudName="kurzweg" publicId="slideshow_barrell2" style={{ height: '200px', width: '100%' }} />
+          <Image cloudName="kurzweg" publicId="slideshow_barrell2" alt="Aloha Brothers owner Nick Fowler surfing" style={{ height: '200px', width: '100%' }} />
         </MediaQuery>
         <Meet />
         <Footer />
