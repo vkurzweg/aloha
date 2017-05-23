@@ -173,7 +173,7 @@
       "dotenv",
       "body-parser",
       "request",
-      "sitemap",
+      "sitemap"
     ],
     "include": [
       "core-js",
