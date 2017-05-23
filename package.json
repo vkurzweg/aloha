@@ -172,7 +172,8 @@
       "nodemailer",
       "dotenv",
       "body-parser",
-      "request"
+      "request",
+      "sitemap",
     ],
     "include": [
       "core-js",
@@ -254,6 +255,7 @@
     "request": "^2.81.0",
     "reselect": "2.5.4",
     "sanitize.css": "4.1.0",
+    "sitemap": "^1.12.0",
     "slick-carousel": "^1.6.0",
     "styled-components": "1.1.2",
     "warning": "3.0.0",

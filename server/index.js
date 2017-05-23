@@ -12,10 +12,35 @@ const resolve = require('path').resolve;
 const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const sm = require('sitemap');
 
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+const sitemap = sm.createSitemap({
+  hostname: 'http://alohabrothers.surf',
+  cacheTime: 600000,
+  urls: [
+    { url: '/booking', changefreq: 'monthly', priority: 0.9 },
+    { url: '/contact', changefreq: 'monthly', priority: 0.9 },
+    { url: '/instructors', changefreq: 'monthly', priority: 0.7 },
+    { url: '/instructors-hawaii', changefreq: 'monthly', priority: 0.7 },
+    { url: '/photography', changefreq: 'monthly', priority: 0.7 },
+    { url: '/faq', changefreq: 'monthly', priority: 0.8 },
+    { url: '/press', changefreq: 'monthly', priority: 0.8 },
+  ]
+});
+
+app.get('/sitemap.xml', function(req, res) {
+  sitemap.toXML( function (err, xml) {
+      if (err) {
+        return res.status(500).end();
+      }
+      res.header('Content-Type', 'application/xml');
+      res.send( xml );
+  });
+});
 
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here

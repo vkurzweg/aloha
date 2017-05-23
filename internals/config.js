@@ -36,6 +36,7 @@ const ReactBoilerplate = {
         'dotenv',
         'body-parser',
         'request',
+        'sitemap',
       ],
 
       /**
