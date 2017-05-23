@@ -23,22 +23,22 @@ function Intro() {
       </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>
-          <Image cloudName="kurzweg" publicId="stars_yellow" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
+          <Image cloudName="kurzweg" publicId="stars_yellow-min" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>500+ 5-star reviews</p>
         </div>
         <div style={{ display: 'block', margin: '0 auto' }}>
           <div style={{ display: 'inline-flex', textAlign: 'center', width: '70%', marginTop: '5%', marginBottom: '2%' }}>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><Image cloudName="kurzweg" publicId="yelp" responsive alt="yelp icon" /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><Image cloudName="kurzweg" publicId="tripadvisor" responsive alt="tripadvisor icon" style={{ paddingLeft: '10%' }} /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><Image cloudName="kurzweg" publicId="thumbtack" responsive alt="thumbtack icon" style={{ paddingLeft: '10%' }} /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><Image cloudName="kurzweg" publicId="facebook" responsive alt="facebook icon" style={{ paddingLeft: '10%' }} /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><Image cloudName="kurzweg" publicId="instagram" responsive alt="instagram icon" style={{ paddingLeft: '10%' }} /></a>
+            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><Image cloudName="kurzweg" publicId="yelp-min" responsive alt="yelp icon" /></a>
+            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><Image cloudName="kurzweg" publicId="tripadvisor-min" responsive alt="tripadvisor icon" style={{ paddingLeft: '10%' }} /></a>
+            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><Image cloudName="kurzweg" publicId="thumbtack-min" responsive alt="thumbtack icon" style={{ paddingLeft: '10%' }} /></a>
+            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><Image cloudName="kurzweg" publicId="facebook-min" responsive alt="facebook icon" style={{ paddingLeft: '10%' }} /></a>
+            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><Image cloudName="kurzweg" publicId="instagram-min" responsive alt="instagram icon" style={{ paddingLeft: '10%' }} /></a>
           </div>
         </div>
         <div className="container">
           <div className="row" style={{ marginTop: '3%' }}>
             <div className="col-xs-3">
-              <Image cloudName="kurzweg" publicId="palmtree_green1" responsive role="presentation" style={{ marginTop: '60%' }} />
+              <Image cloudName="kurzweg" publicId="palmtree_green1-min" responsive role="presentation" style={{ marginTop: '60%' }} />
             </div>
             <div className="col-xs-8">
               <p style={{ marginTop: '5%', textAlign: 'justify', width: '100%', display: 'block', margin: '0 auto', marginBottom: '5%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
@@ -60,11 +60,11 @@ function Intro() {
         <hr style={{ width: '50%', display: 'block', margin: '0 auto', color: '#E6E7E8', marginTop: '3%', marginBottom: '3%' }} />
         <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px', marginBottom: '-2%' }}>Featured in:</p>
         <div style={{ display: 'block', width: '100%', margin: '0 auto', textAlign: 'center' }}>
-          <Image cloudName="kurzweg" publicId="latimes-logo" responsive style={{ padding: '3%' }} alt="la times" />
-          <Image cloudName="kurzweg" publicId="CBS-los-angeles-logo2" responsive style={{ padding: '3%' }} alt="cbs los angeles" />
-          <Image cloudName="kurzweg" publicId="lamag" style={{ padding: '3%' }} alt="la magazine" />
-          <Image cloudName="kurzweg" publicId="Huffington-Post-Logo" style={{ padding: '3%' }} alt="huffington post" />
-          <Image cloudName="kurzweg" publicId="Telemundo" style={{ padding: '3%' }} alt="telemundo" />
+          <Image cloudName="kurzweg" publicId="latimes-logo-min" responsive style={{ padding: '3%' }} alt="la times" />
+          <Image cloudName="kurzweg" publicId="CBS-los-angeles-logo2-min" responsive style={{ padding: '3%' }} alt="cbs los angeles" />
+          <Image cloudName="kurzweg" publicId="lamag-min" style={{ padding: '3%' }} alt="la magazine" />
+          <Image cloudName="kurzweg" publicId="Huffington-Post-Logo-min" style={{ padding: '3%' }} alt="huffington post" />
+          <Image cloudName="kurzweg" publicId="telemundo-min" style={{ padding: '3%' }} alt="telemundo" />
         </div>
         <div style={{ marginTop: '3%', paddingBottom: '5%' }}>
           <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>More press</Btn></Link>
