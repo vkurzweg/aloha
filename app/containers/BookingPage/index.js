@@ -43,7 +43,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               <RatesTablesXL />
               <div className="col-sm-3">
                 <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="400" quality="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
+                <Link style={{ display: 'block' }} to="/gallery"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
                   <Image cloudName="kurzweg" publicId="camera" role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '20px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>
@@ -67,7 +67,7 @@ export class BookingPage extends React.PureComponent { // eslint-disable-line re
               <RatesTables />
               <div className="col-sm-3">
                 <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="300" quality="auto" responsive alt="walking with surfboards in Venice" style={{ padding: '2%', width: '100%', background: `#ECECEC url(${spinner}) center no-repeat` }} />
-                <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
+                <Link style={{ display: 'block' }} to="/gallery"><div style={{ width: '100%', margin: '0 auto', padding: '10%'}}>
                   <Image cloudName="kurzweg" publicId="camera" role="presentation" style={{ display: 'block', margin: '0 auto' }} />
                   <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
                 </div></Link>

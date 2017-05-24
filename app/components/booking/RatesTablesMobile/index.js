@@ -81,7 +81,7 @@ function RatesTables() {
        </div>
      </div>
 
-     <Link style={{ display: 'block' }} to="/photography"><div style={{ width: '100%', margin: '0 auto', marginBottom: '3%', marginTop: '-5%'}}>
+     <Link style={{ display: 'block' }} to="/gallery"><div style={{ width: '100%', margin: '0 auto', marginBottom: '3%', marginTop: '-5%'}}>
        <Image cloudName="kurzweg" publicId="camera" alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
        <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson for $75</p>
      </div></Link>

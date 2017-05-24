@@ -34,7 +34,7 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
-      path: '/booking',
+      path: '/rates',
       name: 'booking',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
@@ -98,7 +98,7 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
-      path: '/photography',
+      path: '/gallery',
       name: 'photography',
       getComponent(nextState, cb) {
         const importModules = Promise.all([

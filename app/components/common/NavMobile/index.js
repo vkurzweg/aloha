@@ -44,13 +44,13 @@ const A = styled.a`
 const items = [
   {
     name: 'Rates & Booking',
-    url: '/booking',
+    url: '/rates',
   }, {
     name: 'FAQ',
     url: '/faq',
   }, {
     name: 'Photography',
-    url: '/photography',
+    url: '/gallery',
   }, {
     name: 'Instructors - California',
     url: '/instructors',
