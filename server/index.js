@@ -22,11 +22,11 @@ const sitemap = sm.createSitemap({
   hostname: 'http://alohabrothers.surf',
   cacheTime: 600000,
   urls: [
-    { url: '/booking', changefreq: 'monthly', priority: 0.9 },
+    { url: '/rates', changefreq: 'monthly', priority: 0.9 },
     { url: '/contact', changefreq: 'monthly', priority: 0.9 },
     { url: '/instructors', changefreq: 'monthly', priority: 0.7 },
     { url: '/instructors-hawaii', changefreq: 'monthly', priority: 0.7 },
-    { url: '/photography', changefreq: 'monthly', priority: 0.7 },
+    { url: '/gallery', changefreq: 'monthly', priority: 0.7 },
     { url: '/faq', changefreq: 'monthly', priority: 0.8 },
     { url: '/press', changefreq: 'monthly', priority: 0.8 },
   ]
