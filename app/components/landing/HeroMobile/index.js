@@ -30,13 +30,13 @@ function Hero() {
       </div>
       <Slider {...settings}>
         <div style={{ width: '100%' }}>
-          <Image cloudName="kurzweg" publicId="portugal1" width="250" responsive style={{ height: '200px', width: '100%', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '8%' }} />
+          <Image cloudName="kurzweg" publicId="portugal1" width="250" responsive quality="auto" style={{ height: '200px', width: '100%', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '8%' }} />
         </div>
         <div style={{ width: '100%' }}>
-          <Image cloudName="kurzweg" publicId="portugal2" width="250" responsive style={{ height: '200px', width: '100%', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '8%' }} />
+          <Image cloudName="kurzweg" publicId="portugal2" width="250" responsive quality="auto" style={{ height: '200px', width: '100%', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '8%' }} />
         </div>
         <div style={{ width: '100%' }}>
-          <Image cloudName="kurzweg" publicId="portugal3" width="250" responsive style={{ height: '200px', width: '100%', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '8%' }} />
+          <Image cloudName="kurzweg" publicId="portugal3" width="250" responsive quality="auto" style={{ height: '200px', width: '100%', paddingTop: '6%', display: 'block', margin: '0 auto', marginTop: '8%' }} />
         </div>
       </Slider>
     </div>

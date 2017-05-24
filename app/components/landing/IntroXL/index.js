@@ -24,11 +24,11 @@ function Intro() {
         <hr style={{ width: '50%', display: 'block', margin: '0 auto', color: '#E6E7E8', marginTop: '3%', marginBottom: '3%' }} />
         <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px', marginBottom: '-2%', fontSize: '20px' }}>Featured in:</p>
         <div style={{ display: 'block', width: '100%', margin: '0 auto', textAlign: 'center' }}>
-          <Image cloudName="kurzweg" publicId="latimes-logo-min" responsive style={{ padding: '3%' }} alt="la times" />
-          <Image cloudName="kurzweg" publicId="CBS-los-angeles-logo2-min" responsive style={{ padding: '3%' }} alt="cbs los angeles" />
-          <Image cloudName="kurzweg" publicId="lamag-min" style={{ padding: '3%' }} alt="la magazine" />
-          <Image cloudName="kurzweg" publicId="Huffington-Post-Logo-min" style={{ padding: '3%' }} alt="huffington post" />
-          <Image cloudName="kurzweg" publicId="telemundo-min" style={{ padding: '3%' }} alt="telemundo" />
+          <Image cloudName="kurzweg" publicId="latimes-logo-min" width="200" quality="auto" responsive style={{ padding: '3%' }} alt="la times" />
+          <Image cloudName="kurzweg" publicId="CBS-los-angeles-logo2-min" width="200" quality="auto" responsive style={{ padding: '3%' }} alt="cbs los angeles" />
+          <Image cloudName="kurzweg" publicId="lamag-min" width="200" quality="auto" responsive style={{ padding: '3%' }} alt="la magazine" />
+          <Image cloudName="kurzweg" publicId="Huffington-Post-Logo-min" width="200" quality="auto" responsive style={{ padding: '3%' }} alt="huffington post" />
+          <Image cloudName="kurzweg" publicId="telemundo-min" width="200" quality="auto" responsive style={{ padding: '3%' }} alt="telemundo" />
         </div>
         <div style={{ marginTop: '3%', paddingBottom: '5%'}}>
           <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>More press</Btn></Link>
