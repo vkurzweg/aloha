@@ -27,12 +27,12 @@ function Intro() {
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>500+ 5-star reviews</p>
         </div>
         <div style={{ display: 'block', margin: '0 auto' }}>
-          <div style={{ display: 'inline-flex', textAlign: 'center', width: '70%', marginTop: '5%', marginBottom: '2%' }}>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><Image cloudName="kurzweg" publicId="yelp-min" width="100" quality="auto" responsive alt="yelp icon" /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><Image cloudName="kurzweg" publicId="tripadvisor-min" width="100" quality="auto" responsive alt="tripadvisor icon" style={{ paddingLeft: '10%' }} /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><Image cloudName="kurzweg" publicId="thumbtack-min" width="100" quality="auto" responsive alt="thumbtack icon" style={{ paddingLeft: '10%' }} /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><Image cloudName="kurzweg" publicId="facebook-min" width="100" quality="auto" responsive alt="facebook icon" style={{ paddingLeft: '10%' }} /></a>
-            <a style={{ paddingLeft: '15%', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><Image cloudName="kurzweg" publicId="instagram-min" width="100" quality="auto" responsive alt="instagram icon" style={{ paddingLeft: '10%' }} /></a>
+          <div style={{ textAlign: 'center', marginTop: '5%', marginBottom: '2%' }}>
+            <a style={{ marginLeft: '-10px', display: 'inline-block' }} href="https://www.yelp.com/biz/aloha-brothers-surf-lessons-venice" target="blank"><Image cloudName="kurzweg" publicId="yelp-min" width="50" quality="auto" responsive alt="yelp icon" style={{ paddingLeft: '15px' }} /></a>
+            <a style={{ paddingLeft: '10px', display: 'inline-block' }} href="https://www.tripadvisor.com/Attraction_Review-g32655-d6592254-Reviews-Aloha_Brothers_Surf_Lessons-Los_Angeles_California.html" target="blank"><Image cloudName="kurzweg" publicId="tripadvisor-min" width="50" quality="auto" responsive alt="tripadvisor icon" style={{ paddingLeft: '15px' }} /></a>
+            <a style={{ paddingLeft: '10px', display: 'inline-block' }} href="https://www.thumbtack.com/ca/venice/surf-lessons/surf-instructor" target="blank"><Image cloudName="kurzweg" publicId="thumbtack-min" width="50" quality="auto" responsive alt="thumbtack icon" style={{ paddingLeft: '15px' }} /></a>
+            <a style={{ paddingLeft: '10px', display: 'inline-block' }} href="https://www.facebook.com/AlohaBrothersSurfLessons" target="blank"><Image cloudName="kurzweg" publicId="facebook-min" width="50" quality="auto" responsive alt="facebook icon" style={{ paddingLeft: '15px' }} /></a>
+            <a style={{ paddingLeft: '10px', display: 'inline-block' }} href="https://www.instagram.com/nickfowler9/" target="blank"><Image cloudName="kurzweg" publicId="instagram-min" width="50" quality="auto" responsive alt="instagram icon" style={{ paddingLeft: '15px' }} /></a>
           </div>
         </div>
         <div className="container">
