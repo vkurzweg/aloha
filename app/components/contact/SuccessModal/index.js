@@ -6,7 +6,8 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import { Modal, Button } from 'antd';
+import Button from 'antd/lib/button';
+import Modal from 'antd/lib/modal';
 
 function SuccessModal(props) {
   return (
