@@ -32,8 +32,8 @@ import { Image } from 'cloudinary-react';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
-  const barrell = 'http://res.cloudinary.com/kurzweg/image/upload/v1496442652/slideshow_barrell2.jpg';
-  const crosswalk = 'http://res.cloudinary.com/kurzweg/image/upload/v1496442635/crosswalk.jpg';
+  const barrell = 'http://res.cloudinary.com/kurzweg/image/upload/v1496453750/slideshow_barrell2.jpg';
+  const crosswalk = 'http://res.cloudinary.com/kurzweg/image/upload/v1496453734/crosswalk.jpg';
     return (
       <div style={{ top: '0' }}>
         <Helmet
