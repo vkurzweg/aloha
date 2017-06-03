@@ -13,10 +13,6 @@ injectGlobal`
     font-family: 'Josefin Sans', sans-serif;
   }
 
-  body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', 'Fjalla One', 'Anton', 'Francois One', Helvetica, Arial, sans-serif;
-  }
-
   #app {
     background-color: #ECECEC;
     min-height: 100%;
@@ -31,6 +27,6 @@ injectGlobal`
   }
 
   .aloha {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
 `;
