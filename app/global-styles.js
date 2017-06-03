@@ -17,6 +17,10 @@ injectGlobal`
     background-color: #ECECEC;
     min-height: 100%;
     min-width: 100%;
+  }
+
+  .loading {
+    background-color: #ECECEC;
     background: url('https://loading.io/loader/?use=eyJzaXplIjo2MCwic3BlZWQiOjEsImNiayI6IiNmZmZmZmYiLCJjMSI6IiM3QzRERkYiLCJjMiI6IjEyIiwiYzMiOiI3IiwiYzQiOiIyMCIsImM1IjoiNSIsImM2IjoiMzAiLCJ0eXBlIjoiZGVmYXVsdCJ9') 50% 50% no-repeat rgb(249,249,249);
   }
 
