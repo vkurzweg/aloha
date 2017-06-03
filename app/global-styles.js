@@ -17,7 +17,7 @@ injectGlobal`
     background-color: #ECECEC;
     min-height: 100%;
     min-width: 100%;
-    // background: url('http://bradsknutson.com/wp-content/uploads/2013/04/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    background: url('https://loading.io/loader/?use=eyJzaXplIjo2MCwic3BlZWQiOjEsImNiayI6IiNmZmZmZmYiLCJjMSI6IiM3QzRERkYiLCJjMiI6IjEyIiwiYzMiOiI3IiwiYzQiOiIyMCIsImM1IjoiNSIsImM2IjoiMzAiLCJ0eXBlIjoiZGVmYXVsdCJ9') 50% 50% no-repeat rgb(249,249,249);
   }
 
   p,
