@@ -7,8 +7,8 @@
     "url": "git://github.com/react-boilerplate/react-boilerplate.git"
   },
   "engines": {
-    "npm": ">=3",
-    "node": ">=5"
+    "npm": "3.10.8",
+    "node": "7.0.0"
   },
   "author": "Max Stoiber",
   "license": "MIT",
@@ -172,7 +172,6 @@
       "nodemailer",
       "dotenv",
       "body-parser",
-      "request",
       "sitemap"
     ],
     "include": [
@@ -209,7 +208,7 @@
     "testRegex": "tests/.*\\.test\\.js$"
   },
   "dependencies": {
-    "antd": "^2.9.3",
+    // "antd": "^2.9.3",
     "aphrodite": "^1.2.1",
     "axios": "^0.16.1",
     "babel-polyfill": "6.20.0",
@@ -222,7 +221,7 @@
     "dotenv": "^4.0.0",
     "express": "4.14.0",
     "fontfaceobserver": "2.0.7",
-    "gifsicle": "^3.0.4",
+    "image-webpack-loader": "^3.3.1",
     "immutable": "3.8.1",
     "intl": "1.2.5",
     "invariant": "2.2.2",
@@ -237,7 +236,7 @@
     "react-helmet": "3.2.2",
     "react-images": "^0.5.2",
     "react-intl": "2.1.5",
-    "react-masonry-component": "^5.0.5",
+    "react-modal": "^1.7.7",
     "react-photo-gallery": "^5.3.0",
     "react-player": "^0.16.0",
     "react-redux": "4.4.6",
@@ -252,7 +251,6 @@
     "redux-form": "^6.6.3",
     "redux-immutable": "3.0.8",
     "redux-saga": "0.14.0",
-    "request": "^2.81.0",
     "reselect": "2.5.4",
     "sanitize.css": "4.1.0",
     "sitemap": "^1.12.0",
@@ -296,7 +294,7 @@
     "file-loader": "0.9.0",
     "html-loader": "0.4.4",
     "html-webpack-plugin": "2.24.1",
-    "image-webpack-loader": "2.0.0",
+    "image-webpack-loader": "3.3.1",
     "imports-loader": "0.6.5",
     "jest-cli": "18.0.0",
     "lint-staged": "3.2.1",
