@@ -39,7 +39,7 @@ import '!!style-loader!css-loader!../node_modules/bootstrap/dist/css/bootstrap.c
 // import '!!style-loader!css-loader!../node_modules/slick-carousel/slick/slick.css';
 // import '!!style-loader!css-loader!../node_modules/slick-carousel/slick/slick-theme.css';
 import '!!style-loader!css-loader!../app/components/press/PressContent/index.css';
-import '!!style-loader!css-loader!../node_modules/antd/dist/antd.css';
+// import '!!style-loader!css-loader!../node_modules/antd/dist/antd.css';
 import '!!style-loader!css-loader!../app/components/photography/LightboxContainer/index.css';
 import '!!style-loader!css-loader!../app/components/photography/LightboxContainerMobile/index.css';
 

@@ -6,12 +6,11 @@
 
 import React from 'react';
 // import styled from 'styled-components';
-import Button from './Button';
 import Slider from 'react-slick';
 import 'slick-carousel';
 import { Image } from 'cloudinary-react';
 import { Link } from 'react-router';
-
+import Button from './Button';
 
 
 function Hero() {
