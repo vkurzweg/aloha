@@ -18,6 +18,12 @@ const sm = require('sitemap');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('*.js', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  next();
+});
+
 const sitemap = sm.createSitemap({
   hostname: 'http://alohabrothers.surf',
   cacheTime: 600000,
@@ -42,11 +48,6 @@ app.get('/sitemap.xml', function(req, res) {
   });
 });
 
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
 
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here

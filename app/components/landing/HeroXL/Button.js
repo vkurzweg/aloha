@@ -14,6 +14,7 @@ const Button = styled.button`
    border-radius: 5px;
    border: 5px solid #FF80AB;
    margin-top: 3%;
+   text-decoration: none;
 
 
   &:hover, &:active, &:focus {
@@ -21,6 +22,7 @@ const Button = styled.button`
     color: #212121;
     border: none
     outline: 0;
+    text-decoration: none;
  }
 `;
 

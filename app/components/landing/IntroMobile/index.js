@@ -16,10 +16,10 @@ function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
       <MediaQuery minWidth={849}>
-        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><Image cloudName="kurzweg" publicId="aloha_logo" width="100" quality="auto" responsive style={{ padding: '2%', width: '100px' }} />Aloha Brothers Surf Lessons, est. 2011<Image className="item" cloudName="kurzweg" publicId="aloha_logo" width="100" responsive quality="auto" style={{ padding: '2%', width: '100px' }} /></h3>
+        <h3 style={{ marginTop: '0', textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><Image cloudName="kurzweg" publicId="aloha_logo" width="100" quality="auto" responsive style={{ padding: '2%', width: '100px' }} />Aloha Brothers Surf Lessons, est. 2011<Image className="item" cloudName="kurzweg" publicId="aloha_logo" width="100" responsive quality="auto" style={{ padding: '2%', width: '100px' }} /></h3>
       </MediaQuery>
       <MediaQuery maxWidth={848}>
-        <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><Image cloudName="kurzweg" publicId="aloha_logo" width="100" quality="auto" responsive style={{ padding: '1%', marginRight: '5%', width: '50px', marginBottom: '1%' }} />Est. 2011<Image className="item" cloudName="kurzweg" publicId="aloha_logo" width="100" responsive quality="auto" role="presentation" style={{ padding: '1%', marginLeft: '5%', width: '50px', marginBottom: '1%' }} /></h3>
+        <h3 style={{ marginTop: '0', textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF' }}><Image cloudName="kurzweg" publicId="aloha_logo" width="100" quality="auto" responsive style={{ padding: '1%', marginRight: '5%', width: '50px', marginBottom: '1%' }} />Est. 2011<Image className="item" cloudName="kurzweg" publicId="aloha_logo" width="100" responsive quality="auto" role="presentation" style={{ padding: '1%', marginLeft: '5%', width: '50px', marginBottom: '1%' }} /></h3>
       </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>

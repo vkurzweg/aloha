@@ -14,7 +14,6 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
     return (
       <div className="col-sm-6" style={{ marginTop: '1%' }}>
         <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', fontWeight: 'bold', fontSize: '30px' }}>Contact us</h4>
-        <p style={{ textAlign: 'center', fontSize: '20px', fontStyle: 'italic' }}>For the fastest response, email nickfowler9@gmail.com.</p>
           <form onSubmit={this.props.handleSubmit} >
             <div className="control-group form-group">
               <div className="controls">
