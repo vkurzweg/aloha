@@ -65,7 +65,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <NavMobile />
           <HeroMobile />
           <IntroMobile />
-          <Image cloudName="kurzweg" publicId="crosswalk" width="300" responsive alt="walking to a surf lesson in Venice, CA" style={{ height: '225px', width: '100%' }} />
+          <Image cloudName="kurzweg" publicId="crosswalk" responsive alt="walking to a surf lesson in Venice, CA" style={{ height: '225px', width: '100%' }} />
         </MediaQuery>
         <MediaQuery minWidth={768} maxWidth={956}>
           <RatesMobile />

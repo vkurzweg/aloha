@@ -13,16 +13,11 @@ const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const sm = require('sitemap');
+const compression = require('compression');
 
-
+app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
 
 const sitemap = sm.createSitemap({
   hostname: 'http://alohabrothers.surf',
@@ -47,8 +42,6 @@ app.get('/sitemap.xml', function(req, res) {
       res.send( xml );
   });
 });
-
-
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
