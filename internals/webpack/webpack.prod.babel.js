@@ -67,6 +67,14 @@ module.exports = require('./webpack.base.babel')({
 
       AppCache: false,
     }),
+
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|html)$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
   ],
 
   performance: {

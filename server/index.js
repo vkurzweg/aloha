@@ -13,9 +13,8 @@ const app = express();
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const sm = require('sitemap');
-const compression = require('compression');
 
-app.use(compression());
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -42,6 +41,31 @@ app.get('/sitemap.xml', function(req, res) {
       res.send( xml );
   });
 });
+
+
+//this middleware serves all js files as gzip
+app.use(function(req, res, next) {
+    var originalPath = req.path;
+    if(!originalPath.endsWith(".js")) {
+        next();
+        return;
+    }
+    try {
+        var stats = fs.statSync(path.join("build", `${req.path}.gz`));
+        res.append('Content-Encoding', 'gzip');
+        res.setHeader('Vary', 'Accept-Encoding');
+        res.setHeader('Cache-Control', 'public, max-age=512000');
+        req.url = `${req.url}.gz`;
+
+        var type = mime.lookup(path.join("build", originalPath));
+        if (typeof type != 'undefined') {
+            var charset = mime.charsets.lookup(type);
+            res.setHeader('Content-Type', type + (charset ? '; charset=' + charset : ''));
+        }
+    } catch(e) {
+    }
+    next();
+})
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
