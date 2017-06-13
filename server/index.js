@@ -54,7 +54,7 @@ app.use(function(req, res, next) {
         var stats = fs.statSync(path.join("build", `${req.path}.gz`));
         res.append('Content-Encoding', 'gzip');
         res.setHeader('Vary', 'Accept-Encoding');
-        res.setHeader('Cache-Control', 'public, max-age=512000');
+        res.setHeader('Cache-Control', 'build, max-age=512000');
         req.url = `${req.url}.gz`;
 
         var type = mime.lookup(path.join("build", originalPath));
