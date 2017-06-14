@@ -38,7 +38,7 @@ function PhotoHeader() {
               </tr>
             </tbody>
           </table>
-            <p style={{ fontFamily: 'Josefin Sans', marginTop: '2%', textAlign: 'left', marginLeft: '5%' }}>* Must show valid student ID</p>
+          <p style={{ fontFamily: 'Josefin Sans', marginTop: '2%', textAlign: 'left', marginLeft: '5%' }}>* Must show valid student ID</p>
         </div>
       </div>
     </div>
