@@ -46,6 +46,10 @@ function RatesTables() {
                <TD>3 people</TD>
                <TD>$255</TD>
              </tr>
+             <tr>
+               <TD>4 people</TD>
+               <TD>$340</TD>
+             </tr>
            </tbody>
          </table>
          <ul style={{ textAlign: 'left', fontSize: '20px', marginLeft: '10%', marginTop: '5%' }}>
