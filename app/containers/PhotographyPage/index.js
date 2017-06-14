@@ -17,6 +17,7 @@ import LightboxContainer from 'components/photography/LightboxContainer';
 import LightboxContainerMobile from 'components/photography/LightboxContainerMobile';
 import Footer from 'components/common/Footer';
 import PhotoHeader from 'components/photography/PhotoHeader';
+import PhotoHeaderMobile from 'components/photography/PhotoHeaderMobile';
 import PhotoHeaderXL from 'components/photography/PhotoHeaderXL';
 
 
@@ -43,7 +44,7 @@ export class PhotographyPage extends React.PureComponent { // eslint-disable-lin
         <MediaQuery maxWidth={767}>
           <NavMobile />
           <div style={{ height: '50px' }}></div>
-          <PhotoHeader />
+          <PhotoHeaderMobile />
           <LightboxContainerMobile />
         </MediaQuery>
         <Footer />
