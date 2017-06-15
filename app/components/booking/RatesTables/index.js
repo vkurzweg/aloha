@@ -128,7 +128,7 @@ function RatesTables() {
        <li>Select Friends or Family --- SUPER IMPORTANT!!!! </li>
        <li>You will be asked to provide 3% of the total if processed incorrectly.</li>
        <li>Sign in to PayPal or create an account</li>
-       <li>Email us and tell us that you purchased a gift certificate, the amount, and for whom NickFowler9@gmail.com</li>
+       <li>Email us and tell us that you purchased a gift certificate, the amount, and for whom at NickFowler9@gmail.com</li>
        <li>We email you the gift certificate!</li>
      </ol>
    </div>

@@ -13,7 +13,7 @@ import NavXL from 'components/common/NavXL';
 import NavMobile from 'components/common/NavMobile';
 import ContactInfo from 'components/contact/ContactInfo';
 import ContactInfoXL from 'components/contact/ContactInfoXL';
-// import SuccessModal from 'components/contact/SuccessModal';
+import SuccessModal from 'components/contact/SuccessModal';
 import { selectContact, selectForm } from './selectors';
 import { createMessage, openModal, closeModal } from './actions';
 import ContactFormContainer from './ContactFormContainer';
@@ -65,6 +65,10 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
                 isCreateFailed={this.props.isCreateFailed}
               />
               <ContactInfoXL />
+              <SuccessModal
+                isOpen={this.props.modalIsOpen}
+                closeModal={this.props.closeModal}
+              />
             </div>
           </div>
         </MediaQuery>
@@ -86,6 +90,10 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
                 isCreateFailed={this.props.isCreateFailed}
               />
               <ContactInfo />
+              <SuccessModal
+                isOpen={this.props.modalIsOpen}
+                closeModal={this.props.closeModal}
+              />
             </div>
           </div>
         </MediaQuery>
@@ -118,7 +126,3 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactPage);
 
-// <SuccessModal
-//   modalIsOpen={this.props.modalIsOpen}
-//   closeModal={this.props.closeModal}
-// />
