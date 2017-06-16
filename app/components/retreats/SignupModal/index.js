@@ -18,6 +18,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     marginTop: '20px',
     width: '85%',
+    height: '85%',
   },
 };
 
