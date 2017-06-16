@@ -23,11 +23,11 @@ function Intro() {
       </MediaQuery>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>
-          <Image cloudName="kurzweg" publicId="stars_yellow-min" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '3%'}} />
+          <Image cloudName="kurzweg" publicId="stars_yellow-min" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '1%'}} />
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>500+ 5-star reviews</p>
         </div>
-        <p style={{ textAlign: 'center', width: '80%', display: 'block', margin: '0 auto', marginTop: '5%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking for an experienced instructor to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
-        <hr style={{ width: '50%', display: 'block', margin: '0 auto', color: '#E6E7E8', marginTop: '3%', marginBottom: '3%' }} />
+        <p style={{ textAlign: 'center', width: '80%', display: 'block', margin: '0 auto', marginTop: '2%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking for an experienced instructor to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
+        <hr style={{ width: '50%', display: 'block', margin: '0 auto', color: '#E6E7E8', marginTop: '1%', marginBottom: '1%' }} />
         <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px', marginBottom: '-2%' }}>Featured in:</p>
         <div style={{ display: 'block', width: '100%', margin: '0 auto', textAlign: 'center' }}>
           <Image cloudName="kurzweg" publicId="latimes-logo-min" responsive style={{ padding: '3%' }} alt="la times" />
@@ -36,7 +36,7 @@ function Intro() {
           <Image cloudName="kurzweg" publicId="Huffington-Post-Logo-min" style={{ padding: '3%' }} alt="huffington post" />
           <Image cloudName="kurzweg" publicId="telemundo-min" style={{ padding: '3%' }} alt="telemundo" />
         </div>
-        <div style={{ marginTop: '3%', paddingBottom: '5%'}}>
+        <div style={{ paddingBottom: '2%'}}>
           <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/press" ><Btn>More press</Btn></Link>
         </div>
       </div>

@@ -5,7 +5,7 @@ const Btn = styled.h4`
   color: #7C4DFF;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 2%;
+  margin-top: 1%;
   border: 1px solid #7C4DFF;
   padding: 2%;
   width: 15em;

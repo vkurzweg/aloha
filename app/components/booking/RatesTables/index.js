@@ -20,7 +20,7 @@ function RatesTables() {
 
      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Rates & Packages</h3>
      <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '75%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
-       <p style={{ fontFamily: 'Josefin Sans' }}>All lessons last 90 minutes (water time)</p>
+       <p style={{ fontFamily: 'Josefin Sans' }}>All lessons last 90 minutes</p>
        <hr style={{ width: '50%', display: 'block', margin: '0 auto', marginTop: '2%', marginBottom: '2%' }} />
        <p style={{ fontFamily: 'Josefin Sans' }}>Surfboard & wetsuit included at no extra charge</p>
        <Link to="/contact"><button className="btn btn-default" style={{ backgroundColor: '#FF80AB', color: 'white', width: '12em', display: 'block', margin: '0 auto', fontSize: '20px', border: 'none', marginTop: '5%', marginBottom: '7%'}}>Book a lesson or package</button></Link>
@@ -52,7 +52,7 @@ function RatesTables() {
              </tr>
            </tbody>
          </table>
-         <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '10%', marginTop: '5%' }}>
+         <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '10%', marginTop: '5%', listStyleType: 'none' }}>
            <li>* 1 instructor for up to 4 people</li>
            <li>We create the group if you don't have at least 3 people</li>
            <li>Most popular option!</li>
@@ -94,7 +94,7 @@ function RatesTables() {
          </tbody>
        </table>
      </div>
-     <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '7%', marginTop: '2%', width: '80%'}}>
+     <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '7%', marginTop: '2%', width: '80%', listStyleType: 'none' }}>
        <li>* <b>9 - 10:30</b> Earliest session M-F</li>
        <li style={{ marginTop: '3%' }}><b>Spring/Summer (March - Sept)</b> Lessons in this package only available Monday - Friday</li>
        <li style={{ marginTop: '3%' }}>We try our best to work with your schedule. If we can't add another person to make your lesson into a group lesson within 24 hours, we will notify you that we need to reschedule.</li>
@@ -128,8 +128,8 @@ function RatesTables() {
        <li>Select Friends or Family --- SUPER IMPORTANT!!!! </li>
        <li>You will be asked to provide 3% of the total if processed incorrectly.</li>
        <li>Sign in to PayPal or create an account</li>
-       <li>Email us and tell us that you purchased a gift certificate, the amount, and for whom at NickFowler9@gmail.com</li>
-       <li>We email you the gift certificate!</li>
+       <li>Email us and tell us that you purchased a gift certificate, the amount, and for whom at nickfowler9@gmail.com</li>
+       <li>We email you the gift certificate :-)</li>
      </ol>
    </div>
   );

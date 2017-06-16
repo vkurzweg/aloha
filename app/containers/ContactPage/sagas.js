@@ -18,15 +18,17 @@ export function* createMessageAsync() {
     console.log('message', message)
     let base = location.protocol + '//' + location.hostname;
     if (base === 'http://localhost') base = 'http://localhost:3000';
-    console.log('base', base);
     const api = axios.create({
       baseURL: base,
       headers: { 'Access-Control-Allow-Origin': '*' },
       timeout: 3000,
     });
-    const response = yield call(api, '/contactus', { method: 'post', data: message })
-    yield put(openModal());
-    yield put(createMessageSuccess());
+    const response = yield call(api, '/contactus', { method: 'post', data: message });
+    console.log('response', response)
+    if (response.status === 200) {
+      yield put(openModal());
+      yield put(createMessageSuccess());
+    };
     console.log('message sent!');
   } catch (e) {
     console.log('Create message request failed', e);

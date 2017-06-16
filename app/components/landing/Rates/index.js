@@ -19,7 +19,7 @@ function Rates() {
       <div className="container" style={{ backgroundColor: '#FF80AB', width: '100%' }}>
         <div className="row">
           <div className="col-sm-6" >
-            <h4 style={{ marginTop: '1%', padding: '3%', textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px' }}>All lessons last 90 minutes (water time)</h4>
+            <h4 style={{ marginTop: '1%', padding: '3%', textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px' }}>All lessons last 90 minutes</h4>
           </div>
           <div className="col-sm-6" >
             <h4 style={{ marginTop: '1%', padding: '3%', textAlign: 'center', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '2px' }}>Surfboard & wetsuit included</h4>
@@ -28,7 +28,7 @@ function Rates() {
       </div>
 
       <div className="container" style={{ backgroundColor: '#ECECEC', width: '100%' }}>
-        <div className="row" style={{ marginTop: '5%' }}>
+        <div className="row" style={{ marginTop: '2%' }}>
           <div className="col-sm-6" style={{ display: 'block', margin: '0 auto', marginBottom: '2%' }}>
             <Card style={{ display: 'block', margin: '0 auto', width: '60%', marginLeft: '25%' }}>
               <CardMedia>
@@ -58,7 +58,7 @@ function Rates() {
         </div>
       </div>
       <div style={{ backgroundColor: '#ECECEC' }}>
-        <Link to="/gallery"><div style={{ border: '2px solid #FF80AB', width: '30%', margin: '0 auto', padding: '2%' }}>
+        <Link to="/gallery" style={{ textDecoration: 'none' }}><div style={{ border: '2px solid #FF80AB', width: '30%', margin: '0 auto', padding: '2%' }}>
           <Image cloudName="kurzweg" publicId="camera" width="auto" responsive alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
           <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson from $75+</p>
         </div></Link>
