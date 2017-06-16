@@ -38,6 +38,7 @@ const A = styled.a`
 
   &:hover {
     color: #FF80AB;
+    text-decoration: none;
   }
 `;
 

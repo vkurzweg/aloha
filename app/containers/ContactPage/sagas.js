@@ -24,7 +24,6 @@ export function* createMessageAsync() {
       timeout: 3000,
     });
     const response = yield call(api, '/contactus', { method: 'post', data: message });
-    console.log('response', response);
     if (response.status === 200) {
       yield put(openModal());
       yield put(createMessageSuccess());
