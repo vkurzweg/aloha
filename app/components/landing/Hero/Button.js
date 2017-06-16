@@ -19,7 +19,7 @@ const Button = styled.button`
 
   &:hover, &:active, &:focus {
     background-color: #FF80AB;
-    color: #212121;
+    color: #2C4A74;
     border: none
     outline: 0;
     text-decoration: none;

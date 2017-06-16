@@ -53,7 +53,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
               </div>
               <div className="control-group form-group">
                 <div className="controls">
-                  <label htmlFor="message" >Type of Lesson and # People Booking</label>
+                  <label htmlFor="message" >Type of Lesson and # of People Booking</label>
                   <Field
                     name="message"
                     component="textarea"

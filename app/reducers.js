@@ -12,6 +12,8 @@ import {
   CREATE_MESSAGE_FAILURE,
   OPEN_MODAL,
   CLOSE_MODAL,
+  OPEN_SIGNUP_MODAL,
+  CLOSE_SIGNUP_MODAL,
 } from './constants';
 import { reducer as reduxFormReducer } from 'redux-form/immutable'
 
@@ -73,6 +75,21 @@ function contactReducer(state = contactInitialState, action) {
   }
 }
 
+const retreatsInitialState = fromJS({
+  modalIsOpen: false,
+});
+
+function retreatsReducer(state = retreatsInitialState, action) {
+  switch (action.type) {
+    case OPEN_SIGNUP_MODAL:
+      return state.set('modalIsOpen', fromJS(action.payload));
+    case CLOSE_SIGNUP_MODAL:
+      return state.set('modalIsOpen', fromJS(action.payload));
+    default:
+      return state;
+  }
+}
+
 /**
  * Creates the main reducer with the asynchronously loaded ones
  */
@@ -82,6 +99,7 @@ export default function createReducer(asyncReducers) {
     language: languageProviderReducer,
     contact: contactReducer,
     form: reduxFormReducer,
+    retreats: retreatsReducer,
     ...asyncReducers,
   });
 }
