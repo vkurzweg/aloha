@@ -17,6 +17,7 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     marginTop: '20px',
+    width: '85%',
   },
 };
 
@@ -31,7 +32,7 @@ function SignupModal(props) {
         contentLabel="Retreat Waiting List"
       >
         <div style={{ width: '90%', margin: '0 auto' }}>
-         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmbOutee2SHBuyoMzrSr_dG6z46QH0rY7TmV4muK-sdxy9lg/viewform?embedded=true" style={{ width: '100%' }} width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmbOutee2SHBuyoMzrSr_dG6z46QH0rY7TmV4muK-sdxy9lg/viewform?embedded=true" style={{ width: '100%' }} width="760" height="500" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
         </div>
       </Modal>
     </div>
