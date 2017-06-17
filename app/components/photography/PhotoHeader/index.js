@@ -12,7 +12,7 @@ function PhotoHeader() {
   return (
     <div>
       <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', paddingTop: '8%' }}>Photography</h3>
-      <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '75%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
+      <div style={{ fontSize: '16px', fontFamily: 'Josefin Sans', width: '90%', margin: '0 auto', textAlign: 'center', marginTop: '2%' }}>
         <p style={{ fontFamily: 'Josefin Sans', fontSize: '18px' }}><b>Add professional photography to your lesson</b></p>
         <ul style={{ width: '50%', display: 'block', margin: '0 auto', textAlign: 'left' }}>
           <li style={{ fontFamily: 'Josefin Sans' }}>Your best images, edited & exported in high-quality JPG format</li>
@@ -23,8 +23,8 @@ function PhotoHeader() {
             <tbody>
               <tr>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Student Package*</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>15 images</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$75 cash / $85 PayPal**</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>15 images per person (minimum 2 people)</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$50 cash per person / $57.50 PayPal**</td>
               </tr>
               <tr>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Value Package</td>
