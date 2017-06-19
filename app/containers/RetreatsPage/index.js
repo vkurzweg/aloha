@@ -32,7 +32,7 @@ export class RetreatsPage extends React.PureComponent { // eslint-disable-line r
 
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
           title="Aloha Brothers Surf & Language Retreats"
           meta={[

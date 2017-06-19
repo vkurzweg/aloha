@@ -59,6 +59,12 @@ const items = [
     name: 'Instructors - Hawaii',
     url: '/instructors-hawaii',
   }, {
+    name: 'Ding Repair',
+    url: '/dingrepair',
+  }, {
+    name: 'Retreats',
+    url: '/retreats',
+  }, {
     name: 'Press',
     url: '/press',
   }, {
