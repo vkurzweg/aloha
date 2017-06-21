@@ -16,14 +16,14 @@ export function* createMessageAsync() {
     const contact = formState.get('contact').toJS();
     const message = contact.values;
     console.log('message', message)
-    let base = location.protocol + '//' + location.hostname;
-    if (base === 'http://localhost') base = 'http://localhost:3000';
+    // let base = location.protocol + '//' + location.hostname;
+    // if (base === 'http://localhost') base = 'http://localhost:3000';
     const api = axios.create({
-      baseURL: base,
-      headers: { 'Access-Control-Allow-Origin': '*' },
-      timeout: 3000,
+      baseURL: 'https://formspree.io/',
+      // headers: { 'Access-Control-Allow-Origin': '*' },
+      // timeout: 3000,
     });
-    const response = yield call(api, '/contactus', { method: 'post', data: message });
+    const response = yield call(api, 'nickfowler9@gmail.com', { method: 'post', data: message });
     if (response.status === 200) {
       yield put(openModal());
       yield put(createMessageSuccess());

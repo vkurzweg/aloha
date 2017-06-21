@@ -65,7 +65,7 @@ function handleSendMail(req, res){
     });
 
   const mail = {
-    from: req.body.email,
+    from: req.body.name + '<' + req.body.email + '>',
     to: process.env.AUTH_USER,
     subject: 'New Website Message - Aloha Brothers',
     html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'

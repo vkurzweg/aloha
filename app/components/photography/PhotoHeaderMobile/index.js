@@ -23,8 +23,8 @@ function PhotoHeader() {
             <tbody>
               <tr>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Student Package *</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>15 images</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$75 cash / $85 PayPal**</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>15 images per person (minimum 2 people)</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$50 cash per person / $57.50 PayPal**</td>
               </tr>
               <tr>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Value Package</td>
@@ -36,10 +36,13 @@ function PhotoHeader() {
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>50 images</td>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$160 cash / $195.50 PayPal**</td>
               </tr>
+              <tr>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>*Must show valid student ID</td>
+                <td />
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>**Permit fees</td>
+              </tr>
             </tbody>
           </table>
-          <p style={{ fontFamily: 'Josefin Sans', marginTop: '2%', textAlign: 'left', marginLeft: '5%' }}>* Must show valid student ID</p>
-          <p style={{ fontFamily: 'Josefin Sans', marginTop: '2%', textAlign: 'left', marginLeft: '5%' }}>** Permit fees</p>
         </div>
       </div>
     </div>

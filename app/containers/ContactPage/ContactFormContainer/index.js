@@ -43,7 +43,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
                 <div className="controls">
                   <label htmlFor="email">Email Address</label>
                   <Field
-                    name="email"
+                    name="_replyto"
                     component="input"
                     type="email"
                     className="form-control"

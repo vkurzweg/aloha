@@ -53,12 +53,21 @@ function Bios() {
         </div>
       </div>
       <Header>Dustin</Header>
-      <div className="row" style={{ marginLeft: '10%', marginBottom: '5%' }}>
+      <div className="row" style={{ marginLeft: '10%' }}>
         <div className="col-sm-5">
           <Image cloudName="kurzweg" publicId="dustin" width="400" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
         <div className="col-sm-7">
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>"Well, I couldn't really imagine spending more than a day away from the beach..."</p>
+        </div>
+      </div>
+      <Header>Rob - Carmel/Monterrey</Header>
+      <div className="row" style={{ marginLeft: '10%', marginBottom: '5%' }}>
+        <div className="col-sm-5">
+          <Image cloudName="kurzweg" publicId="rob" width="400" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
+        </div>
+        <div className="col-sm-7">
+          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>Rob went to University of Hawaii at Manoa and has a B.S. in Environmental Science. He has been surfing for 25 years and has surfed all around the world including Hawaii, Fiji, Europe, Central and South America. Rob is an avid waterman who has taught surfing and other water sports for many years.</p>
         </div>
       </div>
     </div>

@@ -36,9 +36,12 @@ function PhotoHeader() {
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>50 images</td>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$160 cash / $195.50 PayPal**</td>
               </tr>
+              <tr>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>*Must show valid student ID</td>
+                <td />
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>**Permit fees</td>
+              </tr>
             </tbody>
-            <p style={{ fontFamily: 'Josefin Sans', marginTop: '5%' }}>*Must show valid student ID</p>
-            <p style={{ fontFamily: 'Josefin Sans', marginTop: '5%' }}>**Permit fees</p>
           </table>
         </div>
       </div>
