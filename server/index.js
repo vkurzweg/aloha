@@ -10,7 +10,14 @@ const isDev = process.env.NODE_ENV !== 'production';
 const ngrok = (isDev && process.env.ENABLE_TUNNEL) || argv.tunnel ? require('ngrok') : false;
 const resolve = require('path').resolve;
 const app = express();
-// const nodemailer = require('nodemailer');
+const sendmail = require('sendmail')({
+  logger: {
+    debug: console.log,
+    info: console.info,
+    warn: console.warn,
+    error: console.error
+  }
+})
 const bodyParser = require('body-parser');
 const sm = require('sitemap');
 const compression = require('compression');
@@ -54,35 +61,25 @@ app.get('/sitemap.xml', function(req, res) {
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
 
-// function handleSendMail(req, res){
-//   console.log('req.body', req.body)
-//   const transporter = nodemailer.createTransport({
-//       service: 'Gmail',
-//       auth: {
-//           user: process.env.AUTH_USER,
-//           pass: process.env.AUTH_PASS,
-//       }
-//     });
+function handleSendMail(req, res){
+  console.log('req.body', req.body);
 
-//   const mail = {
-//     from: req.body.name + '<' + req.body.email + '>',
-//     to: process.env.AUTH_USER,
-//     subject: 'New Website Message - Aloha Brothers',
-//     html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
-//   }
 
-//   transporter.sendMail(mail, function(error, response){
-//     if(error){
-//         console.log(error);
-//     }else{
-//         console.log("Message sent: " + response.accepted, response.rejected, response.messageId);
-//     }
-//    transporter.close();
-//    res.json({msg: 'Message sent'})
-//   });
-// }
+  sendmail({
+      from: req.body.email,
+      to: 'nickfowler9@gmail.com',
+      subject: 'Aloha Brothers Surf Lessons',
+      html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
+    }, function(err, reply) {
+      console.log(err && err.stack);
+      if (reply.indexOf('221') >= 0){
+        res.status(200).send('Message sent');
+      }
+      console.dir(reply);
+  });
+}
 
-// app.use('/contactus', handleSendMail);
+app.use('/contactus', handleSendMail);
 
 
 // In production we need to pass these values in instead of relying on webpack
@@ -117,3 +114,46 @@ app.listen(port, host, (err) => {
     logger.appStarted(port, prettyHost);
   }
 });
+
+// Alternate mailer code
+// const nodemailer = require('nodemailer');
+// const email = require('emailjs');
+// const server  = email.server.connect({
+//    user:    process.env.AUTH_USER,
+//    password:process.env.AUTH_PASS,
+//    host:    "smtp.gmail.com",
+//    ssl:     true
+// });
+  // server.send({
+  //    text:    req.body.message,
+  //    from:    req.body.email,
+  //    'reply-to': req.body.email,
+  //    to:      "nickfowler9@gmail.com",
+  //    subject: "Aloha Brothers Surf Lessons"
+  // }, function(err, message) { console.log(err || message); });
+
+
+//   const transporter = nodemailer.createTransport({
+//       service: 'Gmail',
+//       auth: {
+//           user: process.env.AUTH_USER,
+//           pass: process.env.AUTH_PASS,
+//       }
+//     });
+
+//   const mail = {
+//     from: req.body.name + '<' + req.body.email + '>',
+//     to: process.env.AUTH_USER,
+//     subject: 'New Website Message - Aloha Brothers',
+//     html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
+//   }
+
+//   transporter.sendMail(mail, function(error, response){
+//     if(error){
+//         console.log(error);
+//     }else{
+//         console.log("Message sent: " + response.accepted, response.rejected, response.messageId);
+//     }
+//    transporter.close();
+//    res.json({msg: 'Message sent'})
+//   });
