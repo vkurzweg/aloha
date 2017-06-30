@@ -22,24 +22,34 @@ function PhotoHeader() {
           <table className="table" style={{ width: '100%', textAlign: 'center' }}>
             <tbody>
               <tr>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Student Package*</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>15 images per person (minimum 2 people)</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$50 cash per person / $57.50 PayPal**</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>1 person</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>20 images</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$85*</td>
               </tr>
               <tr>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Value Package</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>2 people</td>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>30 images</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$110 cash / $126.50 PayPal**</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$60 per person*</td>
               </tr>
               <tr>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Extra Value Package</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>3 people</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>40 images</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$45 per person*</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>4 people</td>
                 <td style={{ fontWeight: 'bold', fontSize: '16px' }}>50 images</td>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$160 cash / $195.50 PayPal**</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$37.50 per person*</td>
               </tr>
               <tr>
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>*Must show valid student ID</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>Deluxe (1-5 people)</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>75 images</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>$175*</td>
+              </tr>
+              <tr>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>*Add 15% if paying via PayPal (permit fees)</td>
                 <td />
-                <td style={{ fontWeight: 'bold', fontSize: '16px' }}>**Permit fees</td>
+                <td style={{ fontWeight: 'bold', fontSize: '16px' }}></td>
               </tr>
             </tbody>
           </table>
