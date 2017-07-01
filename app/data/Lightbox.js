@@ -1,7 +1,7 @@
 const LIGHTBOX_IMAGE_SET = [
   {
     src: 'http://res.cloudinary.com/kurzweg/image/upload/v1494631186/backside_pop_nsr9tu.jpg',
-    caption: 'Fins loose in the juice in the Mexican juice',
+    caption: 'Fins loose in the Mexican juice',
   },
   {
     src: 'http://res.cloudinary.com/kurzweg/image/upload/v1494631596/beach_cleanup_eewmrr.jpg',
