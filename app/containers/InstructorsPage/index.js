@@ -20,7 +20,7 @@ export class InstructorsPage extends React.PureComponent { // eslint-disable-lin
     return (
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Helmet
-          title="Aloha Brothers Surf Instructors - Venice, CA"
+          title="Aloha Brothers Surf Instructors - Venice & Monterrey"
           meta={[
             { name: 'description', content: 'Our friendly and experienced surf instructors have received hundreds of 5-star reviews. Group lessons starting at $85.' },
           ]}

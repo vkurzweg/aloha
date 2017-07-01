@@ -61,7 +61,7 @@ function Bios() {
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>"Well, I couldn't really imagine spending more than a day away from the beach..."</p>
         </div>
       </div>
-      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Surf Instructors - Monterrey</h3>
+      <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Surf Instructors - Monterey</h3>
       <Header>Rob</Header>
       <div className="row" style={{ marginLeft: '10%', marginBottom: '5%' }}>
         <div className="col-sm-5">
