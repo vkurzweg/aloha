@@ -79,7 +79,27 @@ function handleSendMail(req, res){
   });
 }
 
+function handleCareersContact(req, res){
+  console.log('req.body', req.body);
+
+
+  sendmail({
+      from: req.body.email,
+      to: 'nickfowler9@gmail.com',
+      subject: 'Aloha Brothers Surf Lessons - Careers',
+      html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
+    }, function(err, reply) {
+      console.log(err && err.stack);
+      if (reply.indexOf('221') >= 0){
+        res.status(200).send('Message sent');
+      }
+      console.dir(reply);
+  });
+}
+
 app.use('/contactus', handleSendMail);
+
+app.use('/alohacareers', handleCareersContact);
 
 
 // In production we need to pass these values in instead of relying on webpack

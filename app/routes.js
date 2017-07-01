@@ -181,6 +181,25 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/careers',
+      name: 'careers',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/CareersPage/sagas'),
+          import('containers/CareersPage'),
+
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([sagas, component]) => {
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
       path: '/press',
       name: 'press',
       getComponent(nextState, cb) {
