@@ -60,7 +60,7 @@ function Rates() {
         </div>
       </div>
       <div style={{ backgroundColor: '#ECECEC' }}>
-        <Link to="/gallery"><div style={{ border: 'none', borderRadius: '3px', backgroundColor: '#FF80AB', width: '30%', margin: '0 auto', padding: '2%' }}>
+        <Link to="/gallery" style={{ textDecoration: 'none' }}><div style={{ border: 'none', borderRadius: '3px', backgroundColor: '#FF80AB', width: '30%', margin: '0 auto', padding: '2%' }}>
           <Image cloudName="kurzweg" publicId="camera_white" width="auto" responsive alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
           <p style={{ color: '#ECECEC', textAlign: 'center', fontSize: '22px', padding: '1%' }}>Add photography to your lesson from $85</p>
         </div></Link>
