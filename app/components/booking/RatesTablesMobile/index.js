@@ -85,9 +85,9 @@ function RatesTables() {
        </div>
      </div>
 
-     <Link style={{ display: 'block' }} to="/gallery"><div style={{ width: '100%', margin: '0 auto', marginBottom: '3%', marginTop: '-5%'}}>
-       <Image cloudName="kurzweg" publicId="camera" alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
-       <p style={{ color: '#FF80AB', textAlign: 'center', fontSize: '16px', padding: '1%' }}>Add photography to your lesson from $85</p>
+     <Link style={{ display: 'block' }} to="/gallery"><div style={{ border: 'none', borderRadius: '3px', backgroundColor: '#FF80AB', width: '75%', margin: '0 auto', marginBottom: '3%', marginTop: '-5%'}}>
+       <Image cloudName="kurzweg" publicId="camera_white" alt="surf photography" style={{ display: 'block', margin: '0 auto'}} />
+       <p style={{ color: '#ECECEC', textAlign: 'center', fontSize: '16px', padding: '4%' }}>Add photography to your lesson from $85</p>
      </div></Link>
 
      <Image cloudName="kurzweg" publicId="venice_background_oblfde" width="300" responsive alt="walking with surfboards in Venice" style={{ display: 'block', margin: '0 auto', marginBottom: '4%', width: '75%' }} />
