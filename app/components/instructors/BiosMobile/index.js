@@ -44,15 +44,6 @@ function Bios() {
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>Taylor grew up surfing in North Carolina and Hawaii. One day when he was 11 years old, in the sweltering summer heat on a NC coast, he took out his dad's old 1970's Natural Progression surfboard to see if he could catch any waves -- the rest is history. He loves to see people's reactions and joy as they ride their first waves, experiencing the unique - and unmatched - adrenaline of the sport.</p>
         </div>
       </div>
-      <Header>David</Header>
-      <div className="row">
-        <div className="col-sm-5">
-          <Image cloudName="kurzweg" publicId="david" width="200" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
-        </div>
-        <div className="col-sm-7">
-          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>"Surfing is the ultimate exposure to nature. Imagine standing on the shoulder of a giant observing the world constantly changing. The sense of accomplishment I get each day from surfing instills a profound sense of peace in me."</p>
-        </div>
-      </div>
       <Header>Dustin</Header>
       <div className="row">
         <div className="col-sm-5">
@@ -60,6 +51,15 @@ function Bios() {
         </div>
         <div className="col-sm-7">
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>"Well, I couldn't really imagine spending more than a day away from the beach..."</p>
+        </div>
+      </div>
+      <Header>David</Header>
+      <div className="row">
+        <div className="col-sm-5">
+          <Image cloudName="kurzweg" publicId="david" width="200" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
+        </div>
+        <div className="col-sm-7">
+          <p style={{ fontSize: '16px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>"Surfing is the ultimate exposure to nature. Imagine standing on the shoulder of a giant observing the world constantly changing. The sense of accomplishment I get each day from surfing instills a profound sense of peace in me."</p>
         </div>
       </div>
       <h3 style={{ textAlign: 'center', color: '#7C4DFF', letterSpacing: '5px', textTransform: 'uppercase', marginTop: '2%' }}>Surf Instructors - Monterey</h3>
