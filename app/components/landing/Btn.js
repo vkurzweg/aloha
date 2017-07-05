@@ -15,7 +15,7 @@ const Btn = styled.h4`
 
    &:hover, &:active, &:focus {
      background-color: #7C4DFF;
-     color: #ECECEC;
+     color: #FF80AB;
      border: none;
      outline: 0;
   }

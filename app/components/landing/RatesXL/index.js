@@ -13,7 +13,11 @@ import Btn from 'components/landing/Btn';
 import { Image } from 'cloudinary-react';
 
 
-function Rates() {
+function Rates(props) {
+  let color = '#ECECEC';
+  props.hover ? color = '#7C4DFF' : color;
+  let src = 'camera_white';
+  props.hover ? src = 'camera_purple' : src;
   return (
     <div style={{ display: 'block', width: '100%', margin: '0 auto' }}>
       <div className="container" style={{ backgroundColor: '#FF80AB', width: '100%' }}>
@@ -61,8 +65,8 @@ function Rates() {
       </div>
       <div style={{ backgroundColor: '#ECECEC' }}>
         <Link to="/gallery" style={{ textDecoration: 'none' }}><div style={{ border: 'none', borderRadius: '3px', backgroundColor: '#FF80AB', width: '30%', margin: '0 auto', padding: '2%' }}>
-          <Image cloudName="kurzweg" publicId="camera_white" width="auto" responsive alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
-          <p style={{ color: '#ECECEC', textAlign: 'center', fontSize: '22px', padding: '1%' }}>Add photography to your lesson from $85</p>
+          <Image cloudName="kurzweg" publicId={src} width="auto" responsive alt="surf photography" style={{ display: 'block', margin: '0 auto' }} />
+          <p style={{ color, textAlign: 'center', fontSize: '22px', padding: '1%' }}>Add photography to your lesson from $85</p>
         </div></Link>
         <div style={{ marginTop: '3%', paddingBottom: '5%' }}>
           <Link style={{ textDecoration: 'none', cursor: 'pointer' }} to="/rates" ><Btn>All rates & packages</Btn></Link>

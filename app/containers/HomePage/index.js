@@ -31,6 +31,20 @@ import { Image } from 'cloudinary-react';
 
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.state = {
+      hover: false,
+    };
+    this.toggleColor = this.toggleColor.bind(this);
+  }
+
+  toggleColor() {
+    this.setState((prevState) => {
+      return { hover: !prevState.hover };
+    });
+  }
+
   render() {
   const barrell = 'http://res.cloudinary.com/kurzweg/image/upload/v1496453750/slideshow_barrell2.jpg';
   const crosswalk = 'http://res.cloudinary.com/kurzweg/image/upload/v1496453734/crosswalk.jpg';
@@ -47,7 +61,10 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <HeroXL />
           <IntroXL />
           <div style={{ height: '425px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-          <RatesXL />
+          <RatesXL
+            toggleColor={this.toggleColor}
+            hover={this.state.hover}
+          />
           <div style={{ height: '425px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
 
@@ -58,7 +75,10 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <div style={{ height: '300px', backgroundImage: `url(${crosswalk})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery minWidth={957} maxWidth={1823}>
-          <Rates />
+          <Rates
+            toggleColor={this.toggleColor}
+            hover={this.state.hover}
+          />
           <div style={{ height: '300px', backgroundImage: `url(${barrell})`, backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </MediaQuery>
         <MediaQuery maxWidth={767}>
