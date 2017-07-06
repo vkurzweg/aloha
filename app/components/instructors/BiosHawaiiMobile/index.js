@@ -23,6 +23,15 @@ function Bios() {
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '3%', margin: '0 auto' }}>Jeff has been surfing on O'ahu for 27 years and knows the island and all her surf spots. Through his teenage years he surfed competitively. He has always had a great love for the ocean and surfing has been a great source of joy for him throughout his life. Jeff has the experience, wave knowledge and ability to get you up and riding.</p>
         </div>
       </div>
+      <Header>Kekai</Header>
+      <div className="row" style={{ marginBottom: '5%' }}>
+        <div className="col-sm-5">
+          <Image cloudName="kurzweg" publicId="kekai" width="300" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
+        </div>
+        <div className="col-sm-7">
+          <p style={{ fontSize: '16px', width: '80%', paddingTop: '3%', margin: '0 auto' }}>Hailing from Kaua'i, Kekai moved to O'ahu in high school and has been surfing all over the island since. Perhaps he gets his technical expertise from golf (he's a fanatic, playing back and forth regularly between both islands). Whatever the reason, his fluid style is surprisingly precise. Kekai can easily break down idiosyncratic tendencies in the most advanced surfers, or help complete newbies learn how to learn rapidly.</p>
+        </div>
+      </div>
       <Header>Kawai</Header>
       <div className="row" style={{ marginBottom: '5%' }}>
         <div className="col-sm-5">
