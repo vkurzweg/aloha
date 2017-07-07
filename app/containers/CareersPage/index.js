@@ -73,10 +73,6 @@ export class CareersPage extends React.Component { // eslint-disable-line react/
   }
 }
 
-CareersPage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
-
 function mapStateToProps(state) {
   const careersState = selectCareers(state);
   const modalIsOpen = careersState.get('modalIsOpen');

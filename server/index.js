@@ -86,9 +86,10 @@ function handleCareersContact(req, res){
   sendmail({
       from: req.body.email,
       to: 'nickfowler9@gmail.com',
-      subject: 'Aloha Brothers Surf Lessons - Careers',
+      subject: 'Careers at Aloha Brothers Surf Lessons',
       html: '<p>name: ' + req.body.name +'</p>' + '<p>email: ' + req.body.email + '</p>' + '<p>number: ' + req.body.cellNumber +'</p>' + '<p>message: ' + req.body.message + '</p>'
     }, function(err, reply) {
+      console.log(reply)
       console.log(err && err.stack);
       if (reply.indexOf('221') >= 0){
         res.status(200).send('Message sent');
