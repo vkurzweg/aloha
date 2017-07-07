@@ -33,7 +33,7 @@ function SuccessModal(props) {
       >
         <div style={{ width: '75%', margin: '0 auto', textAlign: 'center' }}>
           <Image cloudName="kurzweg" publicId="aloha_logo" quality="auto" width="60" responsive  />
-          <h4>Thanks for your interest in Aloha Brothers. :-) We'll be in touch if there could be a fit!</h4>
+          <h4>Thanks for your interest in Aloha Brothers. :-) Let's meet for coffee!</h4>
         </div>
       </Modal>
     </div>
