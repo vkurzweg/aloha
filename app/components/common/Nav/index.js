@@ -127,6 +127,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
                 <MenuItem key={idx} onTouchTap={this.handleClose.bind(null, item.url)}>{item.name}</MenuItem>
               );
             })}
+            <A href="http://www.dingdelight.surf" target="blank" style={{ fontFamily: 'Lobster Two', textAlign: 'center', marginLeft: '8%' }} >ding delight</A>
           </StyledDrawer>
         </div>
       </div>
