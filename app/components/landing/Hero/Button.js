@@ -15,6 +15,7 @@ const Button = styled.button`
    border: 5px solid #FF80AB;
    margin-top: 3%;
    text-decoration: none;
+   white-space: normal;
 
 
   &:hover, &:active, &:focus {
