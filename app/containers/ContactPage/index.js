@@ -69,6 +69,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
                 openModal={this.props.openModal}
                 closeModal={this.props.closeModal}
                 isCreateFailed={this.props.isCreateFailed}
+                isButtonShowing={this.state.isButtonShowing}
               />
               <ContactInfoXL />
               <SuccessModal

@@ -11,6 +11,8 @@ import { toJS } from 'immutable';
 
 export class ContactFormContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
+    let display = 'block';
+    this.props.isButtonShowing ? display : display = 'none';
     return (
       <div className="col-sm-6" style={{ marginTop: '1%' }}>
         <h4 style={{ textAlign: 'center', color: '#7C4DFF', padding: '2%', letterSpacing: '5px', textTransform: 'uppercase', fontWeight: 'bold', fontSize: '30px' }}>Contact us</h4>
@@ -63,7 +65,7 @@ export class ContactFormContainer extends React.Component { // eslint-disable-li
                   />
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary" style={{ width: '100%', backgroundColor: '#FF80AB', color: 'black', textTransform: 'uppercase', border: 'none', padding: '3%' }}>Send Message</button>
+              <button type="submit" className="btn btn-primary" style={{ display, width: '100%', backgroundColor: '#FF80AB', color: 'black', textTransform: 'uppercase', border: 'none', padding: '3%' }}>Send Message</button>
             </div>
           </form>
         </div>
