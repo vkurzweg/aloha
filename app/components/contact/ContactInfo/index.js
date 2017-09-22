@@ -22,7 +22,7 @@ function ContactInfo() {
         <div style={{ fontSize: '16px', marginLeft: '10%'}}>
           <p><span className="glyphicon glyphicon-phone" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>(323) 316-8108</p>
           <p><span className="glyphicon glyphicon-envelope" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>nickfowler9@gmail.com</p>
-          <p><span className="glyphicon glyphicon-time" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>Monday - Friday: 7:00 AM to 5:00 PM</p>
+          <p><span className="glyphicon glyphicon-time" style={{ fontSize: '18px', padding: '1%', paddingRight: '3%', marginTop: '1%' }}></span>Monday - Sunday: 7:00 AM to 5:00 PM</p>
         </div>
         <h4 style={{ textAlign: 'center', marginTop: '5%', marginBottom: '3%', color: '#7C4DFF', textTransform: 'uppercase', letterSpacing: '1px' }} >Surf Gear & Rentals</h4>
         <div style={{ fontSize: '16px', marginLeft: '10%'}}>

@@ -25,11 +25,17 @@ import { Image } from 'cloudinary-react';
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
+    this.state = {
+      isButtonShowing: true,
+    }
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
+    this.setState((prevState) => {
+      return { isButtonShowing: !prevState.isButtonShowing };
+    });
     this.props.createMessage();
   }
 
@@ -88,6 +94,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
                 openModal={this.props.openModal}
                 closeModal={this.props.closeModal}
                 isCreateFailed={this.props.isCreateFailed}
+                isButtonShowing={this.state.isButtonShowing}
               />
               <ContactInfo />
               <SuccessModal
