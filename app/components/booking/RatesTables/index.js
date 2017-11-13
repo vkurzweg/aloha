@@ -83,7 +83,32 @@ function RatesTables() {
      </div>
 
      <Header>Packages</Header>
-     <Subhead>5-Lesson Package* <span style={{ borderRadius: '3px', backgroundColor: '#6FEAB5', color: 'white', textTransform: 'none', border: '1px solid #8AE5AB', padding: '1%', letterSpacing: '1px' }}><Image cloudName="kurzweg" publicId="palmtree1" alt="palmtree" style={{ height: '25px'}} />Best Value!</span></Subhead>
+
+     <Subhead>3-Lesson Package* </Subhead>
+     <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
+       <table className="table" style={{ width: '100%', textAlign: 'center' }}>
+         <tbody>
+           <tr>
+             <TD>2 private lessons + 1 group</TD>
+             <TD>$375</TD>
+           </tr>
+         </tbody>
+       </table>
+     </div>
+
+     <Subhead>4-Lesson Package*</Subhead>
+     <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
+       <table className="table" style={{ width: '100%', textAlign: 'center' }}>
+         <tbody>
+           <tr>
+             <TD>3 standard group lessons + 1 private lesson</TD>
+             <TD>$375</TD>
+           </tr>
+         </tbody>
+       </table>
+     </div>
+
+     <Subhead>5-Lesson Package*</Subhead>
      <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
        <table className="table" style={{ width: '100%', textAlign: 'center' }}>
          <tbody>
@@ -94,24 +119,12 @@ function RatesTables() {
          </tbody>
        </table>
      </div>
+
      <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '7%', marginTop: '2%', width: '80%', listStyleType: 'none' }}>
        <li>* <b>9 - 10:30</b> Earliest session M-F</li>
        <li style={{ marginTop: '3%' }}><b>Spring/Summer (March - Sept)</b> Lessons in this package only available Monday - Friday</li>
        <li style={{ marginTop: '3%' }}>We try our best to work with your schedule. If we can't add another person to make your lesson into a group lesson within 24 hours, we will notify you that we need to reschedule.</li>
-     </ul>
-     <Subhead>4-Lesson Package*</Subhead>
-     <div style={{ width: '50%', textAlign: 'center', display: 'block', margin: '0 auto', marginTop: '2%' }}>
-       <table className="table" style={{ width: '100%', textAlign: 'center' }}>
-         <tbody>
-           <tr>
-             <TD>3 standard group lessons & 1 private lesson</TD>
-             <TD>$375</TD>
-           </tr>
-         </tbody>
-       </table>
-     </div>
-     <ul style={{ textAlign: 'left', fontSize: '14px', marginLeft: '7%', marginTop: '2%', width: '80%', marginBottom: '5%'}}>
-       <li>* <b>Availablity</b> Same as 5-lesson package</li>
+       <li style={{ marginTop: '3%' }}>Frequently we have more flexibility when scheduling private lessons.</li>
      </ul>
 
      <Header>Gift Certificates</Header>

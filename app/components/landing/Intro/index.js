@@ -24,7 +24,7 @@ function Intro() {
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>
           <Image cloudName="kurzweg" publicId="stars_yellow-min" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', marginTop: '1%'}} />
-          <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>600+ 5-star reviews</p>
+          <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>700+ 5-star reviews</p>
         </div>
         <p style={{ textAlign: 'center', width: '80%', display: 'block', margin: '0 auto', marginTop: '2%', fontSize: '16px' }}>Whether you're a beginner looking to stand up for the first time or already a surfer looking for an experienced instructor to take your skills to the next level, we would love to help! People of all ages and sizes are welcome.</p>
         <hr style={{ width: '50%', display: 'block', margin: '0 auto', color: '#E6E7E8', marginTop: '1%', marginBottom: '1%' }} />
