@@ -13,6 +13,7 @@ const Button = styled.button`
    border-radius: 5px;
    border: 3px solid #FF80AB;
    text-decoration: none;
+   margin-top: -1%;
    font-size: 18px;
 
   &:hover, &:active, &:focus {
