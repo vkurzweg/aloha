@@ -36,7 +36,7 @@ function Hero() {
         <h4 style={{ fontFamily: 'Josefin Sans', textAlign: 'center', color: '#F3BB58', textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 'bold', marginTop: '86%', fontSize: '26px' }}>Venice Beach <br /> surf lessons</h4>
         <hr style={{ color: '#F3BB58', width: '33%', textAlign: 'center', marginTop: '-.5%' }} />
         <h4 style={{ fontFamily: 'Josefin Sans', textAlign: 'center', color: '#F3BB58', textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 'bold', fontSize: '28px', marginTop: '-2%' }}>$85+</h4>
-        <Link to="/contact" style={{ textDecoration: 'none' }}><Button>Book a lesson</Button></Link>
+        <Link to="/contact" style={{ textDecoration: 'none' }}><Button>Sign Up</Button></Link>
       </div>
       <StyledImage />
     </div>
