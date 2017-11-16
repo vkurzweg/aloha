@@ -28,7 +28,7 @@ function Intro() {
       <div style={{ width: '100%', margin: '0 auto' }}>
         <Div>
         <div style={{ width: '100%', margin: '0 auto' }}>
-          <Image cloudName="kurzweg" publicId="stars_yellow-min" width="200" quality="auto" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', paddingTop: '3%'}} />
+          <Image cloudName="kurzweg" publicId="stars_yellow-min" width="200" quality="auto" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto', paddingTop: '1%'}} />
           <p style={{ textAlign: 'center', textTransform: 'uppercase', letterSpacing: '4px' }}>700+ 5-star reviews</p>
         </div>
         <div style={{ display: 'block', margin: '0 auto' }}>

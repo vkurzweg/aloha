@@ -19,7 +19,7 @@ const StyledImage = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   height: 500px;
-  margin-top: -5%;
+  margin-top: -7%;
 `;
 
 
