@@ -18,7 +18,7 @@ const StyledImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 675px;
+  height: 575px;
 `;
 
 
@@ -31,7 +31,7 @@ function Hero() {
   };
   return (
     <div style={{ width: '100%', backgroundColor: 'black', top: '0' }}>
-      <div style={{ zIndex: '10', dispay: 'block', margin: '0 auto', width: '100%', position: 'absolute', marginTop: '25%' }}>
+      <div style={{ zIndex: '10', dispay: 'block', margin: '0 auto', width: '100%', position: 'absolute' }}>
         <h4 style={{ fontFamily: 'Josefin Sans', textAlign: 'center', color: '#F3BB58', textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 'bold', marginTop: '85%', fontSize: '30px' }}>Venice Beach surf lessons starting at $85</h4>
         <Link to="/contact" style={{ textDecoration: 'none' }}><Button>Book a lesson</Button></Link>
       </div>

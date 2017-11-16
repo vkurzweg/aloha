@@ -33,7 +33,7 @@ const StyledDrawer = styled(Drawer)`
 const A = styled.a`
   font-family: 'Lobster', sans-serif;
   text-decoration: none;
-  font-size: 26px;
+  font-size: 22px;
   color: black;
 
   &:hover {
@@ -95,7 +95,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
         <div style={{ position: 'fixed', width: '100%', zIndex: '100', top: '0' }}>
           <StyledAppBar
             title={brand}
-            titleStyle={{ textDecoration: 'none', marginTop: '-2%', textAlign: 'center' }}
+            titleStyle={{ textDecoration: 'none', marginTop: '-2%', textAlign: 'left' }}
             iconElementLeft={<Image cloudName="kurzweg" publicId="menu" responsive alt="menu icon" style={{ padding: '1%' }} />}
             iconStyleLeft={{ padding: '1%' }}
             onLeftIconButtonTouchTap={this.handleToggle}
