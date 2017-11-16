@@ -14,7 +14,7 @@ const Button = styled.button`
    border: 3px solid #FF80AB;
    margin-top: 3%;
    text-decoration: none;
-   font-size: 22px;
+   font-size: 18px;
 
   &:hover, &:active, &:focus {
     background-color: #FF80AB;
