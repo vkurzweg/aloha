@@ -18,7 +18,7 @@ function Bios() {
       <Header>Nick</Header>
       <div className="row">
         <div className="col-sm-5">
-          <Image cloudName="kurzweg" publicId="nick_watershot" width="200" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
+          <Image cloudName="kurzweg" publicId="nick-watershot" width="200" quality="auto" responsive style={{ width: '100%', marginTop: '5%' }} />
         </div>
         <div className="col-sm-7">
           <p style={{ fontSize: '16px', width: '80%', paddingTop: '3%', margin: '0 auto' }}>Born and raised in Hawaii, Nick was pushed into his first wave by former world surfing champion Fred Hemmings when he was around 5 or 6, and has been in love with the ocean ever since.  He studied at UC Santa Cruz because of the school's proximity to quality surf. Nick also studied linguistics in Chile because the country is known for its long, empty waves.</p>
