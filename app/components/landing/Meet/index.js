@@ -17,7 +17,7 @@ function Meet() {
       <div className="container">
         <div className="row">
           <div className="col-sm-6">
-            <Image className="item" cloudName="kurzweg" publicId="nick_q82h51" width="400" quality="auto" responsive style={{ paddingTop: '5%'}} />
+            <Image className="item" cloudName="kurzweg" publicId="nick" width="400" quality="auto" responsive style={{ paddingTop: '5%'}} />
           </div>
           <div className="col-sm-6" style={{ paddingRight: '3%' }}>
             <p style={{ fontSize: '18px', width: '80%', paddingTop: '5%', margin: '0 auto' }}>Born and raised in Hawaii, Nick was pushed into his first wave by former world surfing champion Fred Hemmings when he was around 5 or 6, and has been in love with the ocean ever since.  Nick surfs daily and has taught countless friends and friends of friends and their friends too over the years. He almost always manages to get them up and riding the very first time they go out.</p>

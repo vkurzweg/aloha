@@ -26,7 +26,7 @@ function Rates(props) {
           <div className="col-sm-6" style={{ display: 'block', margin: '0 auto', marginBottom: '2%' }}>
             <Card style={{ display: 'block', margin: '0 auto', width: '60%', marginLeft: '25%' }}>
               <CardMedia>
-                <Image className="item" cloudName="kurzweg" publicId="cuteness_overload_kkto2i" width="400" quality="auto" responsive />
+                <Image className="item" cloudName="kurzweg" publicId="cuteness_overload" width="400" quality="auto" responsive />
               </CardMedia>
               <CardTitle title="Standard Group Lesson" subtitle="$85/person" />
               <CardText style={{ textAlign: 'center', fontSize: '18px', color: '#757575', fontFamily: 'Josefin Sans' }}>

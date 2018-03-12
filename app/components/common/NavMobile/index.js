@@ -89,7 +89,7 @@ class Nav extends React.Component { // eslint-disable-line react/prefer-stateles
   }
 
   render() {
-    const brand = <A href="http://www.alohabrothers.surf" target="blank" style={{ fontFamily: 'Lobster' }}>Aloha Brothers Surf Lessons <Image cloudName="kurzweg" publicId="aloha_logo" quality="auto" width="35" responsive  /></A>;
+    const brand = <A href="http://www.alohabrothers.surf" target="blank" style={{ fontFamily: 'Lobster' }}>Aloha Brothers Surf Lessons <Image cloudName="kurzweg" publicId="aloha-logo" quality="auto" width="35" responsive  /></A>;
     return (
       <div>
         <div style={{ position: 'fixed', width: '100%', zIndex: '100', top: '0' }}>
