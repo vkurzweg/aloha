@@ -14,7 +14,7 @@ import { Image } from 'cloudinary-react';
 function Intro() {
   return (
     <div style={{ backgroundColor: '#ECECEC' }}>
-      <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF', fontSize: '38px', marginTop: '-10%' }}><Image cloudName="kurzweg" publicId="aloha_logo" responsive style={{ padding: '1.5%' }} />Aloha Brothers Surf Lessons, est. 2011<Image cloudName="kurzweg" publicId="aloha_logo" responsive style={{ padding: '1.5%' }} /></h3>
+      <h3 style={{ textAlign: 'center', color: '#FFC233', letterSpacing: '5px', textTransform: 'uppercase', backgroundColor: '#7C4DFF', fontSize: '38px', marginTop: '-10%' }}><Image cloudName="kurzweg" publicId="aloha-logo" responsive style={{ padding: '1.5%' }} />Aloha Brothers Surf Lessons, est. 2011<Image cloudName="kurzweg" publicId="aloha-logo" responsive style={{ padding: '1.5%' }} /></h3>
       <div style={{ width: '100%', margin: '0 auto' }}>
         <div style={{ width: '100%', margin: '0 auto' }}>
           <Image cloudName="kurzweg" publicId="stars_yellow-min" responsive alt="stars icon" style={{ display: 'block', margin: '0 auto'}} />
